@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <!--
+        ______________________________________________________________________________________________________________________________________________________________________________________________
+    -->
     <head> 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>DOMOELECGAM</title>
@@ -15,20 +18,20 @@
                 <style type="text/css" media="all">
                     #article1{position:fixed;background-color:black;color:yellow;}
                     #asideHeaderLeft{position:fixed;background-color:darkblue;color:white;}
-                    #header{position:fixed;background-color:blue;color:white;}
-                    #asideHeaderRight{position:fixed;background-color:blue;color:white;}                        
+                    #header{position:fixed;background-color:darkblue;color:white;}
+                    #asideHeaderRight{position:fixed;background-color:darkblue;color:white;}                        
                 </style>
                 <style type="text/css" media="all">
                     #article2{position:fixed;background-color:black;color:yellow;}
-                    #asideLeft{position:fixed;background-color:blue;color:white; z-index: 50;}
-                    #section{position:fixed;background-color:blue;color:yellow; overflow:auto; z-index: 10;}
-                    #asideRight{position:fixed;background-color:blue;color:white; z-index: 50;}                        
+                    #asideLeft{position:fixed;background-color:darkblue;color:white; z-index: 50;}
+                    #section{position:fixed;background-color:darkblue;color:yellow; overflow:auto; z-index: 10;}
+                    #asideRight{position:fixed;background-color:darkblue;color:white; z-index: 50;}                        
                 </style>
                 <style type="text/css" media="all">
                     #article3{position:fixed;background-color:black;color:yellow;}
-                    #asideFooterLeft{position:fixed;background-color:blue;color:white;}
-                    #footer{position:fixed;background-color:blue;color:yellow;}
-                    #asideFooterRight{position:fixed;background-color:blue;color:white;}                        
+                    #asideFooterLeft{position:fixed;background-color:darkblue;color:white;}
+                    #footer{position:fixed;background-color:darkblue;color:yellow;}
+                    #asideFooterRight{position:fixed;background-color:darkblue;color:white;}                        
                 </style>
             </head>
             <!--l-->
@@ -58,7 +61,7 @@
                         #domoelecgam>nav{background-color: darkblue;color: yellow;}
                         #domoelecgam>nav>button{background-color: blue;color: white;font-size:10px;}
                             #domoelecgam>nav>button:hover{background-color: aqua;color: black;}
-                        .off{background-color:darkred;color:yellow;font-size:25px;position:fixed;left:50%;top:33%;}
+                        .off{background-color:darkred;color:yellow;font-size:25px;position:fixed;left:50%;top:33%;display: none;}
                         .off:hover{background-color:red;color:white;}
                 </style>
             </head>
@@ -77,9 +80,10 @@
                     <style type="text/css" media="all">
                         #personal{display:none;background-color:darkblue;color:yellow;position:fixed;width:60%;height:48%;top:29%;left:15%;}
                         .nav_enlaces{display:none;background-color:blue;color:yellow;position:fixed;width:60%;height:48%;top:37%;left:15%;}
-                        .nav_enlaces>a{background-color:black;color:chartreuse;font-size:35px;display:block;margin-bottom:2%;text-decoration:none;}
+                        .nav_enlaces>a{background-color:black;color:chartreuse;font-size:35px;margin-bottom:2%;text-decoration:none;}
                         .nav_enlaces>a:hover{background-color:chartreuse;color:black;}
-                        .iframes>div>div>iframe{display:none;background-color:blue;color:yellow;position:fixed;width:70%;height:600px;top:37%;left:15%;}
+                        .iframes{background-color: darkblue;height: 98%;}
+                        .iframes>iframe{display:none;width:98%;height:84%;margin-top:17%;}
                         
                     </style>
                     <!--p_p-->
@@ -758,56 +762,108 @@
                             }
                             function p_p_iframe1(){
                                 document.getElementById('p_p_nav_iframe1').style.display="block";
+                                document.getElementById('p_p_nav_iframe2').style.display="none";
+                                document.getElementById('p_p_nav_iframe3').style.display="none";
+                                document.getElementById('p_p_nav_iframe4').style.display="none";
+                                document.getElementById('p_p_nav_iframe5').style.display="none";
                                 document.getElementById('plan_iframes').style.display="block";
                                 document.getElementById('p_iframe_x1').style.display="block";
+                                document.getElementById('p_iframe_x2').style.display="none";
+                                document.getElementById('p_iframe_x3').style.display="none";
+                                document.getElementById('p_iframe_x4').style.display="none";
+                                document.getElementById('p_iframe_x5').style.display="none";
+                                document.getElementById('plan_nav').style.display="none";
                             }
                             function p_p_iframe1Off(){
                                 document.getElementById('p_p_nav_iframe1').style.display="none";
                                 document.getElementById('plan_iframes').style.display="none";
                                 document.getElementById('p_iframe_x1').style.display="none";
+                                document.getElementById('plan_nav').style.display="block";
                             }
                             function p_p_iframe2(){
+                                document.getElementById('p_p_nav_iframe1').style.display="none";
                                 document.getElementById('p_p_nav_iframe2').style.display="block";
+                                document.getElementById('p_p_nav_iframe3').style.display="none";
+                                document.getElementById('p_p_nav_iframe4').style.display="none";
+                                document.getElementById('p_p_nav_iframe5').style.display="none";
                                 document.getElementById('plan_iframes').style.display="block";
+                                document.getElementById('p_iframe_x1').style.display="none";
                                 document.getElementById('p_iframe_x2').style.display="block";
+                                document.getElementById('p_iframe_x3').style.display="none";
+                                document.getElementById('p_iframe_x4').style.display="none";
+                                document.getElementById('p_iframe_x5').style.display="none";
+                                document.getElementById('plan_nav').style.display="none";
                             }
                             function p_p_iframe2Off(){
                                 document.getElementById('p_p_nav_iframe2').style.display="none";
                                 document.getElementById('plan_iframes').style.display="none";
                                 document.getElementById('p_iframe_x2').style.display="none";
+                                document.getElementById('plan_nav').style.display="block";
+                                
                             }
                             function p_p_iframe3(){
+                                document.getElementById('p_p_nav_iframe1').style.display="none";
+                                document.getElementById('p_p_nav_iframe2').style.display="none";
                                 document.getElementById('p_p_nav_iframe3').style.display="block";
+                                document.getElementById('p_p_nav_iframe4').style.display="none";
+                                document.getElementById('p_p_nav_iframe5').style.display="none";
                                 document.getElementById('plan_iframes').style.display="block";
+                                document.getElementById('p_iframe_x1').style.display="none";
+                                document.getElementById('p_iframe_x2').style.display="none";
                                 document.getElementById('p_iframe_x3').style.display="block";
+                                document.getElementById('p_iframe_x4').style.display="none";
+                                document.getElementById('p_iframe_x5').style.display="none";
+                                document.getElementById('plan_nav').style.display="none";
                             }
                             function p_p_iframe3Off(){
                                 document.getElementById('p_p_nav_iframe3').style.display="none";
                                 document.getElementById('plan_iframes').style.display="none";
                                 document.getElementById('p_iframe_x3').style.display="none";
+                                document.getElementById('plan_nav').style.display="block";
                             }
                             function p_p_iframe4(){
+                                document.getElementById('p_p_nav_iframe1').style.display="none";
+                                document.getElementById('p_p_nav_iframe2').style.display="none";
+                                document.getElementById('p_p_nav_iframe3').style.display="none";
                                 document.getElementById('p_p_nav_iframe4').style.display="block";
+                                document.getElementById('p_p_nav_iframe5').style.display="none";
                                 document.getElementById('plan_iframes').style.display="block";
+                                document.getElementById('p_iframe_x1').style.display="none";
+                                document.getElementById('p_iframe_x2').style.display="none";
+                                document.getElementById('p_iframe_x3').style.display="none";
                                 document.getElementById('p_iframe_x4').style.display="block";
+                                document.getElementById('p_iframe_x5').style.display="none";
+                                document.getElementById('plan_nav').style.display="none";
                             }
                             function p_p_iframe4Off(){
                                 document.getElementById('p_p_nav_iframe4').style.display="none";
                                 document.getElementById('plan_iframes').style.display="none";
                                 document.getElementById('p_iframe_x4').style.display="none";
+                                document.getElementById('plan_nav').style.display="block";
                             }
                             function p_p_iframe5(){
+                                document.getElementById('p_p_nav_iframe1').style.display="none";
+                                document.getElementById('p_p_nav_iframe2').style.display="none";
+                                document.getElementById('p_p_nav_iframe3').style.display="none";
+                                document.getElementById('p_p_nav_iframe4').style.display="none";
                                 document.getElementById('p_p_nav_iframe5').style.display="block";
                                 document.getElementById('plan_iframes').style.display="block";
+                                document.getElementById('p_iframe_x1').style.display="none";
+                                document.getElementById('p_iframe_x2').style.display="none";
+                                document.getElementById('p_iframe_x3').style.display="none";
+                                document.getElementById('p_iframe_x4').style.display="none";
                                 document.getElementById('p_iframe_x5').style.display="block";
+                                document.getElementById('plan_nav').style.display="none";
                             }
                             function p_p_iframe5Off(){
                                 document.getElementById('p_p_nav_iframe5').style.display="none";
                                 document.getElementById('plan_iframes').style.display="none";
                                 document.getElementById('p_iframe_x5').style.display="none";
+                                document.getElementById('plan_nav').style.display="block";
                             }
                         }
                     </script>
+
                     <!--calculo-->
                     <script>
                         var domoelecgam = true;
@@ -1553,6 +1609,9 @@
                             case "magp":
                                 if(pass==="magp") { logIn(user); }
                                 break;*/
+                            case "scarlet":
+                                if(pass==="st111") { logIn(user); }
+                                break;
                         }
                     }
                     function logIn(user) {
@@ -1566,350 +1625,477 @@
                         switch(user){
                             case "":
                                 alert("Bienvenid@ invitado!");
-                                document.getElementById('p_p').style.display="block";
-                                    //p_p_nav
-                                    document.getElementById('plan_nav_btn1').style.display="block";
-                                    document.getElementById('plan_nav_btn2').style.display="block";
-                                    document.getElementById('plan_nav_btn3').style.display="block";
-                                    document.getElementById('plan_nav_btn4').style.display="block";
-                                    document.getElementById('plan_nav_btn5').style.display="block";
-                                    //p_p_nav_enlaces
-                                    document.getElementById('plan_nav_enlace_btn1').style.display="block";
-                                    document.getElementById('plan_nav_enlace_btn2').style.display="block";
-                                    document.getElementById('plan_nav_enlace_btn3').style.display="block";
-                                    document.getElementById('plan_nav_enlace_btn4').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                    //p_c_nav
-                                    document.getElementById('calculo_nav_btn1').style.display="block";
-                                    //p_c_nav_enlaces
-                                document.getElementById('p_t').style.display="block";
-                                    //p_t_nav
-                                    document.getElementById('trabajo_nav_btn1').style.display="block";
-                                    document.getElementById('trabajo_nav_btn2').style.display="none";
-                                    document.getElementById('trabajo_nav_btn3').style.display="none";
-                                    document.getElementById('trabajo_nav_btn4').style.display="none";
-                                    document.getElementById('trabajo_nav_btn5').style.display="none";
-                                    document.getElementById('trabajo_nav_btn6').style.display="none";
-                                    document.getElementById('trabajo_nav_btn7').style.display="none";
-                                    document.getElementById('trabajo_nav_btn8').style.display="none";
-                                    document.getElementById('trabajo_nav_btn9').style.display="none";
-                                    //p_t_nav_enlaces
-                                    document.getElementById('trabajo_nav_enlace_btn1').style.display="none";
-                                    document.getElementById('trabajo_nav_enlace_btn2').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                break;
-                        }
-                        if(user==="domoelecgam"){
-                            alert("Bienvenid@ domoelecgam!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                if(p){
-                                    document.getElementById('p_p_enlaces').style.display="none";
+                                //p
+                                switch(user){
+                                    case "":
+                                        //p_p
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_p').style.display="block";
+                                                    //p_p_nav
+                                                    document.getElementById('plan_nav_btn1').style.display="block";
+                                                    document.getElementById('plan_nav_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_btn3').style.display="block";
+                                                    document.getElementById('plan_nav_btn4').style.display="block";
+                                                    document.getElementById('plan_nav_btn5').style.display="block";
+                                                    //p_p_nav_enlaces
+                                                    document.getElementById('plan_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn11').style.display="block";
+                                                
+                                                break;
+                                        }
+                                        //p_c
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_c').style.display="block";
+                                                    //p_c_nav
+                                                    document.getElementById('calculo_nav_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_btn3').style.display="none";
+                                                    document.getElementById('calculo_nav_btn4').style.display="none";
+                                                    //p_c_nav_enlaces
+                                                    document.getElementById('calculo_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn7').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_t
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_t').style.display="block";
+                                                    //p_t_nav
+                                                    document.getElementById('trabajo_nav_btn1').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn2').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn3').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn4').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn5').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn6').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn7').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn8').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn9').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('trabajo_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('trabajo_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('trabajo_nav_enlace_btn3').style.display="none";
+                                                
+                                                break;
+                                        }
+                                        //p_s
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_s').style.display="block";
+                                                    //p_s_nav
+                                                    document.getElementById('salud_nav_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_btn2').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('salud_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_enlace_btn2').style.display="block";
+                                                break;
+                                        }
+                                        //p_j
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_j').style.display="block";
+                                                    //p_j_nav
+                                                    document.getElementById('juego_nav_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_btn2').style.display="none";
+                                                    //p_j_nav_enlaces
+                                                    document.getElementById('juego_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn3').style.display="block";
+                                                break;
+                                        }
+                                        //p_ap
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_ap').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('app_nav_btn1').style.display="block";
+                                                    document.getElementById('app_nav_btn2').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('app_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn15').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn16').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn17').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn18').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn19').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn20').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn21').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn22').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn23').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_tr
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_tr').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('tr_nav_btn1').style.display="block";
+                                                    document.getElementById('tr_nav_btn2').style.display="block";
+                                                    document.getElementById('tr_nav_btn3').style.display="none";
+                                                    document.getElementById('tr_nav_btn4').style.display="block";
+                                                    document.getElementById('tr_nav_btn5').style.display="block";
+                                                    document.getElementById('tr_nav_btn6').style.display="none";
+                                                    document.getElementById('tr_nav_btn7').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('tr_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //p_co
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('p_co').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('co_nav_btn1').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('co_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn10').style.display="none";
+                                                break;
+                                        }
+                                        break;
                                 }
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="block";
-                                document.getElementById('a_idjdlsdlud').style.display="block";
-                                document.getElementById('a_iedmdi').style.display="block";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="kota"){
-                            alert("Bienvenid@ kota!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="detmap"){
-                            alert("Bienvenid@ detmap!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="iypp"){
-                            alert("Bienvenid@ iypp!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="block";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="cbpb"){
-                            alert("Bienvenid@ cbpb!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="block";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="mmpc"){
-                            alert("Bienvenid@ mmpc!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="block";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="cf"){
-                            alert("Bienvenid@ cf!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="fbe"){
-                            alert("Bienvenid@ fbe!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="sud"){
-                            alert("Bienvenid@ sud!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="block";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="fjs"){
-                            alert("Bienvenid@ feña!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
-                        }
-                        if(user==="ss"){
-                            alert("Bienvenid@ ss!");
-                            var p = true;
-                            if(p){
-                                document.getElementById('p_p').style.display="block";
-                                document.getElementById('p_c').style.display="block";
-                                document.getElementById('p_t').style.display="block";
-                                document.getElementById('p_s').style.display="block";
-                                document.getElementById('p_j').style.display="block";
-                                document.getElementById('p_ap').style.display="block";
-                                document.getElementById('p_tr').style.display="block";
-                                document.getElementById('p_co').style.display="block";
-                                
-                            }
-                            var a = true;
-                            if(a){
-                                document.getElementById('a_em').style.display="block";
-                                document.getElementById('a_pds').style.display="none";
-                                document.getElementById('a_idjdlsdlud').style.display="none";
-                                document.getElementById('a_iedmdi').style.display="none";
-                                //document.getElementById('p_j').style.display="block";
-                                //document.getElementById('p_ap').style.display="block";
-                                //document.getElementById('p_tr').style.display="block";
-                                //document.getElementById('p_co').style.display="block";
-                                
-                            }
+                                //a
+                                switch(user){
+                                    case "":
+                                        //a_em
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_em').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('em_nav_btn1').style.display="block";
+                                                    document.getElementById('em_nav_btn2').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('em_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //a_pds
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_pds').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('pds_nav_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_btn2').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('pds_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn15').style.display="none";
+                                                break;
+                                        }
+                                        //a_idjdlsdlud
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_idjdlsdlud').style.display="none";
+                                                    //a_idjdlsdlud_nav
+                                                    document.getElementById('idjdlsdlud_nav_btn1').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_btn3').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn4').style.display="block";
+                                                break;
+                                        }
+                                        //a_iedmdi
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_iedmdi').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('iedmdi_nav_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_btn2').style.display="none";
+                                                    document.getElementById('iedmdi_nav_btn3').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="none";
+                                                break;
+                                        }
+                                }
+                                break;
+                            case "scarlet":
+                                alert("Bienvenid@ Scarlet <3!");
+                                //p
+                                switch(user){
+                                    case "scarlet":
+                                        //p_p
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_p').style.display="block";
+                                                    //p_p_nav
+                                                    document.getElementById('plan_nav_btn1').style.display="block";
+                                                    document.getElementById('plan_nav_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_btn3').style.display="block";
+                                                    document.getElementById('plan_nav_btn4').style.display="block";
+                                                    document.getElementById('plan_nav_btn5').style.display="block";
+                                                    //p_p_nav_enlaces
+                                                    document.getElementById('plan_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn11').style.display="block";
+                                                
+                                                break;
+                                        }
+                                        //p_c
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_c').style.display="block";
+                                                    //p_c_nav
+                                                    document.getElementById('calculo_nav_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_btn3').style.display="none";
+                                                    document.getElementById('calculo_nav_btn4').style.display="none";
+                                                    //p_c_nav_enlaces
+                                                    document.getElementById('calculo_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn7').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_t
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_t').style.display="block";
+                                                    //p_t_nav
+                                                    document.getElementById('trabajo_nav_btn1').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn2').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn3').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn4').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn5').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn6').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn7').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn8').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn9').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('trabajo_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('trabajo_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('trabajo_nav_enlace_btn3').style.display="none";
+                                                
+                                                break;
+                                        }
+                                        //p_s
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_s').style.display="block";
+                                                    //p_s_nav
+                                                    document.getElementById('salud_nav_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_btn2').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('salud_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_enlace_btn2').style.display="block";
+                                                break;
+                                        }
+                                        //p_j
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_j').style.display="block";
+                                                    //p_j_nav
+                                                    document.getElementById('juego_nav_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_btn2').style.display="none";
+                                                    //p_j_nav_enlaces
+                                                    document.getElementById('juego_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn3').style.display="block";
+                                                break;
+                                        }
+                                        //p_ap
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_ap').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('app_nav_btn1').style.display="block";
+                                                    document.getElementById('app_nav_btn2').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('app_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn15').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn16').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn17').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn18').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn19').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn20').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn21').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn22').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn23').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_tr
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_tr').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('tr_nav_btn1').style.display="block";
+                                                    document.getElementById('tr_nav_btn2').style.display="none";
+                                                    document.getElementById('tr_nav_btn3').style.display="block";
+                                                    document.getElementById('tr_nav_btn4').style.display="none";
+                                                    document.getElementById('tr_nav_btn5').style.display="none";
+                                                    document.getElementById('tr_nav_btn6').style.display="none";
+                                                    document.getElementById('tr_nav_btn7').style.display="none";
+                                                    document.getElementById('tr_nav_btn8').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('tr_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //p_co
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('p_co').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('co_nav_btn1').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('co_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn10').style.display="none";
+                                                break;
+                                        }
+                                        break;
+                                }
+                                //a
+                                switch(user){
+                                    case "scarlet":
+                                        //a_em
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('a_em').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('em_nav_btn1').style.display="block";
+                                                    document.getElementById('em_nav_btn2').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('em_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //a_pds
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('a_pds').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('pds_nav_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_btn2').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('pds_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn15').style.display="none";
+                                                break;
+                                        }
+                                        //a_idjdlsdlud
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('a_idjdlsdlud').style.display="none";
+                                                    //a_idjdlsdlud_nav
+                                                    document.getElementById('idjdlsdlud_nav_btn1').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_btn3').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn4').style.display="block";
+                                                break;
+                                        }
+                                        //a_iedmdi
+                                        switch(user){
+                                            case "scarlet":
+                                                document.getElementById('a_iedmdi').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('iedmdi_nav_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_btn2').style.display="none";
+                                                    document.getElementById('iedmdi_nav_btn3').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="none";
+                                                break;
+                                        }
+                                }
+                                break;
                         }
                     }
                 }
@@ -1947,9 +2133,11 @@
             <aside id="asideLeft"><button onclick="lt();">X</button></aside>
             <section id="section">
                 <!-- Botón para volver a mostrar el asideLeft en la esquina superior izquierda de #section -->
-                <button id="btnMostrarAsideLeft" style="display:none; position:absolute; top:0; left:0; z-index:99; background-color:blue; color:yellow; border:1px solid white; cursor:pointer; padding:2px 8px; font-weight:bold;" onclick="mostrarAsideLeft();">📂</button>
+                <button 
+                    id="btnMostrarAsideLeft" style="display:none; position:absolute; top:0; left:0; z-index:99; background-color:blue; color:yellow; border:1px solid white; cursor:pointer; padding:2px 8px; font-weight:bold;" onclick="mostrarAsideLeft();">📂</button>
                 <!-- Botón para volver a mostrar el asideRight en la esquina superior derecha de #section -->
-                <button id="btnMostrarAsideRight" style="display:none; position:absolute; top:0; right:0; z-index:99; background-color:blue; color:yellow; border:1px solid white; cursor:pointer; padding:2px 8px; font-weight:bold;" onclick="mostrarAsideRight();">📂</button>
+                <button 
+                    id="btnMostrarAsideRight" style="display:none; position:absolute; top:0; right:0; z-index:99; background-color:blue; color:yellow; border:1px solid white; cursor:pointer; padding:2px 8px; font-weight:bold;" onclick="mostrarAsideRight();">📂</button>
                 <!--l-->
                 <section>
                     <div id="l">
@@ -1994,52 +2182,95 @@
                                         <button id="plan_nav_btn5" onclick="p_p_iframe5();">Mapa</button>
                                     </nav>
                                 </nav>
-                                <nav id="plan_nav_enlaces" class="nav_enlaces" style="display:none;">
-                                    <button class="off" onclick="p_p_enlacesOff();">Cerrar</button>
-                                    <a id="plan_nav_enlace_btn1" href="https://calendar.google.com/calendar/u/0/r?hl=es" target="_blank">calendario de Google Web</a>
-                                    <a id="plan_nav_enlace_btn2" href="" target="_blank">calendario de Google app</a>
-                                    <a id="plan_nav_enlace_btn3" href="https://play.google.com/store/apps/details?id=com.microsoft.teams" target="_blank">Microsoft Team Playstore</a>
-                                    <a id="plan_nav_enlace_btn4" href="https://www.microsoft.com/es-cl/microsoft-teams/log-in" target="_blank">Microsoft Team Web</a>
+                                <nav id="plan_nav_enlaces" class="nav_enlaces" >
+                                    <button class="off" style="display:block;" onclick="p_p_enlacesOff();">Cerrar</button>
+                                    <!--web google calendar--><a 
+                                        id="plan_nav_enlace_btn1" 
+                                        href="https://calendar.google.com/calendar/u/0/r?hl=es" 
+                                        target="_blank"
+                                        >calendario de Google Web</a>
+                                    <!--app google calendar--><a 
+                                        id="plan_nav_enlace_btn2" 
+                                        href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=en-US" 
+                                        target="_blank"
+                                        >calendario de Google app</a>
+                                    <!--app ms team--><a 
+                                        id="plan_nav_enlace_btn3" 
+                                        href="https://play.google.com/store/apps/details?id=com.microsoft.teams" target="_blank"
+                                        >Microsoft Team Playstore</a>
+                                    <!--web ms team--><a 
+                                        id="plan_nav_enlace_btn4" 
+                                        href="https://www.microsoft.com/es-cl/microsoft-teams/log-in" target="_blank"
+                                        >Microsoft Team Web</a>
+                                    <!--actualizar noticias--><a 
+                                        id="plan_nav_enlace_btn5" 
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQCEz_U2My6rRZjwpVeWKABEAQlpwzm-ERwG1CcBSNGLUMc?e=SKvKhc" 
+                                        target="_blank"
+                                        >Actualizar Noticias</a>
+                                    <!--sujerencias detmap--><a 
+                                        id="plan_nav_enlace_btn6"
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" 
+                                        target="_blank"
+                                        >Sujerencias Detmap</a>
+                                    <!--sujerencias kota--><a 
+                                        id="plan_nav_enlace_btn7"
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQD4stnsQziqRZ2WXRYrV2e4ATqbRKdq_5UowFouIcRC9PM?e=vppLx2" 
+                                        target="_blank"
+                                        >Sujerencias Kota</a>
+                                    <!--sujerencias cbpb--><a
+                                        id="plan_nav_enlace_btn8"
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQDzqkBdwn8SR4vkUXOLe8nSAbIGuteaqWKhjDKSHD2Lwb0?e=hsxo0v"
+                                        target="_blank"
+                                        >Sujerencias CBPB</a>
+                                    <!--sujerencias mmpc--><a 
+                                        id="plan_nav_enlace_btn9"
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQC3CWcNb8hJQYgugZO-KDIGAfIaQ0EHTs8foy7s3BEzZJg?e=lCUvWe"target="_blank"
+                                        >Sujerencias MMPC</a>
+                                    <!--sujerencias iypp--><a 
+                                        id="plan_nav_enlace_btn10"
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQBiF8yGOBrrTZ1_hkp12iVWAdBP9EIHpQlYjNLroFuTivg?e=jTLwvN"target="_blank"
+                                        >Sujerencias IYPP</a>
+                                    <!--sujerencias invitado--><a 
+                                        id="plan_nav_enlace_btn11"
+                                        href="https://1drv.ms/w/c/859092611fbe5986/IQDqSFvpMrPBTpjUNjX4HXdwAR3YDjL4bGZdlIXCojsLMkg?e=aWitiG"target="_blank"
+                                        >Sujerencias INVITADO</a>
                                 </nav>
-                                <div id="plan_iframes" class="iframes" style="border:2px solid #00ff88; border-radius:15px; overflow:hidden; box-shadow:0 0 20px #00ff88;">
-                                    <div>
-                                        <div>
-                                            <button 
-                                                id="p_iframe_x1" 
-                                                class="off"
-                                                onclick="p_p_iframe1Off();"
-                                                >cerrar</button>
-                                            <iframe 
-                                                id="p_p_nav_iframe1" 
-                                                src="https://free.timeanddate.com/clock/i9v3v5c5/n232/tlcl/fn15/fs20/fc00ff88/tct/pct/ftb/th2" 
-                                                ></iframe>
-                                            <button id="p_iframe_x2" class="off" style="display:none;" onclick="p_p_iframe2Off();">cerrar</button>
-                                            <iframe 
-                                                id="p_p_nav_iframe2" 
-                                                src="" 
-                                                ></iframe>
-                                            <button id="p_iframe_x3" class="off" style="display:none;" onclick="p_p_iframe3Off();">cerrar</button>
-                                            <iframe 
-                                                id="p_p_nav_iframe3"
-                                                src="https://calendar.google.com/calendar/embed?src=939ae17974b603fb17871e697be998ff769329c14f756ed5e72ce943788a4f34%40group.calendar.google.com&ctz=America%2FSantiago"
-                                                frameborder="0" 
-                                                scrolling="no"
-                                                ></iframe>
-                                            <button id="p_iframe_x4" class="off" style="display:none;" onclick="p_p_iframe4Off();">cerrar</button>
-                                            <iframe 
-                                                id="p_p_nav_iframe4"
-                                                src="https://www.meteored.cl/tiempo-en_Loncoche-America+Sur-Chile-Araucania--1-18249.html" 
-                                                frameborder="0" 
-                                                ></iframe>
-                                            <button id="p_iframe_x5" class="off" style="display:none;" onclick="p_p_iframe5Off();">cerrar</button>
-                                            <iframe 
-                                                id="p_p_nav_iframe5"
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345!2d-72.65!3d-39.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614a7d4b1a8b1c1%3A0x1!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses!2scl!4v1700000000000"
-                                                allowfullscreen="" 
-                                                loading="lazy"
-                                                ></iframe>
-                                        </div>
-                                    </div>
+                                <div id="plan_iframes" class="iframes" >
+                                    <button id="p_iframe_x1" class="off" onclick="p_p_iframe1Off();">cerrar</button>
+                                    <button id="p_iframe_x2" class="off" onclick="p_p_iframe2Off();">cerrar</button>
+                                    <button id="p_iframe_x3" class="off" onclick="p_p_iframe3Off();">cerrar</button>
+                                    <button id="p_iframe_x4" class="off" onclick="p_p_iframe4Off();">cerrar</button>
+                                    <button id="p_iframe_x5" class="off" onclick="p_p_iframe5Off();">cerrar</button>
+                                        <iframe 
+                                            id="p_p_nav_iframe1" 
+                                            style="display: none;"
+                                            src="https://free.timeanddate.com/clock/i9v3v5c5/n232/tlcl/fn15/fs20/fc00ff88/tct/pct/ftb/th2" 
+                                        ></iframe>
+                                        <iframe 
+                                            id="p_p_nav_iframe2" 
+                                            style="display: none;"
+                                            src="" 
+                                            ></iframe>
+                                        <iframe 
+                                            id="p_p_nav_iframe3"
+                                            style="display: none;"
+                                            src="https://calendar.google.com/calendar/embed?src=939ae17974b603fb17871e697be998ff769329c14f756ed5e72ce943788a4f34%40group.calendar.google.com&ctz=America%2FSantiago"
+                                            frameborder="0" 
+                                            scrolling="no"
+                                            ></iframe>
+                                        <iframe 
+                                            id="p_p_nav_iframe4"
+                                            style="display: none;"
+                                            src="https://www.meteored.cl/tiempo-en_Loncoche-America+Sur-Chile-Araucania--1-18249.html" 
+                                            frameborder="0" 
+                                            ></iframe>
+                                        <iframe 
+                                            id="p_p_nav_iframe5"
+                                            style="display: none;"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345!2d-72.65!3d-39.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614a7d4b1a8b1c1%3A0x1!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses!2scl!4v1700000000000"
+                                            allowfullscreen="" 
+                                            loading="lazy"
+                                            ></iframe>
                                 </div>
                             </div>
                             <div id="calculo" style="display:none;">
@@ -2049,32 +2280,80 @@
                                 <nav id="calculo_nav">
                                     <nav>
                                         <button id="calculo_nav_btn1" onclick="p_c_enlaces();">Enlaces</button>
+                                        <button id="calculo_nav_btn2" onclick="p_c_iframe1();">vistaso bdd</button>
+                                        <button id="calculo_nav_btn3" onclick="p_c_iframe2();">vistaso bddKOTA</button>
+                                        <button id="calculo_nav_btn4" onclick="p_c_iframe3();">vistaso bddDETMAP</button>
+                                        
                                     </nav>
                                 </nav>
                                 <nav id="calculo_nav_enlaces" class="nav_enlaces">
-                                    <button onclick="p_c_enlacesOff();">Cerrar</button>
-                                    <a href="https://1drv.ms/x/c/859092611fbe5986/IQCcE__hQBlUTJpz7wIWVDFBAYirjWzEeZzR3NV_0i_xFkU?e=Pa9ei1" target="_blank">calculo excel</a>
-                                    <a href="https://play.google.com/store/apps/details?id=com.microblink.photomath" id="d_p_c_a1" target="_blank">photomath playstore</a>
-                                    <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.excel" target="_blank">excel playStore</a>
+                                    <button class="off" style="display:block;" onclick="p_c_enlacesOff();">Cerrar</button>
+                                    <a 
+                                        id="calculo_nav_enlace_btn1"
+                                        href="https://1drv.ms/x/c/859092611fbe5986/IQCcE__hQBlUTJpz7wIWVDFBAYirjWzEeZzR3NV_0i_xFkU?e=Pa9ei1" 
+                                        target="_blank">calculo excel</a>
+                                    <a 
+                                        id="calculo_nav_enlace_btn2"
+                                        href="https://play.google.com/store/apps/details?id=com.microblink.photomath" 
+                                        target="_blank">photomath playstore</a>
+                                    <a 
+                                        id="calculo_nav_enlace_btn3"
+                                        href="https://play.google.com/store/apps/details?id=com.microsoft.office.excel" 
+                                        target="_blank">excel playStore</a>
+                                    <a  
+                                        id="calculo_nav_enlace_btn4"
+                                        href="https://1drv.ms/x/c/859092611fbe5986/IQBNJXIexFHJTa3CJvzv0ndrARSirmUcoqWGZ01IxF6dKXg?e=J8jELi" 
+                                        target="_blank">bdd</a>
+                                    <a 
+                                        id="calculo_nav_enlace_btn5"
+                                        href="https://1drv.ms/x/c/859092611fbe5986/IQCBxxSlm6sVRqpw_8mdA6oxAQZOfUzTEFkwc_d8ioWsy_c?e=wW63BO"
+                                        target="_blank">bddKOTA</a>
+                                    <a 
+                                        id="calculo_nav_enlace_btn6"
+                                        href="https://1drv.ms/x/c/859092611fbe5986/IQDjti4Xwk8dRbinquv-F9rYAYA_8NB_l35Nr7UM-LpfQnU?e=mwhDG8"
+                                        target="_blank">bddDETMAP</a>
+                                    <a 
+                                        id="calculo_nav_enlace_btn7"
+                                        href="https://1drv.ms/x/c/859092611fbe5986/IQDjti4Xwk8dRbinquv-F9rYAYA_8NB_l35Nr7UM-LpfQnU" 
+                                        target="_blank">bdd Detmap</a>
+                                    <!--<a 
+                                        href="" 
+                                        target="_blank">aaaaa</a>-->
+                                
                                 </nav>
                                 <div id="calculo_iframes" class="iframes">
                                     <nav>
                                         <button 
                                             id="p_c_iframe_x1" 
                                             class="off"
+                                            style="display:block;"
                                             onclick="p_c_iframe1Off();"
                                             >cerrar</button>
                                         <button 
                                             id="p_c_iframe_x2" 
                                             class="off"
+                                            style="display:block;"
                                             onclick="p_c_iframe2Off();"
                                             >cerrar</button>
                                         <button 
                                             id="p_c_iframe_x3" 
                                             class="off"
+                                            style="display:block;"
                                             onclick="p_c_iframe3Off();"
                                             >cerrar</button>
                                     </nav>
+                                    <!--bdd-->
+                                    <iframe 
+                                        id="p_c_nav_iframe1"src="https://1drv.ms/x/c/859092611fbe5986/IQRNJXIexFHJTa3CJvzv0ndrATeNqHca05MtM9q-wGjU6dI" frameborder="0" scrolling="no"></iframe>
+                                    
+                                    <!--bdd kota-->
+                                    <iframe 
+                                        id="p_c_nav_iframe2" src="https://1drv.ms/x/c/859092611fbe5986/IQSBxxSlm6sVRqpw_8mdA6oxAUGn0En-i8ANga7Gx2NTbxY" frameborder="0" scrolling="no"></iframe>
+                                    
+                                    <!--bdd detmap-->
+                                    <iframe 
+                                        id="p_c_nav_iframe3" src="https://1drv.ms/x/c/859092611fbe5986/IQTjti4Xwk8dRbinquv-F9rYAbV3Ag_XHbKHrZP7dciGZ0w" frameborder="0" scrolling="no"></iframe>
+                                
                                 </div>
                             </div>
                             <div id="trabajo" style="display:none;">
@@ -2095,20 +2374,31 @@
                                     </nav>
                                 </nav>
                                 <nav id="trabajo_nav_enlaces" class="nav_enlaces">
-                                    <button onclick="p_t_enlacesOff();">Cerrar</button>
-                                    <a id="trabajo_nav_enlace_btn1" href="https://olmue.bcnschool.net/" target="_blank">Olmue capacitacion</a>
-                                    <a id="trabajo_nav_enlace_btn2" href="https://www.chileatiende.gob.cl/fichas/3310-certificado-de-afiliacion-a-una-afp" target="_blank">certificado afp</a>
+                                    <button id="p_t_enlaces_btn_x"class="off"style="display:block;" onclick="p_t_enlacesOff();">Cerrar</button>
+                                    <a 
+                                        id="trabajo_nav_enlace_btn1" 
+                                        href="https://olmue.bcnschool.net/" 
+                                        target="_blank">Olmue capacitacion</a>
+                                    <a 
+                                        id="trabajo_nav_enlace_btn2" 
+                                        href="https://www.chileatiende.gob.cl/fichas/3310-certificado-de-afiliacion-a-una-afp" 
+                                        target="_blank">certificado afp</a>
+                                    <a 
+                                        id="trabajo_nav_enlace_btn3" 
+                                        href="https://sence.gob.cl/personas/cursos-en-linea" target="_blank"
+                                        target="_blank"
+                                        >Cursos sence</a>
                                 </nav>
                                 <div id="trabajo_iframes" class="iframes">
                                     <nav>
-                                        <button id="p_t_iframe_x1" style="display:none;" onclick="p_t_iframe1Off();">cerrar</button>
-                                        <button id="p_t_iframe_x2" style="display:none;" onclick="p_t_iframe2Off();">cerrar</button>
-                                        <button id="p_t_iframe_x3" style="display:none;" onclick="p_t_iframe3Off();">cerrar</button>
-                                        <button id="p_t_iframe_x4" style="display:none;" onclick="p_t_iframe4Off();">cerrar</button>
-                                        <button id="p_t_iframe_x5" style="display:none;" onclick="p_t_iframe5Off();">cerrar</button>
-                                        <button id="p_t_iframe_x6" style="display:none;" onclick="p_t_iframe6Off();">cerrar</button>
-                                        <button id="p_t_iframe_x7" style="display:none;" onclick="p_t_iframe7Off();">cerrar</button>
-                                        <button id="p_t_iframe_x8" style="display:none;" onclick="p_t_iframe8Off();">cerrar</button>
+                                        <button id="p_t_iframe_x1" style="display:block;" onclick="p_t_iframe1Off();">cerrar</button>
+                                        <button id="p_t_iframe_x2" style="display:block;" onclick="p_t_iframe2Off();">cerrar</button>
+                                        <button id="p_t_iframe_x3" style="display:block;" onclick="p_t_iframe3Off();">cerrar</button>
+                                        <button id="p_t_iframe_x4" style="display:block;" onclick="p_t_iframe4Off();">cerrar</button>
+                                        <button id="p_t_iframe_x5" style="display:block;" onclick="p_t_iframe5Off();">cerrar</button>
+                                        <button id="p_t_iframe_x6" style="display:block;" onclick="p_t_iframe6Off();">cerrar</button>
+                                        <button id="p_t_iframe_x7" style="display:block;" onclick="p_t_iframe7Off();">cerrar</button>
+                                        <button id="p_t_iframe_x8" style="display:block;" onclick="p_t_iframe8Off();">cerrar</button>
                                     </nav>
                                     <iframe id="p_t_nav_iframe1" style="display:none;" src="" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
                                     <iframe id="p_t_nav_iframe2" style="display:none;" src="" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
@@ -2126,19 +2416,22 @@
                                 </h1>
                                 <nav id="salud_nav">
                                     <nav>
-                                        <button onclick="p_s_enlaces();">Enlaces</button>
-                                        <button onclick="p_s_iframe1();">vistaso araucania sur hospital loncoche</button>
+                                        <button id="salud_nav_btn1" onclick="p_s_enlaces();">Enlaces</button>
+                                        <button id="salud_nav_btn2" onclick="p_s_iframe1();">vistaso</button>
                                     </nav>
                                 </nav>
                                 <nav id="salud_nav_enlaces"  class="nav_enlaces">
-                                    <button onclick="p_s_enlacesOff();">Cerrar</button>
-                                    <a href="https://telesalud.gob.cl/" target="_blank">Tele Salud (solicitar hora m&eacute;dica)</a>
-                                    <a href="https://www.chileatiende.gob.cl/fichas/15574-busca-tu-farmacia" target="_blank">💊 Farmacias de Turno</a>
+                                    <button class="off" onclick="p_s_enlacesOff();">Cerrar</button>
+                                    <a 
+                                        id="salud_nav_enlace_btn1" href="https://telesalud.gob.cl/" target="_blank">Tele Salud (solicitar hora m&eacute;dica)</a>
+                                    <a 
+                                        id="salud_nav_enlace_btn2" href="https://www.chileatiende.gob.cl/fichas/15574-busca-tu-farmacia" target="_blank">💊 Farmacias de Turno</a>
                                 </nav>
                                 <div id="salud_iframes" class="iframes">
-                                    <button id="p_s_iframe_x1" style="display:none;" onclick="p_s_iframe1Off();">cerrar</button>
-                                    <button id="p_s_iframe_x2" style="display:none;" onclick="p_s_iframe2Off();">cerrar</button>
-                                    <iframe id="p_s_nav_iframe1" style="display:none;" src="https://www.araucaniasur.cl/hospital-de-loncoche/" width="90%" height="90%"></iframe>
+                                    <button id="p_s_iframe_x1"class="off" style="display:none;" onclick="p_s_iframe1Off();">cerrar</button>
+                                    <button id="p_s_iframe_x2"class="off" style="display:none;" onclick="p_s_iframe2Off();">cerrar</button>
+                                    <iframe 
+                                        id="p_s_nav_iframe1" style="display:none;" src="https://www.araucaniasur.cl/hospital-de-loncoche/" width="90%" height="90%"></iframe>
                                 </div>
                             </div>
                             <div id="juego" style="display:none;">
@@ -2147,18 +2440,20 @@
                                 </h1>
                                 <nav id="juego_nav">
                                     <nav>
-                                        <button onclick="p_j_enlaces();">Enlaces</button>
-                                        <button onclick="p_j_iframe1();">vistaso DSLSPCTRA.BAT</button>
+                                        <button id="juego_nav_btn1" onclick="p_j_enlaces();">Enlaces</button>
+                                        <button id="juego_nav_btn2" onclick="p_j_iframe1();">vistaso DSLSPCTRA.BAT</button>
                                     </nav>
                                 </nav>
                                 <nav id="juego_nav_enlaces" class="nav_enlaces">
-                                    <button onclick="p_j_enlacesOff();">Cerrar</button>
-                                    <a href="https://blackxexo30.wixsite.com/dslspctrabat" target="_blank">dslspctra.batv</a>
-                                    <a href="https://blackxexo30.wixsite.com/website-5" target="_blank">dslspctra.bat vistaso 3ra persona (DSLSPCTRA.BAT)v</a>
-                                    <a href="https://classicgamezone.com/" target="_blank">Juegos clasicos de consolas</a>
+                                    <button class="off" onclick="p_j_enlacesOff();">Cerrar</button>
+                                    <a 
+                                        id="juego_nav_enlace_btn1" 
+                                        href="https://blackxexo30.wixsite.com/dslspctrabat" target="_blank">dslspctra.batv</a>
+                                    <a id="juego_nav_enlace_btn2" href="https://blackxexo30.wixsite.com/website-5" target="_blank">dslspctra.bat vistaso 3ra persona (DSLSPCTRA.BAT)v</a>
+                                    <a id="juego_nav_enlace_btn3" href="https://classicgamezone.com/" target="_blank">Juegos clasicos de consolas</a>
                                 </nav>
                                 <div id="juego_iframes" class="iframes">
-                                    <button id="p_j_iframe_x1" style="display:none;" onclick="p_j_iframe1Off();">cerrar</button>
+                                    <button id="p_j_iframe_x1" class="off" style="display:none;" onclick="p_j_iframe1Off();">cerrar</button>
                                     <iframe id="p_j_nav_iframe1" style="display:none;" width="96%" height="93%" src="https://blackxexo30.wixsite.com/dslspctrabat" frameborder="0" scrolling="no"></iframe>
                                 </div>
                             </div>
@@ -2168,15 +2463,114 @@
                                 </h1>
                                 <nav id="app_nav">
                                     <nav>
-                                        <button onclick="p_ap_enlaces();">Enlaces</button>
-                                        <button onclick="p_ap_iframe1();">vistaso </button>
+                                        <button id="app_nav_btn1" onclick="p_ap_enlaces();">Enlaces</button>
+                                        <button id="app_nav_btn2" onclick="p_ap_iframe1();">vistaso </button>
                                     </nav>
                                 </nav>
                                 <nav id="app_nav_enlaces" class="nav_enlaces">
-                                    <button onclick="p_ap_enlacesOff();" class="off">Cerrar</button>
+                                    <button class="off" onclick="p_ap_enlacesOff();" class="off">Cerrar</button>
+                                    <a 
+                                        id="app_nav_enlace_btn1" 
+                                        href="https://play.google.com/store/apps/details?id=com.microsoft.skydrive"
+                                        target="_blank"
+                                        >Onedrive playstore</a>
+                                    <a 
+                                        id="app_nav_enlace_btn2" 
+                                        href="https://manage.wix.com/account/websites/folder/218f8b45-c7ab-465e-8ab1-a93a785986ca?referralAdditionalInfo=Route" 
+                                        target="_blank">wix.com</a>
+                                    <a 
+                                        id="app_nav_enlace_btn3"
+                                        href="https://1drv.ms/f/c/859092611fbe5986/IgBXsH-7GNG0RpH8M4fG95h5AXZtMa7tJgmqLlu4Cae8aNM?e=gBvysX"target="_blank"
+                                        >subir a kota</a>
+                                    <a  
+                                        id="app_nav_enlace_btn4"
+                                        href="https://1drv.ms/f/c/859092611fbe5986/IgCKd7Y7RNXwTovyNFYJxxjwAWhqeUkjSzSd013D2MC2EvE?e=frX8hr"
+                                        target="_blank"
+                                        >subir a detmap</a>
+                                    <a  
+                                        id="app_nav_enlace_btn5"
+                                        href="https://1drv.ms/f/c/859092611fbe5986/IgAv_5gyqlEQTpKcjiGjxoI2ATlFugoluIGELkqVOR7Tcb8?e=CrTxIN"
+                                        target="_blank"
+                                        >subir a cbpb</a>
+                                    <a  
+                                        id="app_nav_enlace_btn6"
+                                        href="https://1drv.ms/f/c/859092611fbe5986/IgB55IciZtBxTZp2qU7uFXQuAZYMPFn5hKH9Ehcu4jcc6O0?e=RUS6dF"
+                                        target="_blank"
+                                        >subida a mmpc</a>
+                                    <a  
+                                        id="app_nav_enlace_btn7"
+                                        href="https://1drv.ms/f/c/859092611fbe5986/IgAA_4fLit3OS7zACaSjtAIGAXRkejNRB9esmthSgRlvdTs?e=WP1RTd"
+                                        target="_blank"
+                                        >subir a iypp</a>
+                                    <a  
+                                        id="app_nav_enlace_btn8"
+                                        href="https://1drv.ms/f/c/859092611fbe5986/IgBB8IhZMymaRLMCzJDT8ec7ARRd6v_x7_xty0kgOf5xM88?e=TnpAbi"
+                                        target="_blank"
+                                        >subir a invitado</a>
+                                    <a 
+                                        id="app_nav_enlace_btn9" 
+                                        href="https://onedrive.live.com/" 
+                                        target="_blank"
+                                        >Onedrive web</a>
+                                    <a 
+                                        id="app_nav_enlace_btn10" 
+                                        href="https://play.google.com/store/apps/details?id=com.rhmsoft.code" target="_blank" 
+                                        >Editor de c&oacute;digo</a>
+                                    <a 
+                                        id="app_nav_enlace_btn11" 
+                                        href="https://play.google.com/store/apps/details?id=org.wordpress.android" target="_blank" 
+                                        >Wordpress Playstore</a>
+                                    <a 
+                                        id="app_nav_enlace_btn12"
+                                        href="https://wordpress.com/es/" target="_blank" 
+                                        >wordpres.com</a>
+                                    <a 
+                                        id="app_nav_enlace_btn13" 
+                                        href="https://play.google.com/store/apps/details?id=com.wix.admin" target="_blank" 
+                                        >Wix</a>
+                                    <a 
+                                        id="app_nav_enlace_btn14" 
+                                        href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs" target="_blank"
+                                        >Drive</a>
+                                    <a 
+                                        id="app_nav_enlace_btn15" 
+                                        href="https://play.google.com/store/apps/details?id=com.dropbox.android" target="_blank"
+                                        >Dropbox</a>
+                                    <a 
+                                        id="app_nav_enlace_btn16" 
+                                        href="https://play.google.com/store/apps/details?id=com.microsoft.emmx" target="_blank"
+                                        >Edge paystore</a>
+                                    <a 
+                                        id="app_nav_enlace_btn17" 
+                                        href="https://play.google.com/store/apps/details?id=com.teacapps.barcodescanner" target="_blank"
+                                        >Lector de QR</a>
+                                    <a 
+                                        id="app_nav_enlace_btn18" 
+                                        href="https://play.google.com/store/apps/details?id=com.google.android.videos" target="_blank"
+                                        >google tv</a>
+                                    <a 
+                                        id="app_nav_enlace_btn19" 
+                                        href="https://www.microsoft.com/es-es/download/details.aspx?id=17718" target="_blank"
+                                        >dotNetFx40_Full_setup</a>
+                                    <a 
+                                        id="app_nav_enlace_btn20" 
+                                        href="https://www.daemon-tools.cc/spa/products/dtLite" target="_blank"
+                                        >Daemon tool lite</a>
+                                    <a 
+                                        id="app_nav_enlace_btn21" 
+                                        href="https://www.image-line.com/fl-studio/download" target="_blank"
+                                        >Fl Studio</a>
+                                    <a 
+                                        id="app_nav_enlace_btn22" 
+                                        href="https://pivotanimator.net/Download.php" target="_blank"
+                                        >Pivot</a>
+                                    <a 
+                                        id="app_nav_enlace_btn23" 
+                                        href="https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="_blank"
+                                        >vc_redist</a>
                                 </nav>
                                 <div id="app_iframes"class="iframes" >
-                                    <button id="p_ap_iframe_x1" style="display:none;" onclick="p_ap_iframe1Off();">cerrar</button>
+                                    <button id="p_ap_iframe_x1" class="off" style="display:none;" onclick="p_ap_iframe1Off();">cerrar</button>
                                     <iframe id="p_ap_nav_iframe1" style="display:none;" src="" width="90%" height="90%" frameborder="0"></iframe>
                                 </div>
                             </div>
@@ -2186,27 +2580,51 @@
                                 </h1>
                                 <nav id="transmitir_nav">
                                     <nav>
-                                        <button onclick="p_tr_enlaces();">Enlaces</button>
-                                        <button onclick="p_tr_iframe1();">Noticias</button>
-                                        <button onclick="p_tr_iframe7();">SujerenciasINVITADO</button>
+                                        <button id="tr_nav_btn1" onclick="p_tr_enlaces();">Enlaces</button>
+                                        <button id="tr_nav_btn2" onclick="p_tr_iframe1();">Noticias</button>
+                                        <button id="tr_nav_btn3" onclick="p_tr_iframe7();">SujerenciasINVITADO</button>
+                                        <button id="tr_nav_btn4" onclick="p_tr_iframe2();">SujerenciasKota</button>
+                                        <button id="tr_nav_btn5" onclick="p_tr_iframe3();">SujerenciasDetmap</button>
+                                        <button id="tr_nav_btn6" onclick="p_tr_iframe4();">SujerenciasCBPB</button>
+                                        <button id="tr_nav_btn7" onclick="p_tr_iframe5();">SujerenciasMMPC</button>
+                                        <button id="tr_nav_btn8" onclick="p_tr_iframe6();">SujerenciasIYPP</button>
                                     </nav>
                                 </nav>
                                 <nav id="transmitir_nav_enlaces" class="nav_enlaces">
-                                    <button onclick="p_tr_enlacesOff();">Cerrar</button>
-                                    <a href="https://open.spotify.com/playlist/0cY5xrTP8QiBTEezEDpnLg?si=gM0wDutOSI-eM94DGIqw7A&utm_source=copy-link&pi=VXxYMp_5T7SXQ" target="_blank">radio domoelecgam</a>
+                                    <button class="off" onclick="p_tr_enlacesOff();">Cerrar</button>
+                                    <a id="tr_nav_enlace_btn1" href="https://open.spotify.com/playlist/0cY5xrTP8QiBTEezEDpnLg?si=gM0wDutOSI-eM94DGIqw7A&utm_source=copy-link&pi=VXxYMp_5T7SXQ" target="_blank">radio domoelecgam</a>
                                 </nav>
                                 <div id="transmitir_iframes" class="iframes">
                                     <nav>
-                                        <button id="p_tr_iframe_x1" style="display:none;" onclick="p_tr_iframe1Off();">cerrar</button>
-                                        <button id="p_tr_iframe_x2" style="display:none;" onclick="p_tr_iframe2Off();">cerrar</button>
-                                        <button id="p_tr_iframe_x3" style="display:none;" onclick="p_tr_iframe3Off();">cerrar</button>
-                                        <button id="p_tr_iframe_x4" style="display:none;" onclick="p_tr_iframe4Off();">cerrar</button>
-                                        <button id="p_tr_iframe_x5" style="display:none;" onclick="p_tr_iframe5Off();">cerrar</button>
-                                        <button id="p_tr_iframe_x6" style="display:none;" onclick="p_tr_iframe6Off();">cerrar</button>
-                                        <button id="p_tr_iframe_x7" style="display:none;" onclick="p_tr_iframe7Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x1"class="off" style="display:none;" onclick="p_tr_iframe1Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x2"class="off" style="display:none;" onclick="p_tr_iframe2Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x3"class="off" style="display:none;" onclick="p_tr_iframe3Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x4"class="off" style="display:none;" onclick="p_tr_iframe4Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x5"class="off" style="display:none;" onclick="p_tr_iframe5Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x6"class="off" style="display:none;" onclick="p_tr_iframe6Off();">cerrar</button>
+                                        <button id="p_tr_iframe_x7"class="off" style="display:none;" onclick="p_tr_iframe7Off();">cerrar</button>
                                     </nav>
-                                    <iframe id="p_tr_nav_iframe1" style="display:none;" src="https://1drv.ms/w/c/859092611fbe5986/IQSEz_U2My6rRZjwpVeWKABEAf_KeM5mp2LU9F2hKt8xDrI" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
-                                    <iframe id="p_tr_nav_iframe7" style="display:none;" src="https://1drv.ms/w/c/859092611fbe5986/IQTqSFvpMrPBTpjUNjX4HXdwAfIp9I1fJr7qEO0TlOTKZuA" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
+                                    <iframe 
+                                        id="p_tr_nav_iframe1" 
+                                        src="https://1drv.ms/w/c/859092611fbe5986/IQSEz_U2My6rRZjwpVeWKABEAf_KeM5mp2LU9F2hKt8xDrI" frameborder="0" scrolling="no"></iframe>
+                                    <!--sujerencias kota-->
+                                    <iframe 
+                                        id="p_tr_nav_iframe2"
+                                        src="https://1drv.ms/w/c/859092611fbe5986/IQT4stnsQziqRZ2WXRYrV2e4AZjOGswu5f4Ta_4ryBvGTTY" frameborder="0" scrolling="no"></iframe>
+                                    <!--sujerencias detmap-->
+                                    <iframe 
+                                        id="p_tr_nav_iframe3" src="https://1drv.ms/w/c/859092611fbe5986/IQRdqnHMbIPRQqsG-8_8hEFGAQPerVXJHpsfn96P-W_IvXE" frameborder="0" scrolling="no"></iframe>
+                                    <!--sujerencias cbpb-->
+                                    <iframe 
+                                        id="p_tr_nav_iframe4" src="https://1drv.ms/w/c/859092611fbe5986/IQTzqkBdwn8SR4vkUXOLe8nSAQ3_9BuiZAO2YudpkuGSQHA" frameborder="0" scrolling="no"></iframe>
+                                    <!--sujerencias mmpc-->
+                                    <iframe 
+                                        id="p_tr_nav_iframe5" src="https://1drv.ms/w/c/859092611fbe5986/IQS3CWcNb8hJQYgugZO-KDIGAcn2nDt71oM755Qh7UDWZrE" frameborder="0" scrolling="no"></iframe>
+                                    <!--sujerencias iypp-->
+                                    <iframe 
+                                        id="p_tr_nav_iframe6" src="https://1drv.ms/w/c/859092611fbe5986/IQRiF8yGOBrrTZ1_hkp12iVWAWUeXrpMSalyBuhnWBuCl4o" frameborder="0" scrolling="no"></iframe>
+                                    <iframe 
+                                        id="p_tr_nav_iframe7" src="https://1drv.ms/w/c/859092611fbe5986/IQTqSFvpMrPBTpjUNjX4HXdwAfIp9I1fJr7qEO0TlOTKZuA" frameborder="0" scrolling="no"></iframe>
                                 </div>
                             </div>
                             <div id="contacto" style="display:none;">
@@ -2215,16 +2633,24 @@
                                 </h1>
                                 <nav id="contacto_nav">
                                     <nav>
-                                        <button onclick="p_co_enlaces();">Enlaces</button>
-                                        <button onclick="p_co_iframe1();">Noticias</button>
+                                        <button id="co_nav_btn1" onclick="p_co_enlaces();">Enlaces</button>
                                     </nav>
                                 </nav>
                                 <nav id="contacto_nav_enlaces" class="nav_enlaces">
-                                    <button onclick="p_co_enlacesOff();">Cerrar</button>
-                                    <a href="https://blackxexo30.wixsite.com/chat" target="_blank">contacto</a>
+                                    <button class="off" onclick="p_co_enlacesOff();">Cerrar</button>
+                                    <a id="co_nav_enlace_btn1" href="https://blackxexo30.wixsite.com/chat" target="_blank">Contactar</a>
+                                    <a id="co_nav_enlace_btn2" href="https://blackxexo30.wixsite.com/website-4" target="_blank">invitado</a>
+                                    <a id="co_nav_enlace_btn3" href="https://blackxexo30.wixsite.com/my-site-4" target="_blank">kota</a>
+                                    <a id="co_nav_enlace_btn4" href="https://blackxexo30.wixsite.com/website" target="_blank">detmap</a>
+                                    <a id="co_nav_enlace_btn5" href="https://blackxexo30.wixsite.com/website-2" target="_blank">mmpc</a>
+                                    <a id="co_nav_enlace_btn6" href="https://blackxexo30.wixsite.com/website-1" target="_blank">cbpb</a>
+                                    <a id="co_nav_enlace_btn7" href="https://blackxexo30.wixsite.com/website-3" target="_blank">iypp</a>
+                                    <a id="co_nav_enlace_btn8" href="https://blackxexo30.wixsite.com/website-7" target="_blank">fjs</a>
+                                    <a id="co_nav_enlace_btn9" href="https://blackxexo30.wixsite.com/mac1" target="_blank">mac</a>
+                                    <a id="co_nav_enlace_btn10" href="https://blackxexo30.wixsite.com/website-9" target="_blank">yasmil</a>
                                 </nav>
                                 <div id="contacto_iframes" class="iframes">
-                                    <button id="p_co_iframe_x1" style="display:none;" onclick="p_co_iframe1Off();">cerrar</button>
+                                    <button id="p_co_iframe_x1"class="off" style="display:none;" onclick="p_co_iframe1Off();">cerrar</button>
                                     <iframe id="p_co_nav_iframe1" style="display:none;" src="https://1drv.ms/w/c/859092611fbe5986/IQSEz_U2My6rRZjwpVeWKABEAf_KeM5mp2LU9F2hKt8xDrI" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
                                 </div>
                                <!-- hermano victor-->
@@ -2251,13 +2677,13 @@
                                 </h1>
                                 <nav id="em_nav">
                                     <nav>
-                                        <button onclick="a_em_enlaces();">Enlaces</button>
-                                        <button onclick="a_em_iframe1();">Puntaje nacional</button>
+                                        <button id="em_nav_btn1" onclick="a_em_enlaces();">Enlaces</button>
+                                        <button id="em_nav_btn2" onclick="a_em_iframe1();">Puntaje nacional</button>
                                     </nav>
                                 </nav>
                                 <nav id="em_nav_enlaces" class="nav_enlaces">
-                                    <button class="off" onclick="a_em_enlacesOff();">Cerrar</button>
-                                    <a href="https://aprendoenlinea.mineduc.gob.cl/" target="_blank">Aprendo en linea</a>
+                                    <button class="off" onclick="a_em_enlacesOff();" style="display:block;">Cerrar</button>
+                                    <a id="em_nav_enlace_btn1" href="https://aprendoenlinea.mineduc.gob.cl/" target="_blank">Aprendo en linea</a>
                                 </nav>
                                 <div id="em_iframes" class="iframes">
                                     <button class="off" id="a_iframe_x1" onclick="a_em_iframe1Off();">cerrar</button>
@@ -2275,14 +2701,44 @@
                                 </h1>
                                 <nav id="pds_nav">
                                     <nav>
-                                        <button onclick="a_pds_enlaces();">Enlaces</button>
-                                        <button onclick="a_pds_iframe1();">telefonica 1</button>
+                                        <button id="pds_nav_btn1" onclick="a_pds_enlaces();">Enlaces</button>
+                                        <button id="pds_nav_btn2" onclick="a_pds_iframe1();">telefonica 1</button>
                                     </nav>
                                 </nav>
                                 <nav id="pds_nav_enlaces" class="nav_enlaces">
                                     <button 
                                         class="off"
                                         onclick="a_pds_enlacesOff();">Cerrar</button>
+                                    <a id="pds_nav_enlace_btn1" href="https://www.w3schools.com/html/" target="_blank"
+                                        >w3schools html</a>
+                                    <a id="pds_nav_enlace_btn2" href="https://www.w3schools.com/css/default.asp" target="_blank"
+                                        >w3schools css</a>
+                                    <a id="pds_nav_enlace_btn3" href="https://www.w3schools.com/js/default.asp" target="_blank"
+                                        >w3schools js</a>
+                                    <a id="pds_nav_enlace_btn4" href="https://www.w3schools.com/php/default.asp"target="_blank"
+                                        >w3schools php</a>
+                                    <a id="pds_nav_enlace_btn5" href="https://www.w3schools.com/mysql/default.asp"target="_blank"
+                                        >w3schools mysql</a>
+                                    <a id="pds_nav_enlace_btn6" href="https://www.w3schools.com/java/default.asp"target="_blank"
+                                        >w3schools java</a>
+                                    <a id="pds_nav_enlace_btn7" href="https://www.w3schools.com/python/default.asp"target="_blank"
+                                        >w3schools python</a>
+                                    <a id="pds_nav_enlace_btn8" href="https://www.w3schools.com/c/index.php"target="_blank"
+                                        >w3schools c</a>
+                                    <a id="pds_nav_enlace_btn9" href="https://www.w3schools.com/excel/index.php"target="_blank"
+                                        >w3schools excel</a>
+                                    <a id="pds_nav_enlace_btn10" href="https://www.w3schools.com/xml/default.asp"target="_blank"
+                                        >w3schools xml</a>
+                                    <a id="pds_nav_enlace_btn11" href="https://www.w3schools.com/nodejs/default.asp"target="_blank"
+                                        >w3schools nodejs</a>
+                                    <a id="pds_nav_enlace_btn12" href="https://www.w3schools.com/ai/default.asp"target="_blank"
+                                        >w3schools ai</a>
+                                    <a id="pds_nav_enlace_btn13" href="https://www.w3schools.com/cybersecurity/index.php"target="_blank"
+                                        >w3schools cybersecurity</a>
+                                    <a id="pds_nav_enlace_btn14" href="https://www.w3schools.com/datascience/default.asp"target="_blank"
+                                        >w3schools datascience</a>
+                                    <a id="pds_nav_enlace_btn15" href="https://www.w3schools.com/tools/index.php"target="_blank"
+                                        >w3schools tools</a>
                                 </nav>
                                 <div id="pds_iframes" class="iframes">
                                     <button 
@@ -2300,19 +2756,27 @@
                                 <h1 id="idjdlsdlud_h1">IDJDLSDLUD
                                     <button id="idjdlsdlud_h1_x" onclick="idjdlsdludNo();">X</button>
                                 </h1>
+                                    mosia 12 y 13 mandamientod
+                                    resurreccion
+                                    salvacion
+                                    exaltacion
+                                    glados de gloria
                                 <nav id="idjdlsdlud_nav">
                                     <nav>
-                                        <button onclick="a_idjdlsdlud_enlaces();">Enlaces</button>
-                                        <button onclick="a_idjdlsdlud_iframe1();">cuadernoIDJDLSDLUD</button>
-                                        <button onclick="a_idjdlsdlud_iframe2();">biblioteca IDJDLSDLUD</button>
+                                        <button id="idjdlsdlud_nav_btn1" onclick="a_idjdlsdlud_enlaces();">Enlaces</button>
+                                        <button id="idjdlsdlud_nav_btn2" onclick="a_idjdlsdlud_iframe1();">cuadernoIDJDLSDLUD</button>
+                                        <button id="idjdlsdlud_nav_btn3" onclick="a_idjdlsdlud_iframe2();">biblioteca IDJDLSDLUD</button>
                                     </nav>
                                 </nav>
                                 <nav id="idjdlsdlud_nav_enlaces" class="nav_enlaces">
                                     <button 
                                         class="off"
                                         onclick="a_idjdlsdlud_enlacesOff();">Cerrar</button>
-                                    <a href="https://1drv.ms/x/c/859092611fbe5986/IQDhOGz75CIhTZJ9_5mggUxbAU9YgJ7b6FI0uPd-a0X3JUM?e=7iShdG" target="_blank">bddIDJDLSDLUD</a>
-                                    <a href="https://1drv.ms/w/c/859092611fbe5986/IQCnAcSuqugLS51FyIvSCXutAaMyApKr1tYwbFaSJT8pto8?e=BaD8DH" target="_blank">cuadernoIDJDLSDUD</a>
+                                    <a id="idjdlsdlud_nav_enlace_btn1" href="https://1drv.ms/x/c/859092611fbe5986/IQDhOGz75CIhTZJ9_5mggUxbAU9YgJ7b6FI0uPd-a0X3JUM?e=7iShdG" target="_blank">bddIDJDLSDLUD</a>
+                                    <a id="idjdlsdlud_nav_enlace_btn2" href="https://1drv.ms/w/c/859092611fbe5986/IQCnAcSuqugLS51FyIvSCXutAaMyApKr1tYwbFaSJT8pto8?e=BaD8DH" target="_blank">cuadernoIDJDLSDUD</a>
+                                    <a id="idjdlsdlud_nav_enlace_btn3" href="https://www.churchofjesuschrist.org/study?lang=spa" target="_blank">Biblioteca web</a>
+                                    <a id="idjdlsdlud_nav_enlace_btn4" href="https://play.google.com/store/apps/details?id=org.lds.ldssa" target="_blank">Biblioteca app</a>
+                                
                                 </nav>
                                 <div id="idjdlsdlud_iframes" class="iframes">
                                     <button 
@@ -2340,17 +2804,21 @@
                             </div>
                             <div id="iedmdi" style="display:none;">
                                 <h1 id="iedmdi_h1">IEDMDI
-                                    <button id="iedmdi_h1_x" onclick="iedmdiNo();">X</button></h1>
+                                    <button id="iedmdi_h1_x" onclick="iedmdiNo();">X</button>
+                                </h1>
                                 <nav id="iedmdi_nav">
                                     <nav>
-                                        <button onclick="a_iedmdi_enlaces();">Enlaces</button>
-                                        <button onclick="a_iedmdi_iframe1();">cuaderno iedmdi</button>
-                                        <button onclick="a_iedmdi_iframe2();">biblioteca iedmdi</button>
+                                        <button id="iedmdi_nav_btn1" onclick="a_iedmdi_enlaces();">Enlaces</button>
+                                        <button id="iedmdi_nav_btn2" onclick="a_iedmdi_iframe1();">cuaderno iedmdi</button>
+                                        <button id="iedmdi_nav_btn3" onclick="a_iedmdi_iframe2();">biblioteca iedmdi</button>
                                     </nav>
                                 </nav>
                                 <nav id="iedmdi_nav_enlaces" class="nav_enlaces">
                                     <button class="off" onclick="a_iedmdi_enlacesOff();">Cerrar</button>
-                                    <a href="https://blackxexo30.wixsite.com/website-6" target="_blank">iedmdi</a>
+                                    <a id="iedmdi_nav_enlace_btn1" href="https://blackxexo30.wixsite.com/website-6" 
+                                        target="_blank">iedmdi</a>
+                                    <a id="iedmdi_nav_enlace_btn2" href="https://1drv.ms/x/c/859092611fbe5986/IQAFjts5KlomR4HtQ6JqUQMLAbGRsBD5S7gcG4Ci7KoCquM?e=Bl0gDw" 
+                                        target="_blank">bdd iedmdi</a>
                                 </nav>
                                 <div id="iedmdi_iframes" class="iframes">
                                     <button class="off" id="a_iedmdi_iframe_x1" onclick="a_iedmdi_iframe1Off();">cerrar cuaderno iedmdir</button>
