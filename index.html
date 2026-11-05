@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <!--
+    <!-- fetch() funcion js para protocolo http
         ______________________________________________________________________________________________________________________________________________________________________________________________
     -->
     <head> 
@@ -863,7 +863,6 @@
                             }
                         }
                     </script>
-
                     <!--calculo-->
                     <script>
                         var domoelecgam = true;
@@ -890,6 +889,8 @@
                                 document.getElementById('p_c_nav_iframe1').style.display="block";
                                 document.getElementById('calculo_iframes').style.display="block";
                                 document.getElementById('p_c_iframe_x1').style.display="block";
+                                document.getElementById('p_c_iframe_x2').style.display="none";
+                                document.getElementById('p_c_iframe_x3').style.display="none";
                                 document.getElementById('calculo_nav').style.display="none";
                             }
                             function p_c_iframe1Off(){
@@ -901,7 +902,9 @@
                             function p_c_iframe2(){
                                 document.getElementById('p_c_nav_iframe2').style.display="block";
                                 document.getElementById('calculo_iframes').style.display="block";
+                                document.getElementById('p_c_iframe_x1').style.display="none";
                                 document.getElementById('p_c_iframe_x2').style.display="block";
+                                document.getElementById('p_c_iframe_x3').style.display="none";
                                 document.getElementById('calculo_nav').style.display="none";
                             }
                             function p_c_iframe2Off(){
@@ -913,6 +916,8 @@
                             function p_c_iframe3(){
                                 document.getElementById('p_c_nav_iframe3').style.display="block";
                                 document.getElementById('calculo_iframes').style.display="block";
+                                document.getElementById('p_c_iframe_x1').style.display="none";
+                                document.getElementById('p_c_iframe_x2').style.display="none";
                                 document.getElementById('p_c_iframe_x3').style.display="block";
                                 document.getElementById('calculo_nav').style.display="none";
                             }
@@ -1759,12 +1764,13 @@
                                                 document.getElementById('p_tr').style.display="block";
                                                     //p_ap_nav
                                                     document.getElementById('tr_nav_btn1').style.display="block";
-                                                    document.getElementById('tr_nav_btn2').style.display="block";
+                                                    document.getElementById('tr_nav_btn2').style.display="none";
                                                     document.getElementById('tr_nav_btn3').style.display="none";
-                                                    document.getElementById('tr_nav_btn4').style.display="block";
-                                                    document.getElementById('tr_nav_btn5').style.display="block";
+                                                    document.getElementById('tr_nav_btn4').style.display="none";
+                                                    document.getElementById('tr_nav_btn5').style.display="none";
                                                     document.getElementById('tr_nav_btn6').style.display="none";
                                                     document.getElementById('tr_nav_btn7').style.display="none";
+                                                    document.getElementById('tr_nav_btn8').style.display="none";
                                                     //p_ap_nav_enlaces
                                                     document.getElementById('tr_nav_enlace_btn1').style.display="block";
                                                 break;
@@ -1777,7 +1783,7 @@
                                                     document.getElementById('co_nav_btn1').style.display="block";
                                                     //p_co_nav_enlaces
                                                     document.getElementById('co_nav_enlace_btn1').style.display="block";
-                                                    document.getElementById('co_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn2').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn3').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn4').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn5').style.display="none";
@@ -1860,7 +1866,7 @@
                                 }
                                 break;
                             case "scarlet":
-                                alert("Bienvenid@ Scarlet <3!");
+                                alert("Bienvenid@ Scarlet!");
                                 //p
                                 switch(user){
                                     case "scarlet":
@@ -1885,7 +1891,7 @@
                                                     document.getElementById('plan_nav_enlace_btn8').style.display="none";
                                                     document.getElementById('plan_nav_enlace_btn9').style.display="none";
                                                     document.getElementById('plan_nav_enlace_btn10').style.display="none";
-                                                    document.getElementById('plan_nav_enlace_btn11').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn11').style.display="none";
                                                 
                                                 break;
                                         }
@@ -1970,7 +1976,7 @@
                                                     document.getElementById('app_nav_enlace_btn5').style.display="none";
                                                     document.getElementById('app_nav_enlace_btn6').style.display="none";
                                                     document.getElementById('app_nav_enlace_btn7').style.display="none";
-                                                    document.getElementById('app_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn8').style.display="none";
                                                     document.getElementById('app_nav_enlace_btn9').style.display="none";
                                                     document.getElementById('app_nav_enlace_btn10').style.display="none";
                                                     document.getElementById('app_nav_enlace_btn11').style.display="none";
@@ -1996,7 +2002,7 @@
                                                     //p_ap_nav
                                                     document.getElementById('tr_nav_btn1').style.display="block";
                                                     document.getElementById('tr_nav_btn2').style.display="none";
-                                                    document.getElementById('tr_nav_btn3').style.display="block";
+                                                    document.getElementById('tr_nav_btn3').style.display="none";
                                                     document.getElementById('tr_nav_btn4').style.display="none";
                                                     document.getElementById('tr_nav_btn5').style.display="none";
                                                     document.getElementById('tr_nav_btn6').style.display="none";
@@ -2325,20 +2331,17 @@
                                     <nav>
                                         <button 
                                             id="p_c_iframe_x1" 
-                                            class="off"
-                                            style="display:block;"
+                                            class="off" style="display:block;"
                                             onclick="p_c_iframe1Off();"
                                             >cerrar</button>
                                         <button 
                                             id="p_c_iframe_x2" 
-                                            class="off"
-                                            style="display:block;"
+                                            class="off"style="display:block;"
                                             onclick="p_c_iframe2Off();"
                                             >cerrar</button>
                                         <button 
                                             id="p_c_iframe_x3" 
-                                            class="off"
-                                            style="display:block;"
+                                            class="off"style="display:block;"
                                             onclick="p_c_iframe3Off();"
                                             >cerrar</button>
                                     </nav>
@@ -2391,14 +2394,14 @@
                                 </nav>
                                 <div id="trabajo_iframes" class="iframes">
                                     <nav>
-                                        <button id="p_t_iframe_x1" style="display:block;" onclick="p_t_iframe1Off();">cerrar</button>
-                                        <button id="p_t_iframe_x2" style="display:block;" onclick="p_t_iframe2Off();">cerrar</button>
-                                        <button id="p_t_iframe_x3" style="display:block;" onclick="p_t_iframe3Off();">cerrar</button>
-                                        <button id="p_t_iframe_x4" style="display:block;" onclick="p_t_iframe4Off();">cerrar</button>
-                                        <button id="p_t_iframe_x5" style="display:block;" onclick="p_t_iframe5Off();">cerrar</button>
-                                        <button id="p_t_iframe_x6" style="display:block;" onclick="p_t_iframe6Off();">cerrar</button>
-                                        <button id="p_t_iframe_x7" style="display:block;" onclick="p_t_iframe7Off();">cerrar</button>
-                                        <button id="p_t_iframe_x8" style="display:block;" onclick="p_t_iframe8Off();">cerrar</button>
+                                        <button id="p_t_iframe_x1" style="display:none;" onclick="p_t_iframe1Off();">cerrar</button>
+                                        <button id="p_t_iframe_x2" style="display:none;" onclick="p_t_iframe2Off();">cerrar</button>
+                                        <button id="p_t_iframe_x3" style="display:none;" onclick="p_t_iframe3Off();">cerrar</button>
+                                        <button id="p_t_iframe_x4" style="display:none;" onclick="p_t_iframe4Off();">cerrar</button>
+                                        <button id="p_t_iframe_x5" style="display:none;" onclick="p_t_iframe5Off();">cerrar</button>
+                                        <button id="p_t_iframe_x6" style="display:none;" onclick="p_t_iframe6Off();">cerrar</button>
+                                        <button id="p_t_iframe_x7" style="display:none;" onclick="p_t_iframe7Off();">cerrar</button>
+                                        <button id="p_t_iframe_x8" style="display:none;" onclick="p_t_iframe8Off();">cerrar</button>
                                     </nav>
                                     <iframe id="p_t_nav_iframe1" style="display:none;" src="" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
                                     <iframe id="p_t_nav_iframe2" style="display:none;" src="" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
@@ -2814,7 +2817,7 @@
                                     </nav>
                                 </nav>
                                 <nav id="iedmdi_nav_enlaces" class="nav_enlaces">
-                                    <button class="off" onclick="a_iedmdi_enlacesOff();">Cerrar</button>
+                                    <button class="off" style="display:block;" onclick="a_iedmdi_enlacesOff();">Cerrar</button>
                                     <a id="iedmdi_nav_enlace_btn1" href="https://blackxexo30.wixsite.com/website-6" 
                                         target="_blank">iedmdi</a>
                                     <a id="iedmdi_nav_enlace_btn2" href="https://1drv.ms/x/c/859092611fbe5986/IQAFjts5KlomR4HtQ6JqUQMLAbGRsBD5S7gcG4Ci7KoCquM?e=Bl0gDw" 
