@@ -80,7 +80,7 @@
                     <style type="text/css" media="all">
                         #personal{display:none;background-color:darkblue;color:yellow;position:fixed;width:60%;height:48%;top:29%;left:15%;}
                         .nav_enlaces{display:none;background-color:blue;color:yellow;position:fixed;width:60%;height:48%;top:37%;left:15%;}
-                        .nav_enlaces>a{background-color:black;color:chartreuse;font-size:35px;margin-bottom:2%;text-decoration:none;}
+                        .nav_enlaces>a{float:left;background-color:black;color:chartreuse;font-size:35px;margin-bottom:2%;text-decoration:none;margin-left:2%;}
                         .nav_enlaces>a:hover{background-color:chartreuse;color:black;}
                         .iframes{background-color: darkblue;height: 98%;}
                         .iframes>iframe{display:none;width:98%;height:84%;margin-top:17%;}
@@ -187,7 +187,7 @@
                         #em_nav>nav>button{display:block;background-color:blue;color:yellow;float:left;margin:1%;}
                         #em_nav_enlaces{display:none;background-color:blue;color:yellow;position:fixed;width:60%;height:48%;top:29%;left:15%;}
                         #em_nav_enlaces>a{background-color:aqua;color:black;}
-                        #em_iframes{display:none;background-color:blue;color:yellow;position:absolute;width:94%;height:55%;top:29%;left:3%; z-index: 5;}
+                        #em_iframes{display:none;background-color:blue;color:yellow;position:absolute;width:94%;height:80%;top:37%;left:3%; z-index: 5;}
                     </style>
                     <!--a_pds-->
                     <style type="text/css" media="all">
@@ -1578,16 +1578,16 @@
                             case "":
                                 if(pass==="") {logIn(user);}
                                 break;
-                            /*case "domoelecgam":
+                            case "domoelecgam":
                                 if(pass==="0001") { logIn(user); }
-                                break;
-                            case "kota":
-                                if(pass==="kota") { logIn(user); }
                                 break;
                             case "detmap":
                                 if(pass==="detmap123") { logIn(user); }
                                 break;
-                            case "iypp":
+                            case "kota":
+                                if(pass==="kota") { logIn(user); }
+                                break;
+                            /*case "iypp":
                                 if(pass==="iypp321") { logIn(user); }
                                 break;
                             case "cbpb":
@@ -1627,6 +1627,7 @@
                         document.getElementById("l").style.display="none";
                         document.getElementById("user").value="";
                         document.getElementById("pass").value="";
+                        //""
                         switch(user){
                             case "":
                                 alert("Bienvenid@ invitado!");
@@ -1764,7 +1765,7 @@
                                                 document.getElementById('p_tr').style.display="block";
                                                     //p_ap_nav
                                                     document.getElementById('tr_nav_btn1').style.display="block";
-                                                    document.getElementById('tr_nav_btn2').style.display="none";
+                                                    document.getElementById('tr_nav_btn2').style.display="block";
                                                     document.getElementById('tr_nav_btn3').style.display="none";
                                                     document.getElementById('tr_nav_btn4').style.display="none";
                                                     document.getElementById('tr_nav_btn5').style.display="none";
@@ -1792,6 +1793,7 @@
                                                     document.getElementById('co_nav_enlace_btn8').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn9').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn11').style.display="block";
                                                 break;
                                         }
                                         break;
@@ -1865,6 +1867,732 @@
                                         }
                                 }
                                 break;
+                        }
+                        //domoelecgam
+                        switch(user){
+                            case "domoelecgam":
+                                alert("Bienvenid@ domoelecgam!");
+                                //p
+                                switch(user){
+                                    case "domoelecgam":
+                                        //p_p
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_p').style.display="block";
+                                                    //p_p_nav
+                                                    document.getElementById('plan_nav_btn1').style.display="block";
+                                                    document.getElementById('plan_nav_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_btn3').style.display="block";
+                                                    document.getElementById('plan_nav_btn4').style.display="block";
+                                                    document.getElementById('plan_nav_btn5').style.display="block";
+                                                    //p_p_nav_enlaces
+                                                    document.getElementById('plan_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn4').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn5').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn7').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn9').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn10').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn11').style.display="block";
+                                                
+                                                break;
+                                        }
+                                        //p_c
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_c').style.display="block";
+                                                    //p_c_nav
+                                                    document.getElementById('calculo_nav_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_btn2').style.display="block";
+                                                    document.getElementById('calculo_nav_btn3').style.display="block";
+                                                    document.getElementById('calculo_nav_btn4').style.display="block";
+                                                    //p_c_nav_enlaces
+                                                    document.getElementById('calculo_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn4').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn5').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn7').style.display="block";
+                                                    
+                                                break;
+                                        }
+                                        //p_t
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_t').style.display="block";
+                                                    //p_t_nav
+                                                    document.getElementById('trabajo_nav_btn1').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn2').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn3').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn4').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn5').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn6').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn7').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn8').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn9').style.display="block";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('trabajo_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('trabajo_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('trabajo_nav_enlace_btn3').style.display="block";
+                                                
+                                                break;
+                                        }
+                                        //p_s
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_s').style.display="block";
+                                                    //p_s_nav
+                                                    document.getElementById('salud_nav_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_btn2').style.display="block";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('salud_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_enlace_btn2').style.display="block";
+                                                break;
+                                        }
+                                        //p_j
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_j').style.display="block";
+                                                    //p_j_nav
+                                                    document.getElementById('juego_nav_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_btn2').style.display="block";
+                                                    //p_j_nav_enlaces
+                                                    document.getElementById('juego_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn3').style.display="block";
+                                                break;
+                                        }
+                                        //p_ap
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_ap').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('app_nav_btn1').style.display="block";
+                                                    document.getElementById('app_nav_btn2').style.display="block";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('app_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn4').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn5').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn7').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn9').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn10').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn11').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn12').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn13').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn14').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn15').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn16').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn17').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn18').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn19').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn20').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn21').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn22').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn23').style.display="block";
+                                                    
+                                                break;
+                                        }
+                                        //p_tr
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_tr').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('tr_nav_btn1').style.display="block";
+                                                    document.getElementById('tr_nav_btn2').style.display="block";
+                                                    document.getElementById('tr_nav_btn3').style.display="block";
+                                                    document.getElementById('tr_nav_btn4').style.display="block";
+                                                    document.getElementById('tr_nav_btn5').style.display="block";
+                                                    document.getElementById('tr_nav_btn6').style.display="block";
+                                                    document.getElementById('tr_nav_btn7').style.display="block";
+                                                    document.getElementById('tr_nav_btn8').style.display="block";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('tr_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //p_co
+                                        switch(user){
+                                            case "domoelecgam":
+                                                document.getElementById('p_co').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('co_nav_btn1').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('co_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn4').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn5').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn7').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn9').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn10').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn11').style.display="block";
+                                                break;
+                                        }
+                                        break;
+                                }
+                                //a
+                                switch(user){
+                                    case "":
+                                        //a_em
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_em').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('em_nav_btn1').style.display="block";
+                                                    document.getElementById('em_nav_btn2').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('em_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //a_pds
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_pds').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('pds_nav_btn1').style.display="block";
+                                                    document.getElementById('pds_nav_btn2').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('pds_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn4').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn5').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn7').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn8').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn9').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn10').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn11').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn12').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn13').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn14').style.display="block";
+                                                    document.getElementById('pds_nav_enlace_btn15').style.display="block";
+                                                break;
+                                        }
+                                        //a_idjdlsdlud
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_idjdlsdlud').style.display="block";
+                                                    //a_idjdlsdlud_nav
+                                                    document.getElementById('idjdlsdlud_nav_btn1').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_btn2').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_btn3').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn4').style.display="block";
+                                                break;
+                                        }
+                                        //a_iedmdi
+                                        switch(user){
+                                            case "":
+                                                document.getElementById('a_iedmdi').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('iedmdi_nav_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_btn2').style.display="block";
+                                                    document.getElementById('iedmdi_nav_btn3').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                }
+                                break;
+                        }
+                        //detmap
+                        switch(user){
+                            case "detmap":
+                                alert("Bienvenid@ detmap!");
+                                //p
+                                switch(user){
+                                    case "detmap":
+                                        //p_p
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_p').style.display="block";
+                                                    //p_p_nav
+                                                    document.getElementById('plan_nav_btn1').style.display="block";
+                                                    document.getElementById('plan_nav_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_btn3').style.display="block";
+                                                    document.getElementById('plan_nav_btn4').style.display="block";
+                                                    document.getElementById('plan_nav_btn5').style.display="block";
+                                                    //p_p_nav_enlaces
+                                                    document.getElementById('plan_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn11').style.display="none";
+                                                
+                                                break;
+                                        }
+                                        //p_c
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_c').style.display="block";
+                                                    //p_c_nav
+                                                    document.getElementById('calculo_nav_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_btn3').style.display="none";
+                                                    document.getElementById('calculo_nav_btn4').style.display="none";
+                                                    //p_c_nav_enlaces
+                                                    document.getElementById('calculo_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn6').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn7').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_t
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_t').style.display="block";
+                                                    //p_t_nav
+                                                    document.getElementById('trabajo_nav_btn1').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn2').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn3').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn4').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn5').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn6').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn7').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn8').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn9').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('trabajo_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('trabajo_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('trabajo_nav_enlace_btn3').style.display="none";
+                                                
+                                                break;
+                                        }
+                                        //p_s
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_s').style.display="block";
+                                                    //p_s_nav
+                                                    document.getElementById('salud_nav_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_btn2').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('salud_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_enlace_btn2').style.display="block";
+                                                break;
+                                        }
+                                        //p_j
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_j').style.display="block";
+                                                    //p_j_nav
+                                                    document.getElementById('juego_nav_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_btn2').style.display="none";
+                                                    //p_j_nav_enlaces
+                                                    document.getElementById('juego_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn3').style.display="block";
+                                                break;
+                                        }
+                                        //p_ap
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_ap').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('app_nav_btn1').style.display="block";
+                                                    document.getElementById('app_nav_btn2').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('app_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn4').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn15').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn16').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn17').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn18').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn19').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn20').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn21').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn22').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn23').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_tr
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_tr').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('tr_nav_btn1').style.display="block";
+                                                    document.getElementById('tr_nav_btn2').style.display="block";
+                                                    document.getElementById('tr_nav_btn3').style.display="none";
+                                                    document.getElementById('tr_nav_btn4').style.display="none";
+                                                    document.getElementById('tr_nav_btn5').style.display="none";
+                                                    document.getElementById('tr_nav_btn6').style.display="none";
+                                                    document.getElementById('tr_nav_btn7').style.display="none";
+                                                    document.getElementById('tr_nav_btn8').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('tr_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //p_co
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('p_co').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('co_nav_btn1').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('co_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn11').style.display="block";
+                                                break;
+                                        }
+                                        break;
+                                }
+                                //a
+                                switch(user){
+                                    case "detmap":
+                                        //a_em
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('a_em').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('em_nav_btn1').style.display="block";
+                                                    document.getElementById('em_nav_btn2').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('em_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //a_pds
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('a_pds').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('pds_nav_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_btn2').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('pds_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn15').style.display="none";
+                                                break;
+                                        }
+                                        //a_idjdlsdlud
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('a_idjdlsdlud').style.display="none";
+                                                    //a_idjdlsdlud_nav
+                                                    document.getElementById('idjdlsdlud_nav_btn1').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_btn3').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn4').style.display="block";
+                                                break;
+                                        }
+                                        //a_iedmdi
+                                        switch(user){
+                                            case "detmap":
+                                                document.getElementById('a_iedmdi').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('iedmdi_nav_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_btn2').style.display="none";
+                                                    document.getElementById('iedmdi_nav_btn3').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="none";
+                                                break;
+                                        }
+                                }
+                                break;
+                        }
+                        //kota
+                        switch(user){
+                            case "kota":
+                                alert("Bienvenid@ kota!");
+                                //p
+                                switch(user){
+                                    case "kota":
+                                        //p_p
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_p').style.display="block";
+                                                    //p_p_nav
+                                                    document.getElementById('plan_nav_btn1').style.display="block";
+                                                    document.getElementById('plan_nav_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_btn3').style.display="block";
+                                                    document.getElementById('plan_nav_btn4').style.display="block";
+                                                    document.getElementById('plan_nav_btn5').style.display="block";
+                                                    //p_p_nav_enlaces
+                                                    document.getElementById('plan_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn7').style.display="block";
+                                                    document.getElementById('plan_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('plan_nav_enlace_btn11').style.display="none";
+                                                
+                                                break;
+                                        }
+                                        //p_c
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_c').style.display="block";
+                                                    //p_c_nav
+                                                    document.getElementById('calculo_nav_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_btn3').style.display="none";
+                                                    document.getElementById('calculo_nav_btn4').style.display="none";
+                                                    //p_c_nav_enlaces
+                                                    document.getElementById('calculo_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn5').style.display="block";
+                                                    document.getElementById('calculo_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('calculo_nav_enlace_btn7').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_t
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_t').style.display="block";
+                                                    //p_t_nav
+                                                    document.getElementById('trabajo_nav_btn1').style.display="block";
+                                                    document.getElementById('trabajo_nav_btn2').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn3').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn4').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn5').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn6').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn7').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn8').style.display="none";
+                                                    document.getElementById('trabajo_nav_btn9').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('trabajo_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('trabajo_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('trabajo_nav_enlace_btn3').style.display="none";
+                                                
+                                                break;
+                                        }
+                                        //p_s
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_s').style.display="block";
+                                                    //p_s_nav
+                                                    document.getElementById('salud_nav_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_btn2').style.display="none";
+                                                    //p_t_nav_enlaces
+                                                    document.getElementById('salud_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('salud_nav_enlace_btn2').style.display="block";
+                                                break;
+                                        }
+                                        //p_j
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_j').style.display="block";
+                                                    //p_j_nav
+                                                    document.getElementById('juego_nav_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_btn2').style.display="none";
+                                                    //p_j_nav_enlaces
+                                                    document.getElementById('juego_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn2').style.display="block";
+                                                    document.getElementById('juego_nav_enlace_btn3').style.display="block";
+                                                break;
+                                        }
+                                        //p_ap
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_ap').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('app_nav_btn1').style.display="block";
+                                                    document.getElementById('app_nav_btn2').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('app_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn15').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn16').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn17').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn18').style.display="block";
+                                                    document.getElementById('app_nav_enlace_btn19').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn20').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn21').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn22').style.display="none";
+                                                    document.getElementById('app_nav_enlace_btn23').style.display="none";
+                                                    
+                                                break;
+                                        }
+                                        //p_tr
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_tr').style.display="block";
+                                                    //p_ap_nav
+                                                    document.getElementById('tr_nav_btn1').style.display="block";
+                                                    document.getElementById('tr_nav_btn2').style.display="block";
+                                                    document.getElementById('tr_nav_btn3').style.display="none";
+                                                    document.getElementById('tr_nav_btn4').style.display="none";
+                                                    document.getElementById('tr_nav_btn5').style.display="none";
+                                                    document.getElementById('tr_nav_btn6').style.display="none";
+                                                    document.getElementById('tr_nav_btn7').style.display="none";
+                                                    document.getElementById('tr_nav_btn8').style.display="none";
+                                                    //p_ap_nav_enlaces
+                                                    document.getElementById('tr_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //p_co
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('p_co').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('co_nav_btn1').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('co_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('co_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn11').style.display="block";
+                                                break;
+                                        }
+                                        break;
+                                }
+                                //a
+                                switch(user){
+                                    case "kota":
+                                        //a_em
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('a_em').style.display="block";
+                                                    //p_co_nav
+                                                    document.getElementById('em_nav_btn1').style.display="block";
+                                                    document.getElementById('em_nav_btn2').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('em_nav_enlace_btn1').style.display="block";
+                                                break;
+                                        }
+                                        //a_pds
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('a_pds').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('pds_nav_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_btn2').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('pds_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn3').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn4').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn5').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn6').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn7').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn8').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn9').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn11').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn12').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn13').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn14').style.display="none";
+                                                    document.getElementById('pds_nav_enlace_btn15').style.display="none";
+                                                break;
+                                        }
+                                        //a_idjdlsdlud
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('a_idjdlsdlud').style.display="none";
+                                                    //a_idjdlsdlud_nav
+                                                    document.getElementById('idjdlsdlud_nav_btn1').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_btn3').style.display="block";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn1').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn2').style.display="none";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn3').style.display="block";
+                                                    document.getElementById('idjdlsdlud_nav_enlace_btn4').style.display="block";
+                                                break;
+                                        }
+                                        //a_iedmdi
+                                        switch(user){
+                                            case "kota":
+                                                document.getElementById('a_iedmdi').style.display="none";
+                                                    //p_co_nav
+                                                    document.getElementById('iedmdi_nav_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_btn2').style.display="none";
+                                                    document.getElementById('iedmdi_nav_btn3').style.display="none";
+                                                    //p_co_nav_enlaces
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="block";
+                                                    document.getElementById('iedmdi_nav_enlace_btn1').style.display="none";
+                                                break;
+                                        }
+                                }
+                                break;
+                        }
+                        //scarlet
+                        switch(user){
                             case "scarlet":
                                 alert("Bienvenid@ Scarlet!");
                                 //p
@@ -2001,7 +2729,7 @@
                                                 document.getElementById('p_tr').style.display="block";
                                                     //p_ap_nav
                                                     document.getElementById('tr_nav_btn1').style.display="block";
-                                                    document.getElementById('tr_nav_btn2').style.display="none";
+                                                    document.getElementById('tr_nav_btn2').style.display="block";
                                                     document.getElementById('tr_nav_btn3').style.display="none";
                                                     document.getElementById('tr_nav_btn4').style.display="none";
                                                     document.getElementById('tr_nav_btn5').style.display="none";
@@ -2029,6 +2757,7 @@
                                                     document.getElementById('co_nav_enlace_btn8').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn9').style.display="none";
                                                     document.getElementById('co_nav_enlace_btn10').style.display="none";
+                                                    document.getElementById('co_nav_enlace_btn11').style.display="block";
                                                 break;
                                         }
                                         break;
@@ -2191,23 +2920,19 @@
                                 <nav id="plan_nav_enlaces" class="nav_enlaces" >
                                     <button class="off" style="display:block;" onclick="p_p_enlacesOff();">Cerrar</button>
                                     <!--web google calendar--><a 
-                                        id="plan_nav_enlace_btn1" 
-                                        href="https://calendar.google.com/calendar/u/0/r?hl=es" 
-                                        target="_blank"
-                                        >calendario de Google Web</a>
+                                        id="plan_nav_enlace_btn1" target="_blank"href="https://calendar.google.com/calendar/u/0/r?hl=es" 
+                                        >calendar G Web</a>
                                     <!--app google calendar--><a 
-                                        id="plan_nav_enlace_btn2" 
-                                        href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=en-US" 
-                                        target="_blank"
-                                        >calendario de Google app</a>
+                                        id="plan_nav_enlace_btn2" target="_blank"href="https://play.google.com/store/apps/details?id=com.google.android.calendar" 
+                                        >calendar G app</a>
                                     <!--app ms team--><a 
                                         id="plan_nav_enlace_btn3" 
                                         href="https://play.google.com/store/apps/details?id=com.microsoft.teams" target="_blank"
-                                        >Microsoft Team Playstore</a>
+                                        >MS Team app</a>
                                     <!--web ms team--><a 
                                         id="plan_nav_enlace_btn4" 
                                         href="https://www.microsoft.com/es-cl/microsoft-teams/log-in" target="_blank"
-                                        >Microsoft Team Web</a>
+                                        >MS Team Web</a>
                                     <!--actualizar noticias--><a 
                                         id="plan_nav_enlace_btn5" 
                                         href="https://1drv.ms/w/c/859092611fbe5986/IQCEz_U2My6rRZjwpVeWKABEAQlpwzm-ERwG1CcBSNGLUMc?e=SKvKhc" 
@@ -2297,7 +3022,7 @@
                                     <a 
                                         id="calculo_nav_enlace_btn1"
                                         href="https://1drv.ms/x/c/859092611fbe5986/IQCcE__hQBlUTJpz7wIWVDFBAYirjWzEeZzR3NV_0i_xFkU?e=Pa9ei1" 
-                                        target="_blank">calculo excel</a>
+                                        target="_blank">calculo bdd</a>
                                     <a 
                                         id="calculo_nav_enlace_btn2"
                                         href="https://play.google.com/store/apps/details?id=com.microblink.photomath" 
@@ -2305,7 +3030,7 @@
                                     <a 
                                         id="calculo_nav_enlace_btn3"
                                         href="https://play.google.com/store/apps/details?id=com.microsoft.office.excel" 
-                                        target="_blank">excel playStore</a>
+                                        target="_blank">excel app</a>
                                     <a  
                                         id="calculo_nav_enlace_btn4"
                                         href="https://1drv.ms/x/c/859092611fbe5986/IQBNJXIexFHJTa3CJvzv0ndrARSirmUcoqWGZ01IxF6dKXg?e=J8jELi" 
@@ -2320,8 +3045,8 @@
                                         target="_blank">bddDETMAP</a>
                                     <a 
                                         id="calculo_nav_enlace_btn7"
-                                        href="https://1drv.ms/x/c/859092611fbe5986/IQDjti4Xwk8dRbinquv-F9rYAYA_8NB_l35Nr7UM-LpfQnU" 
-                                        target="_blank">bdd Detmap</a>
+                                        href=""
+                                        target="_blank"></a>
                                     <!--<a 
                                         href="" 
                                         target="_blank">aaaaa</a>-->
@@ -2394,14 +3119,14 @@
                                 </nav>
                                 <div id="trabajo_iframes" class="iframes">
                                     <nav>
-                                        <button id="p_t_iframe_x1" style="display:none;" onclick="p_t_iframe1Off();">cerrar</button>
-                                        <button id="p_t_iframe_x2" style="display:none;" onclick="p_t_iframe2Off();">cerrar</button>
-                                        <button id="p_t_iframe_x3" style="display:none;" onclick="p_t_iframe3Off();">cerrar</button>
-                                        <button id="p_t_iframe_x4" style="display:none;" onclick="p_t_iframe4Off();">cerrar</button>
-                                        <button id="p_t_iframe_x5" style="display:none;" onclick="p_t_iframe5Off();">cerrar</button>
-                                        <button id="p_t_iframe_x6" style="display:none;" onclick="p_t_iframe6Off();">cerrar</button>
-                                        <button id="p_t_iframe_x7" style="display:none;" onclick="p_t_iframe7Off();">cerrar</button>
-                                        <button id="p_t_iframe_x8" style="display:none;" onclick="p_t_iframe8Off();">cerrar</button>
+                                        <button id="p_t_iframe_x1" class="off" style="display:none;" onclick="p_t_iframe1Off();">cerrar</button>
+                                        <button id="p_t_iframe_x2" class="off" style="display:none;" onclick="p_t_iframe2Off();">cerrar</button>
+                                        <button id="p_t_iframe_x3" class="off" style="display:none;" onclick="p_t_iframe3Off();">cerrar</button>
+                                        <button id="p_t_iframe_x4" class="off" style="display:none;" onclick="p_t_iframe4Off();">cerrar</button>
+                                        <button id="p_t_iframe_x5" class="off" style="display:none;" onclick="p_t_iframe5Off();">cerrar</button>
+                                        <button id="p_t_iframe_x6" class="off" style="display:none;" onclick="p_t_iframe6Off();">cerrar</button>
+                                        <button id="p_t_iframe_x7" class="off" style="display:none;" onclick="p_t_iframe7Off();">cerrar</button>
+                                        <button id="p_t_iframe_x8" class="off" style="display:none;" onclick="p_t_iframe8Off();">cerrar</button>
                                     </nav>
                                     <iframe id="p_t_nav_iframe1" style="display:none;" src="" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
                                     <iframe id="p_t_nav_iframe2" style="display:none;" src="" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
@@ -2476,7 +3201,7 @@
                                         id="app_nav_enlace_btn1" 
                                         href="https://play.google.com/store/apps/details?id=com.microsoft.skydrive"
                                         target="_blank"
-                                        >Onedrive playstore</a>
+                                        >Onedrive app</a>
                                     <a 
                                         id="app_nav_enlace_btn2" 
                                         href="https://manage.wix.com/account/websites/folder/218f8b45-c7ab-465e-8ab1-a93a785986ca?referralAdditionalInfo=Route" 
@@ -2651,6 +3376,7 @@
                                     <a id="co_nav_enlace_btn8" href="https://blackxexo30.wixsite.com/website-7" target="_blank">fjs</a>
                                     <a id="co_nav_enlace_btn9" href="https://blackxexo30.wixsite.com/mac1" target="_blank">mac</a>
                                     <a id="co_nav_enlace_btn10" href="https://blackxexo30.wixsite.com/website-9" target="_blank">yasmil</a>
+                                    <a id="co_nav_enlace_btn11" href="https://play.google.com/store/apps/details?id=com.facebook.orca" target="_blank">messenger</a>
                                 </nav>
                                 <div id="contacto_iframes" class="iframes">
                                     <button id="p_co_iframe_x1"class="off" style="display:none;" onclick="p_co_iframe1Off();">cerrar</button>
@@ -2668,14 +3394,14 @@
                             <button id="h1_aprendizaje_x" onclick="aprendizajeNo();">X</button>
                         </h1>
                         <nav id="nav_aprendizaje">
-                            <button id="a_em" onclick="em();">EM</button>
+                            <button id="a_em" onclick="em();">Ed.Media Y B&aacute;sica</button>
                             <button id="a_pds" onclick="pds();">PDS</button>
                             <button id="a_idjdlsdlud" onclick="idjdlsdlud();">IDJDLSDLUD</button>
                             <button id="a_iedmdi" onclick="iedmdi();">IEDMDI</button>
                         </nav>
                         <div id="aprender">
                             <div id="em" style="display:none;">
-                                <h1 id="em_h1">EM
+                                <h1 id="em_h1">Ed. Media y b&aacute;sica
                                     <button id="em_h1_x" onclick="emNo();">X</button>
                                 </h1>
                                 <nav id="em_nav">
@@ -2692,9 +3418,8 @@
                                     <button class="off" id="a_iframe_x1" onclick="a_em_iframe1Off();">cerrar</button>
                                     <iframe 
                                         id="a_em_nav_iframe1" 
+                                        style="margin-top:0;"
                                         src="https://www.puntajenacional.cl/"
-                                        width="100%"
-                                        height="100%"
                                         ></iframe>
                                 </div>
                             </div>
