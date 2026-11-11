@@ -7,7 +7,8 @@
             <style type="text/css" media="all">
                 *{border:1px solid aqua}
                 body{background-color: black;color: chartreuse;}
-                main{position:fixed;background-color: darkblue;color: yellow;border: 1px solid aqua;width:98%;height:98%;}
+                main{position:fixed;background-color: darkblue;color: yellow;border: 1px solid aqua;width:98%;height:98%;left:0;}
+                .main{display:none;}
             </style>
             <style type="text/css" media="all">
                 #m0>h1{text-align:center;background-color:blue;color:white;margin:3%;padding:3%;}
@@ -17,23 +18,43 @@
                 #m0>button{text-align:center;background-color:aqua;color:black;margin:3%;padding:3%;}
             </style>
             <style type="text/css" media="all">
-                *{border:1px solid aqua}
-                body{background-color: black;color: chartreuse;}
-                main{position:fixed;background-color: darkblue;color: yellow;border: 1px solid aqua;width:98%;height:98%;}
-                .estructuras{background-color:black;position:fixed;}
-                #asideL1{width:10%;height:10%;top:2%;left:3.4%;}
-                #header{width:69%;height:10%;top:2%;left:16.4%;}
-                #asideR1{width:10%;height:10%;top:2%;left:88.4%;}
-                #asideL2{width:10%;height:71%;top:14%;left:3.4%;}
-                #article{width:69%;height:71%;top:14%;left:16.4%;}
-                #asideR2{width:10%;height:71%;top:14%;left:88.4%;}
-                #asideL3{width:10%;height:10%;top:87%;left:3.4%;}
-                #footer{width:69%;height:10%;top:87%;left:16.4%;}
-                #asideR3{width:10%;height:10%;top:87%;left:88.4%;}
+                .gam{display:flex;}
+                .gam>nav>input{background-color:chartreuse;color:black;}
+                .gam>nav>button{background-color:aqua;color:black;}
+                .gam>nav>button:hover{background-color:blue;color:white;}
             </style>
-            <style type="text/css" media="all">
-                .main{display:none;}
-            </style>
+            <head>
+                <style type="text/css" media="all">
+                    .estructuras{background-color:black;position:fixed;}
+                    #asideL1{width:10%;height:10%;top:2%;left:3.4%;}
+                    #header {width:69%;height:10%;top:2%;left:16.4%;}
+                    #asideR1{width:10%;height:10%;top:2%;left:88.4%;}
+                    #asideL2{width:10%;height:71%;top:14%;left:3.4%;}
+                    #article{width:69%;height:71%;top:14%;left:16.4%;}
+                    #asideR2{width:10%;height:71%;top:14%;left:88.4%;}
+                    #asideL3{width:10%;height:10%;top:87%;left:3.4%;}
+                    #footer {width:69%;height:10%;top:87%;left:16.4%;}
+                    #asideR3{width:10%;height:10%;top:87%;left:88.4%;}
+                </style>
+                <style type="text/css" media="all">
+                    #article>div{padding:1%;margin:1%;background-color:darkblue;}
+                    #article>div>nav{padding:1%;margin:1%;background-color:black;}
+                    #article>div>nav>a{background-color:chartreuse;color:black;text-decoration:none;}
+                </style>
+                <style type="text/css" media="all">
+                    #domoelecgam{display:flex;}
+                    #domoelecgam>nav>button{background-color:blue;color:aqua;}
+                    #domoelecgam>nav>button:hover{background-color:darkblue;color:yellow;}
+                </style>
+            </head>
+            <head>
+                <style type="text/css" media="all">
+                    #m2{background-color:pink;color:white;text-align:center;}
+                    #m2>h1{background-color:red;color:white;text-align:center;}
+                    #m2>nav{background-color:orange;color:white;margin:1%;padding:1%;}
+                    #m2>nav>a{background-color:darkred;color:pink;}
+                </style>
+            </head>
         </head>
         <head>
             <script>
@@ -125,7 +146,22 @@
                 
             </aside>
             <header id="header" class="estructuras">
-                
+                <div id="gam" class="gam">
+                    <nav>
+                        <input type="text" id="chat" value="" placeholder="escriba aquí!"/>
+                        <button onclick="chat();">GAM</button>
+                    </nav>
+                </div>
+                    <div id="domoelecgam">
+                        <nav id="nav_domoelecgam">
+                            <button onclick="persona();">PERSONA</button>
+                            <button onclick="aprendizaje();">APRENDIZAJE</button>
+                            <button onclick="tienda();">TIENDA</button>
+                            <button onclick="sociedad();">SOCIEDAD</button>
+                            <button onclick="red();">RED</button>
+                            <button onclick="proyecto();">PROYECTO</button>
+                        </nav>
+                    </div>
             </header>
             <aside id="asideR1" class="estructuras">
                 
@@ -134,7 +170,32 @@
                 
             </aside>
             <article id="article" class="estructuras">
-
+                <div id="plan">
+                    <nav>
+                        <a target="_blank"href="https://calendar.google.com/calendar/u/0/r?hl=es" 
+                        >calendar G Web</a>
+                        <a target="_blank"href="https://play.google.com/store/apps/details?id=com.google.android.calendar" 
+                        >calendar G app</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.microsoft.teams" target="_blank"
+                        >MS Team app</a>
+                        <a href="https://www.microsoft.com/es-cl/microsoft-teams/log-in" target="_blank"
+                        >MS Team Web</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQCEz_U2My6rRZjwpVeWKABEAQlpwzm-ERwG1CcBSNGLUMc?e=SKvKhc" target="_blank"
+                        >Actualizar Noticias</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" target="_blank"
+                        >Informe Detmap</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQD4stnsQziqRZ2WXRYrV2e4ATqbRKdq_5UowFouIcRC9PM?e=vppLx2" target="_blank"
+                        >Sujerencias Kota</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQDzqkBdwn8SR4vkUXOLe8nSAbIGuteaqWKhjDKSHD2Lwb0?e=hsxo0v"target="_blank"
+                        >Sujerencias CBPB</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQC3CWcNb8hJQYgugZO-KDIGAfIaQ0EHTs8foy7s3BEzZJg?e=lCUvWe"target="_blank"
+                        >Sujerencias MMPC</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQBiF8yGOBrrTZ1_hkp12iVWAdBP9EIHpQlYjNLroFuTivg?e=jTLwvN"target="_blank"
+                        >Sujerencias IYPP</a>
+                        <a href="https://1drv.ms/w/c/859092611fbe5986/IQDqSFvpMrPBTpjUNjX4HXdwAR3YDjL4bGZdlIXCojsLMkg?e=aWitiG"target="_blank"
+                        >Sujerencias INVITADO</a>
+                    </nav>
+                </div>
             </article>
             <aside id="asideR2" class="estructuras">
                 
@@ -150,7 +211,17 @@
             </aside>
         </main>
         <main id="m2" class="main">
-            <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
+            <h1>DETMAP</h1>
+            <div id="gam" class="gam">
+                <nav>
+                    <input type="text" id="chat" value="" placeholder="escriba aquí!"/>
+                    <button onclick="chat();">GAM</button>
+                </nav>
+            </div>
+            <nav>
+                <a href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" target="_blank"
+                >INFORME DETMAP</a>
+            </nav>
         </main>
         <main id="m3" class="main">
             <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
