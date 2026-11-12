@@ -80,6 +80,8 @@
                                     document.getElementById('aprendizaje').style.display="none";
                                         document.getElementById('a_em_e').style.display="none";
                                         document.getElementById('a_em_i1').style.display="none";
+                                        document.getElementById('a_pds_e').style.display="none";
+                                        document.getElementById('a_pds_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
@@ -673,12 +675,26 @@
                     function pds(){
                         document.getElementById('pds').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_pds').style.display="block";
                         
                     }
                     function pdsOff(){
                         document.getElementById('pds').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_pds').style.display="none";
                         
+                    }
+                    function a_pds_e(){
+                        document.getElementById('a_pds_e').style.display="block";
+                    }
+                    function a_pds_eOff(){
+                        document.getElementById('a_pds_e').style.display="none";
+                    }
+                    function a_pds_i1(){
+                        document.getElementById('a_pds_i1').style.display="block";
+                    }
+                    function a_pds_i1Off(){
+                        document.getElementById('a_pds_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -897,6 +913,12 @@
                             <button onclick="a_em_i1();">PN</button>
                             <button onclick="a_em_i1Off();">X</button>
                         </nav>
+                        <nav id="a_pds" class="p">
+                            <button onclick="a_pds_e();">enlaces</button>
+                            <button onclick="a_pds_eOff();">X</button>
+                            <button onclick="a_pds_i1();">i1</button>
+                            <button onclick="a_pds_i1Off();">X</button>
+                        </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
                             <button onclick="a_idjdlsdlud_eOff();">X</button>
@@ -1047,10 +1069,12 @@
                     </div>
                     <div id="pds" class="p">
                         <h1>PDS <button onclick="pdsOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_pds_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_pds_i" class="i">
+                            <iframe id="a_pds_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
