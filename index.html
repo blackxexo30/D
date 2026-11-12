@@ -78,6 +78,8 @@
                                         document.getElementById('p_pl_i2').style.display="none";
                                         document.getElementById('p_pl_i3').style.display="none";
                                     document.getElementById('aprendizaje').style.display="none";
+                                        document.getElementById('a_em_e').style.display="none";
+                                        document.getElementById('a_em_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
@@ -645,12 +647,26 @@
                     function em(){
                         document.getElementById('em').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_em').style.display="block";
                         
                     }
                     function emOff(){
                         document.getElementById('em').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_em').style.display="none";
                         
+                    }
+                    function a_em_e(){
+                        document.getElementById('a_em_e').style.display="block";
+                    }
+                    function a_em_eOff(){
+                        document.getElementById('a_em_e').style.display="none";
+                    }
+                    function a_em_i1(){
+                        document.getElementById('a_em_i1').style.display="block";
+                    }
+                    function a_em_i1Off(){
+                        document.getElementById('a_em_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -875,6 +891,12 @@
                         <button onclick="s();">s</button>
                         
                     </nav>
+                        <nav id="a_em" class="p">
+                            <button onclick="a_em_e();">enlaces</button>
+                            <button onclick="a_em_eOff();">X</button>
+                            <button onclick="a_em_i1();">PN</button>
+                            <button onclick="a_em_i1Off();">X</button>
+                        </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
                             <button onclick="a_idjdlsdlud_eOff();">X</button>
@@ -1014,10 +1036,12 @@
                     <h1>APRENDIZAJE<button onclick="aprendizajeOff();">X</button></h1>
                     <div id="em" class="p">
                         <h1>EM <button onclick="emOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_em_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_em_i" class="i">
+                            <iframe id="a_em_i1" src="https://www.puntajenacional.cl/" 
+                                frameborder="0" scrolling="no"></iframe>
                             
                         </div>
                     </div>
