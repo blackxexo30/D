@@ -77,11 +77,19 @@
                                         document.getElementById('p_pl_i1').style.display="none";
                                         document.getElementById('p_pl_i2').style.display="none";
                                         document.getElementById('p_pl_i3').style.display="none";
+                                        document.getElementById('p_c_e').style.display="none";
+                                        document.getElementById('p_c_i1').style.display="none";
+                                        document.getElementById('p_c_i2').style.display="none";
+                                        document.getElementById('p_c_i3').style.display="none";
+                                        document.getElementById('p_t_e').style.display="none";
+                                        document.getElementById('p_t_i1').style.display="none";
                                     document.getElementById('aprendizaje').style.display="none";
                                         document.getElementById('a_em_e').style.display="none";
                                         document.getElementById('a_em_i1').style.display="none";
                                         document.getElementById('a_pds_e').style.display="none";
                                         document.getElementById('a_pds_i1').style.display="none";
+                                        document.getElementById('a_vpcmdcr_e').style.display="none";
+                                        document.getElementById('a_vpcmdcr_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
@@ -551,24 +559,64 @@
                     function calculo(){
                         document.getElementById('calculo').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_c').style.display="block";
                         
                     }
                     function calculoOff(){
                         document.getElementById('calculo').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_c').style.display="none";
                         
+                    }
+                    function p_c_e(){
+                        document.getElementById('p_c_e').style.display="block";
+                    }
+                    function p_c_eOff(){
+                        document.getElementById('p_c_e').style.display="none";
+                    }
+                    function p_c_i1(){
+                        document.getElementById('p_c_i1').style.display="block";
+                    }
+                    function p_c_i1Off(){
+                        document.getElementById('p_c_i1').style.display="none";
+                    }
+                    function p_c_i2(){
+                        document.getElementById('p_c_i2').style.display="block";
+                    }
+                    function p_c_i2Off(){
+                        document.getElementById('p_c_i2').style.display="none";
+                    }
+                    function p_c_i3(){
+                        document.getElementById('p_c_i3').style.display="block";
+                    }
+                    function p_c_i3Off(){
+                        document.getElementById('p_c_i3').style.display="none";
                     }
                 </script>
                 <script>
                     function trabajo(){
                         document.getElementById('trabajo').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_t').style.display="block";
                         
                     }
                     function trabajoOff(){
                         document.getElementById('trabajo').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_t').style.display="none";
                         
+                    }
+                    function p_t_e(){
+                        document.getElementById('p_t_e').style.display="block";
+                    }
+                    function p_t_eOff(){
+                        document.getElementById('p_t_e').style.display="none";
+                    }
+                    function p_t_i1(){
+                        document.getElementById('p_t_i1').style.display="block";
+                    }
+                    function p_t_i1Off(){
+                        document.getElementById('p_t_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -701,12 +749,26 @@
                     function vpcmdcr(){
                         document.getElementById('vpcmdcr').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_vpcmdcr').style.display="block";
                         
                     }
                     function vpcmdcrOff(){
                         document.getElementById('vpcmdcr').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_vpcmdcr').style.display="none";
                         
+                    }
+                    function a_vpcmdcr_e(){
+                        document.getElementById('a_vpcmdcr_e').style.display="block";
+                    }
+                    function a_vpcmdcr_eOff(){
+                        document.getElementById('a_vpcmdcr_e').style.display="none";
+                    }
+                    function a_vpcmdcr_i1(){
+                        document.getElementById('a_vpcmdcr_i1').style.display="block";
+                    }
+                    function a_vpcmdcr_i1Off(){
+                        document.getElementById('a_vpcmdcr_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -849,7 +911,6 @@
             <input type="password" id="p" class="inputL" value=""><br><br>
             <button id="btn1" onclick="l();">Iniciar sesi&oacute;n</button>
         </main>
-        <!--m1,h1,u,p,btn1-->
         <main id="m1" class="main">
             <aside id="asideL1" class="estructuras">
                 
@@ -892,6 +953,23 @@
                             <button onclick="p_pl_i3Off();">X</button>
                             
                         </nav>
+                        <nav id="p_c" class="p">
+                            <button onclick="p_c_e();">enlaces</button>
+                            <button onclick="p_c_eOff();">X</button>
+                            <button onclick="p_c_i1();">bdd</button>
+                            <button onclick="p_c_i1Off();">X</button>
+                            <button onclick="p_c_i2();">kota</button>
+                            <button onclick="p_c_i2Off();">X</button>
+                            <button onclick="p_c_i3();">detmap</button>
+                            <button onclick="p_c_i3Off();">X</button>
+                            
+                        </nav>
+                        <nav id="p_t" class="p">
+                            <button onclick="p_t_e();">enlaces</button>
+                            <button onclick="p_t_eOff();">X</button>
+                            <button onclick="p_t_i1();">bdd</button>
+                            <button onclick="p_t_i1Off();">X</button>
+                        </nav>
                     <nav id="a_" class="p">
                         <button onclick="em();">em</button>
                         <button onclick="pds();">pds</button>
@@ -918,6 +996,12 @@
                             <button onclick="a_pds_eOff();">X</button>
                             <button onclick="a_pds_i1();">i1</button>
                             <button onclick="a_pds_i1Off();">X</button>
+                        </nav>
+                        <nav id="a_vpcmdcr" class="p">
+                            <button onclick="a_vpcmdcr_e();">enlaces</button>
+                            <button onclick="a_vpcmdcr_eOff();">X</button>
+                            <button onclick="a_vpcmdcr_i1();">i1</button>
+                            <button onclick="a_vpcmdcr_i1Off();">X</button>
                         </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
@@ -975,7 +1059,7 @@
                     </div>
                     <div id="calculo" class="p">
                         <h1>C&Aacute;LCULO <button onclick="calculoOff();">X</button></h1>
-                        <nav>
+                        <nav id="p_c_e">
                             <a href="https://1drv.ms/x/c/859092611fbe5986/IQCcE__hQBlUTJpz7wIWVDFBAbtmYtfrG_oC4-AcCMw9Rrs" target="_blank"
                                 >calculo bdd</a>
                             <a href="https://play.google.com/store/apps/details?id=com.microblink.photomath" target="_blank"
@@ -990,22 +1074,31 @@
                                 >bddDETMAP</a>
                         </nav>
                         <div id="p_c_i" class="i">
-                            <!--bdd-->
-                            <iframe src="https://1drv.ms/x/c/859092611fbe5986/IQRNJXIexFHJTa3CJvzv0ndrATeNqHca05MtM9q-wGjU6dI" frameborder="0" scrolling="no"></iframe>
-                            <!--bdd kota-->
-                            <iframe src="https://1drv.ms/x/c/859092611fbe5986/IQSBxxSlm6sVRqpw_8mdA6oxAUGn0En-i8ANga7Gx2NTbxY" frameborder="0" scrolling="no"></iframe>
-                            <!--bdd detmap-->
-                            <iframe  src="https://1drv.ms/x/c/859092611fbe5986/IQTjti4Xwk8dRbinquv-F9rYAbV3Ag_XHbKHrZP7dciGZ0w" frameborder="0" scrolling="no"></iframe>
+                            <iframe id="p_c_i1" src="https://1drv.ms/x/c/859092611fbe5986/IQRNJXIexFHJTa3CJvzv0ndrATeNqHca05MtM9q-wGjU6dI"
+                                frameborder="0" scrolling="yes"></iframe>
+                            <iframe id="p_c_i2" src="https://1drv.ms/x/c/859092611fbe5986/IQSBxxSlm6sVRqpw_8mdA6oxAUGn0En-i8ANga7Gx2NTbxY"
+                                frameborder="0" scrolling="yes"></iframe>
+                            <iframe id="p_c_i3" src="https://1drv.ms/x/c/859092611fbe5986/IQTjti4Xwk8dRbinquv-F9rYAbV3Ag_XHbKHrZP7dciGZ0w"
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
                     <div id="trabajo" class="p">
                         <h1>TRABAJO <button onclick="trabajoOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="p_t_e">
+                            <a href="https://olmue.bcnschool.net/" 
+                                target="_blank">Olmue capacitacion</a>
+                            <a href="https://www.chileatiende.gob.cl/fichas/3310-certificado-de-afiliacion-a-una-afp" 
+                                target="_blank">certificado afp</a>
+                            <a href="https://sence.gob.cl/personas/cursos-en-linea" target="_blank"
+                                target="_blank">Cursos sence</a>
                         </nav>
                         <div id="p_t_i" class="i">
-                            
+                            <iframe id="p_t_i1" src="https://1drv.ms/u/c/859092611fbe5986/IQSBp_mYstuHRppCzJq47OrsAXxPl66rZ9eImijGDEL8Q3M"
+                                frameborder="0" scrolling="yes"></iframe>
+                            <!--<iframe id="p_t_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            -->
                         </div>
                     </div>
                     <div id="salud" class="p">
@@ -1080,10 +1173,12 @@
                     </div>
                     <div id="vpcmdcr" class="p">
                         <h1>VPCMDCR <button onclick="vpcmdcrOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_vpcmdcr_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_vpcmdcr_i" class="i">
+                            <iframe id="a_vpcmdcr_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
@@ -1213,9 +1308,12 @@
                     <button onclick="chat3();">GAM</button>
                 </nav>
             </div>
-            <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
-                <button onclick="lOff();">Cerrar sesi&oacute;n</button>
-                
+            <h1>Hola Kota</h1>
+            <nav>
+                <a href="https://1drv.ms/x/c/859092611fbe5986/IQCBxxSlm6sVRqpw_8mdA6oxAQZOfUzTEFkwc_d8ioWsy_c?e=wW63BO"
+                    target="_blank">bddKOTA</a>
+            </nav>
+            <button onclick="lOff();">Cerrar sesi&oacute;n</button>
         </main>
         <main id="m4" class="main">
             <div class="gam">
