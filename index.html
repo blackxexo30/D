@@ -74,6 +74,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
+                    var noticia1 = "ALERTA: Probabilidad de tornado para Loncoche entre las 14:00 a 20:00 horas hoy domingo.";
                     switch(u){
                         case "domoelecgam":
                             switch(p){
@@ -109,6 +110,8 @@
                                 case "detmap123":
                                     document.getElementById('m0').style.display="none";
                                     document.getElementById('m2').style.display="block";
+                                    document.getElementById('noticiam1').innerHTML=noticia1;
+                                    
                                     break;
                             }
                             break;
@@ -1306,6 +1309,7 @@
         </main>
         <main id="m2" class="main">
             <h1>DETMAP</h1>
+            <p id="noticiam1"></p>
             <div class="gam">
                 <nav>
                     <input type="text" id="chat2" value="" placeholder="escriba aquí!"/>
