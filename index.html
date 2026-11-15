@@ -92,6 +92,9 @@
                                         document.getElementById('p_c_i3').style.display="none";
                                         document.getElementById('p_t_e').style.display="none";
                                         document.getElementById('p_t_i1').style.display="none";
+                                        
+                                            document.getElementById('noticiam1').innerHTML=noticia1;
+                                    
                                     document.getElementById('aprendizaje').style.display="none";
                                         document.getElementById('a_em_e').style.display="none";
                                         document.getElementById('a_em_i1').style.display="none";
@@ -110,7 +113,7 @@
                                 case "detmap123":
                                     document.getElementById('m0').style.display="none";
                                     document.getElementById('m2').style.display="block";
-                                    document.getElementById('noticiam1').innerHTML=noticia1;
+                                    document.getElementById('noticiam2').innerHTML=noticia1;
                                     
                                     break;
                             }
@@ -120,6 +123,8 @@
                                 case "kota":
                                     document.getElementById('m0').style.display="none";
                                     document.getElementById('m3').style.display="block";
+                                    document.getElementById('noticiam3').innerHTML=noticia1;
+                                    
                                     break;
                             }
                             break;
@@ -128,6 +133,8 @@
                                 case "lr333":
                                     document.getElementById('m0').style.display="none";
                                     document.getElementById('m4').style.display="block";
+                                    document.getElementById('noticiam4').innerHTML=noticia1;
+                                    
                                     break;
                             }
                             break;
@@ -1151,6 +1158,7 @@
                     </div>
                     <div id="transmitir" class="p">
                         <h1>TRANSMITIR <button onclick="transmitirOff();">X</button></h1>
+                        <p id="noticiam1"></p>
                         <nav>
                             
                         </nav>
@@ -1309,13 +1317,13 @@
         </main>
         <main id="m2" class="main">
             <h1>DETMAP</h1>
-            <p id="noticiam1"></p>
             <div class="gam">
                 <nav>
                     <input type="text" id="chat2" value="" placeholder="escriba aquí!"/>
                     <button onclick="chat2();">GAM</button>
                 </nav>
             </div>
+            <p id="noticiam2"></p>
             <nav>
                 <a href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" target="_blank"
                 >INFORME DETMAP</a>
@@ -1331,6 +1339,7 @@
                 </nav>
             </div>
             <h1>Hola Kota</h1>
+            <p id="noticiam3"></p>
             <nav>
                 <a href="https://1drv.ms/x/c/859092611fbe5986/IQCBxxSlm6sVRqpw_8mdA6oxAQZOfUzTEFkwc_d8ioWsy_c?e=wW63BO"
                     target="_blank">bddKOTA</a>
@@ -1340,12 +1349,14 @@
             <button onclick="lOff();">Cerrar sesi&oacute;n</button>
         </main>
         <main id="m4" class="main">
+            <h1>Laura</h1>
             <div class="gam">
                 <nav>
                     <input type="text" id="chat4" value="" placeholder="escriba aquí!"/>
                     <button onclick="chat4();">GAM</button>
                 </nav>
             </div>
+            <p id="noticiam4"></p>
             <h1>Hola Laura</h1>
             <p>Esta mas rica usted besitos, este es un 
                 ejemplo nomas yo puedo crear una sesion 
