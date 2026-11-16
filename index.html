@@ -61,7 +61,7 @@
                 </style>
             <head>
                 <style type="text/css" media="all">
-                    #m3{background-color:pink;color:white;text-align:center;}
+                    #m3{background-color:black;color:white;text-align:center;}
                     #m3>h1{background-color:red;color:white;text-align:center;}
                     #m3>nav{background-color:orange;color:white;margin:1%;padding:1%;}
                     #m3>nav>a{background-color:darkred;color:pink;}
@@ -74,7 +74,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
-                    var noticia1 = "16/11/2026 Enfrente el estres de fin de año en hacer nada en el tiempo libre :)";
+                    var noticia1 = "16/11/2026 Postulaciones abiertas para empleo, consulte al chat";
                     //var noticia1 = "";
                     
                     switch(u){
@@ -112,9 +112,15 @@
                                         document.getElementById('a_pds_i1').style.display="none";
                                         document.getElementById('a_vpcmdcr_e').style.display="none";
                                         document.getElementById('a_vpcmdcr_i1').style.display="none";
+                                        document.getElementById('a_os10_e').style.display="none";
+                                        document.getElementById('a_os10_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
+                                    document.getElementById('tienda').style.display="none";
+                                        document.getElementById('a_donar_e').style.display="none";
+                                        document.getElementById('a_donar_i1').style.display="none";
+                                        
                                     break;
                             }
                             break;
@@ -880,12 +886,26 @@
                     function os10(){
                         document.getElementById('os10').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_os10').style.display="block";
                         
                     }
                     function os10Off(){
                         document.getElementById('os10').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_os10').style.display="none";
                         
+                    }
+                    function a_os10_e(){
+                        document.getElementById('a_os10_e').style.display="block";
+                    }
+                    function a_os10_eOff(){
+                        document.getElementById('a_os10_e').style.display="none";
+                    }
+                    function a_os10_i1(){
+                        document.getElementById('a_os10_i1').style.display="block";
+                    }
+                    function a_os10_i1Off(){
+                        document.getElementById('a_os10_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -1002,6 +1022,50 @@
                         document.getElementById('s').style.display="none";
                         document.getElementById('a_').style.display="block";
                         
+                    }
+                </script>
+            </head>
+            <head>
+                <script>
+                    function tienda(){
+                        document.getElementById('tienda').style.display="block";
+                        document.getElementById('nav_domoelecgam').style.display="none";
+                        document.getElementById('t_').style.display="block";
+                    }
+                    function tiendaOff(){
+                        document.getElementById('tienda').style.display="none";
+                        document.getElementById('nav_domoelecgam').style.display="block";
+                        document.getElementById('t_').style.display="none";
+                        
+                        // Ocultar también los submódulos de tiemda para evitar que queden activos
+                        document.getElementById('donar').style.display="none";
+                        
+                    }
+                </script>
+                <script>
+                    function donar(){
+                        document.getElementById('donar').style.display="block";
+                        document.getElementById('t_').style.display="none";
+                        document.getElementById('a_donar').style.display="block";
+                        
+                    }
+                    function donarOff(){
+                        document.getElementById('donar').style.display="none";
+                        document.getElementById('t_').style.display="block";
+                        document.getElementById('a_donar').style.display="none";
+                        
+                    }
+                    function a_donar_e(){
+                        document.getElementById('a_donar_e').style.display="block";
+                    }
+                    function a_donar_eOff(){
+                        document.getElementById('a_donar_e').style.display="none";
+                    }
+                    function a_donar_i1(){
+                        document.getElementById('a_donar_i1').style.display="block";
+                    }
+                    function a_donar_i1Off(){
+                        document.getElementById('a_donar_i1').style.display="none";
                     }
                 </script>
             </head>
@@ -1138,6 +1202,12 @@
                             <button onclick="a_vpcmdcr_i1();">i1</button>
                             <button onclick="a_vpcmdcr_i1Off();">X</button>
                         </nav>
+                        <nav id="a_os10" class="p">
+                            <button onclick="a_os10_e();">enlaces</button>
+                            <button onclick="a_os10_eOff();">X</button>
+                            <button onclick="a_os10_i1();">i1</button>
+                            <button onclick="a_os10_i1Off();">X</button>
+                        </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
                             <button onclick="a_idjdlsdlud_eOff();">X</button>
@@ -1146,6 +1216,17 @@
                             <button onclick="a_idjdlsdlud_i2();">biblioteca sud</button>
                             <button onclick="a_idjdlsdlud_i2Off();">X</button>
                         </nav>
+                    <nav id="t_" class="p">
+                        <button onclick="donar();">donar</button>
+                        
+                    </nav>
+                        <nav id="a_donar" class="p">
+                            <button onclick="a_donar_e();">enlaces</button>
+                            <button onclick="a_donar_eOff();">X</button>
+                            <button onclick="a_donar_i1();">PN</button>
+                            <button onclick="a_donar_i1Off();">X</button>
+                        </nav>
+                        
                 </div>
             </header>
             <aside id="asideR1" class="estructuras">
@@ -1345,10 +1426,12 @@
                     </div>
                     <div id="os10" class="p">
                         <h1>OS10 <button onclick="os10Off();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_os10_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_os10_i" class="i">
+                            <iframe id="a_os10_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
@@ -1395,13 +1478,19 @@
                             <a id="idjdlsdlud_nav_enlace_btn2" href="https://1drv.ms/w/c/859092611fbe5986/IQAkk38ynKBlSo2AVFpIIZSiAVs8zJfdSAOB4VjqL6Ux440" target="_blank">cuaderno IDJDLSDUD</a>
                             <a id="idjdlsdlud_nav_enlace_btn3" href="https://www.churchofjesuschrist.org/study?lang=spa" target="_blank">Biblioteca web</a>
                             <a id="idjdlsdlud_nav_enlace_btn4" href="https://play.google.com/store/apps/details?id=org.lds.ldssa" target="_blank">Biblioteca app</a>
-                            
+                            <a href="https://www.churchofjesuschrist.org/study/general-conference/2026/10/53villanueva?lang=spa&id=p_uTAhP%2Cp_hz2zt%2Cp_fzcPh%2Cp_hqrB0%2Cp_csiNC%2Cp_mprqN%2Cp_jN56J#p_uTAhP" 
+                                target="_blank">Probadme ahora en cristo</a>
+                            <a>alma 13:3</a>
+                            <a>DyC 122:7</a>
                         </nav>
                         <div id="a_idjdlsdlud_i" class="i">
                             <iframe id="a_idjdlsdlud_i1" src="https://1drv.ms/w/c/859092611fbe5986/IQQkk38ynKBlSo2AVFpIIZSiAcpNKG_ttuXdOpEhjGj0TxY" 
                                 frameborder="0" scrolling="yes"></iframe>
                             <iframe id="a_idjdlsdlud_i2" src="https://www.churchofjesuschrist.org/study?lang=spa"
                                 scrolling="yes">{}</iframe>
+                        </div>
+                        <div>
+                            
                         </div>
                     </div>
                     <div id="iem" class="p">
@@ -1432,6 +1521,21 @@
                         </div>
                     </div>
                 </div>
+                <div id="tienda"class="domoelecgam">
+                    <h1>TIENDA<button onclick="tiendaOff();">X</button></h1>
+                    <div id="donar" class="p">
+                        <h1>donar <button onclick="donarOff();">X</button></h1>
+                        <nav id="a_donar_e">
+                            <a>#####</a>
+                        </nav>
+                        <div id="a_donar_i" class="i">
+                            <iframe id="a_donar_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--tienda/donar-->
             </article>
             <aside id="asideR2" class="estructuras">
                 
@@ -1457,8 +1561,10 @@
             </div>
             <p id="noticiam2"></p>
             <nav>
+                <a href="https://1drv.ms/f/c/859092611fbe5986/IgCKd7Y7RNXwTovyNFYJxxjwAWhqeUkjSzSd013D2MC2EvE" 
+                    target="_blank">Subir</a>
                 <a href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" target="_blank"
-                >INFORME DETMAP</a>
+                >Informe</a>
             </nav>
                 <button onclick="lOff();">Cerrar sesi&oacute;n</button>
                 
@@ -1470,11 +1576,13 @@
                     <button onclick="chat3();">GAM</button>
                 </nav>
             </div>
-            <h1>Hola Kota</h1>
+            <h1>Kota</h1>
             <p id="noticiam3"></p>
             <nav>
                 <a href="https://1drv.ms/x/c/859092611fbe5986/IQCBxxSlm6sVRqpw_8mdA6oxAQZOfUzTEFkwc_d8ioWsy_c?e=wW63BO"
                     target="_blank">bddKOTA</a>
+                <a href="https://1drv.ms/f/c/859092611fbe5986/IgBXsH-7GNG0RpH8M4fG95h5AXZtMa7tJgmqLlu4Cae8aNM" 
+                    target="_blank">Subir</a>
             </nav>
             <img src="https://gifdb.com/images/high/flashing-close-up-venom-face-zc8jfc7oau2hpk0r.gif" 
             width="100%"height="50%"/>
@@ -1490,32 +1598,8 @@
             </div>
             <p id="noticiam4"></p>
             <h1>Hola Laura</h1>
-            <p>Esta mas rica usted besitos, este es un 
-                ejemplo nomas yo puedo crear una sesion 
-                bkn para usted aquijejejej cuidate bella 💘
-            </p>
-            <ol>te puedo ayudar a:
-                <li>Estudiar</li>
-                <li>Hacer trampas en las pruebas</li>
-                <li>Entretenimiento</li>
-                <li>Trabajar</li>
-                <li>Etc...</li>
-            </ol>
-            <ul>tambien:
-                <li>calculos matematicos</li>
-                <li>simulaciones</li>
-                <li>y lo que se te ocurra me lo dices y lo hago </li>
-                <li>me pagas con carne jajajaj</li>
-            </ul>
-            <p>Est7dia 4to medio yo te puedo ayudar 
-                a estudiar para que pases ojala con buena nota 
-                , esta app te ayudara jejejej
-            </p>
-            <p>Cuando tenga mas tiempo te voy mejorando 
-             ésta sesión con lo que te guste bbsita 
-            </p>
-                <button onclick="lOff();">Cerrar sesi&oacute;n</button>
-                
+            
+            <button onclick="lOff();">Cerrar sesi&oacute;n</button>
         </main>
         <main id="m5" class="main">
             <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
