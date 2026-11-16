@@ -74,7 +74,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
-                    var noticia1 = "ACTUALIZACIÓN DE CONDICIONES Y RIESGO EN LONCOCHE​ (14:00 - 20:00 hrs) Precaución: Monitoreo activo ante posibles formaciones tornádicas o de embudo.";
+                    var noticia1 = "16/11/2026 Enfrente el estres de fin de año en hacer nada en el tiempo libre :)";
                     //var noticia1 = "";
                     
                     switch(u){
@@ -94,9 +94,17 @@
                                         document.getElementById('p_c_i3').style.display="none";
                                         document.getElementById('p_t_e').style.display="none";
                                         document.getElementById('p_t_i1').style.display="none";
-                                        
+                                        document.getElementById('p_s_e').style.display="none";
+                                        document.getElementById('p_s_i1').style.display="none";
+                                        document.getElementById('p_j_e').style.display="none";
+                                        document.getElementById('p_j_i1').style.display="none";
+                                        document.getElementById('p_ap_e').style.display="none";
+                                        document.getElementById('p_ap_i1').style.display="none";
+                                        document.getElementById('p_tr_e').style.display="none";
+                                        document.getElementById('p_tr_i1').style.display="none";
                                             document.getElementById('noticiam1').innerHTML=noticia1;
-                                    
+                                        document.getElementById('p_co_e').style.display="none";
+                                        document.getElementById('p_co_i1').style.display="none";
                                     document.getElementById('aprendizaje').style.display="none";
                                         document.getElementById('a_em_e').style.display="none";
                                         document.getElementById('a_em_i1').style.display="none";
@@ -643,60 +651,130 @@
                     function salud(){
                         document.getElementById('salud').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_s').style.display="block";
                         
                     }
                     function saludOff(){
                         document.getElementById('salud').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_s').style.display="none";
                         
+                    }
+                    function p_s_e(){
+                        document.getElementById('p_s_e').style.display="block";
+                    }
+                    function p_s_eOff(){
+                        document.getElementById('p_s_e').style.display="none";
+                    }
+                    function p_s_i1(){
+                        document.getElementById('p_s_i1').style.display="block";
+                    }
+                    function p_s_i1Off(){
+                        document.getElementById('p_s_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function juego(){
                         document.getElementById('juego').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_j').style.display="block";
                         
                     }
                     function juegoOff(){
                         document.getElementById('juego').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_j').style.display="none";
                         
+                    }
+                    function p_j_e(){
+                        document.getElementById('p_j_e').style.display="block";
+                    }
+                    function p_j_eOff(){
+                        document.getElementById('p_j_e').style.display="none";
+                    }
+                    function p_j_i1(){
+                        document.getElementById('p_j_i1').style.display="block";
+                    }
+                    function p_j_i1Off(){
+                        document.getElementById('p_j_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function app(){
                         document.getElementById('app').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_ap').style.display="block";
                         
                     }
                     function appOff(){
                         document.getElementById('app').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_ap').style.display="none";
                         
+                    }
+                    function p_ap_e(){
+                        document.getElementById('p_ap_e').style.display="block";
+                    }
+                    function p_ap_eOff(){
+                        document.getElementById('p_ap_e').style.display="none";
+                    }
+                    function p_ap_i1(){
+                        document.getElementById('p_ap_i1').style.display="block";
+                    }
+                    function p_ap_i1Off(){
+                        document.getElementById('p_ap_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function transmitir(){
                         document.getElementById('transmitir').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_tr').style.display="block";
                         
                     }
                     function transmitirOff(){
                         document.getElementById('transmitir').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_tr').style.display="none";
                         
+                    }
+                    function p_tr_e(){
+                        document.getElementById('p_tr_e').style.display="block";
+                    }
+                    function p_tr_eOff(){
+                        document.getElementById('p_tr_e').style.display="none";
+                    }
+                    function p_tr_i1(){
+                        document.getElementById('p_tr_i1').style.display="block";
+                    }
+                    function p_tr_i1Off(){
+                        document.getElementById('p_tr_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function contacto(){
                         document.getElementById('contacto').style.display="block";
                         document.getElementById('p_').style.display="none";
+                        document.getElementById('p_co').style.display="block";
                         
                     }
                     function contactoOff(){
                         document.getElementById('contacto').style.display="none";
                         document.getElementById('p_').style.display="block";
+                        document.getElementById('p_co').style.display="none";
                         
+                    }
+                    function p_co_e(){
+                        document.getElementById('p_co_e').style.display="block";
+                    }
+                    function p_co_eOff(){
+                        document.getElementById('p_co_e').style.display="none";
+                    }
+                    function p_co_i1(){
+                        document.getElementById('p_co_i1').style.display="block";
+                    }
+                    function p_co_i1Off(){
+                        document.getElementById('p_co_i1').style.display="none";
                     }
                 </script>
             </head>
@@ -997,6 +1075,36 @@
                             <button onclick="p_t_i1();">bdd</button>
                             <button onclick="p_t_i1Off();">X</button>
                         </nav>
+                        <nav id="p_s" class="p">
+                            <button onclick="p_s_e();">enlaces</button>
+                            <button onclick="p_s_eOff();">X</button>
+                            <button onclick="p_s_i1();">bdd</button>
+                            <button onclick="p_s_i1Off();">X</button>
+                        </nav>
+                        <nav id="p_j" class="p">
+                            <button onclick="p_j_e();">enlaces</button>
+                            <button onclick="p_j_eOff();">X</button>
+                            <button onclick="p_j_i1();">bdd</button>
+                            <button onclick="p_j_i1Off();">X</button>
+                        </nav>
+                        <nav id="p_ap" class="p">
+                            <button onclick="p_ap_e();">enlaces</button>
+                            <button onclick="p_ap_eOff();">X</button>
+                            <button onclick="p_ap_i1();">bdd</button>
+                            <button onclick="p_ap_i1Off();">X</button>
+                        </nav>
+                        <nav id="p_tr" class="p">
+                            <button onclick="p_tr_e();">enlaces</button>
+                            <button onclick="p_tr_eOff();">X</button>
+                            <button onclick="p_tr_i1();">bdd</button>
+                            <button onclick="p_tr_i1Off();">X</button>
+                        </nav>
+                        <nav id="p_co" class="p">
+                            <button onclick="p_co_e();">enlaces</button>
+                            <button onclick="p_co_eOff();">X</button>
+                            <button onclick="p_co_i1();">bdd</button>
+                            <button onclick="p_co_i1Off();">X</button>
+                        </nav>
                     <nav id="a_" class="p">
                         <button onclick="em();">em</button>
                         <button onclick="pds();">pds</button>
@@ -1123,7 +1231,7 @@
                             <a href="https://www.bne.cl/home" 
                                 target="_blank">BNE</a>
                         </nav>
-                        <div id="p_t_i" class="i">1
+                        <div id="p_t_i" class="i">
                             <iframe id="p_t_i1" src=""
                                 frameborder="0" scrolling="yes"></iframe>
                             <!--<iframe id="p_t_i1" src=""
@@ -1133,48 +1241,70 @@
                     </div>
                     <div id="salud" class="p">
                         <h1>SALUD <button onclick="saludOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="p_s_e">
+                            <a>####</a>
                         </nav>
                         <div id="p_s_i" class="i">
-                            
+                            <iframe id="p_s_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            <!--<iframe id="p_s_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            -->
                         </div>
+                        
                     </div>
                     <div id="juego" class="p">
                         <h1>JUEGO <button onclick="juegoOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="p_j_e">
+                            <a>####</a>
                         </nav>
                         <div id="p_j_i" class="i">
-                            
+                            <iframe id="p_j_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            <!--<iframe id="p_j_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            -->
                         </div>
+                        
                     </div>
                     <div id="app" class="p">
                         <h1>APP <button onclick="appOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="p_ap_e">
+                            <a>####</a>
                         </nav>
                         <div id="p_ap_i" class="i">
-                            
+                            <iframe id="p_ap_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            <!--<iframe id="p_ap_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            -->
                         </div>
                     </div>
                     <div id="transmitir" class="p">
                         <h1>TRANSMITIR <button onclick="transmitirOff();">X</button></h1>
-                        <p id="noticiam1"></p>
-                        <nav>
-                            
+                        <nav id="p_tr_e">
+                            <a>####</a>
                         </nav>
                         <div id="p_tr_i" class="i">
-                            
+                            <iframe id="p_tr_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            <!--<iframe id="p_tr_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            -->
                         </div>
+                        <p id="noticiam1"></p>
                     </div>
                     <div id="contacto" class="p">
                         <h1>CONTACTO <button onclick="contactoOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="p_co_e">
+                            <a>####</a>
                         </nav>
                         <div id="p_co_i" class="i">
-                            
+                            <iframe id="p_co_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            <!--<iframe id="p_co_i1" src=""
+                                frameborder="0" scrolling="yes"></iframe>
+                            -->
                         </div>
                     </div>
                 </div>
