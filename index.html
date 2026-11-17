@@ -45,6 +45,8 @@
                     #domoelecgam{display:flex;}
                     #domoelecgam>nav>button{background-color:blue;color:aqua;}
                     #domoelecgam>nav>button:hover{background-color:darkblue;color:yellow;}
+                    #domoelecgam>nav>nav>button{background-color:blue;color:aqua;}
+                    #domoelecgam>nav>nav>button:hover{background-color:darkblue;color:yellow;}
                 </style>
                 <style type="text/css" media="all">
                     .p{display:none;}
@@ -74,7 +76,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
-                    var noticia1 = "16/11/2026 Postulaciones abiertas para empleo, consulte al chat";
+                    var noticia1 = "21:19 | Se viene una actualización importante se trabaja en ello!";
                     //var noticia1 = "";
                     
                     switch(u){
@@ -1111,6 +1113,7 @@
                         <button onclick="contacto();">contacto</button>
                         
                     </nav>
+                    <nav>
                         <nav id="p_pl" class="p">
                             <button onclick="p_pl_e();">enlaces</button>
                             <button onclick="p_pl_eOff();">X</button>
@@ -1169,21 +1172,23 @@
                             <button onclick="p_co_i1();">bdd</button>
                             <button onclick="p_co_i1Off();">X</button>
                         </nav>
+                    </nav>
                     <nav id="a_" class="p">
                         <button onclick="em();">em</button>
                         <button onclick="pds();">pds</button>
-                        <button onclick="vpcmdcr();">vpcmdcr</button>
+                        <button onclick="vpcmdcr();">vp</button>
                         <button onclick="os10();">os10</button>
                         <button onclick="ade();">ade</button>
                         <button onclick="ayci();">ayci</button>
                         <button onclick="ccdbl();">ccdbl</button>
                         <button onclick="iedmdi();">iedmdi</button>
-                        <button onclick="idjdlsdlud();">idjdlsdlud</button>
+                        <button onclick="idjdlsdlud();">sud</button>
                         <button onclick="iem();">iem</button>
                         <button onclick="fo();">fo</button>
                         <button onclick="s();">s</button>
                         
                     </nav>
+                    <nav>
                         <nav id="a_em" class="p">
                             <button onclick="a_em_e();">enlaces</button>
                             <button onclick="a_em_eOff();">X</button>
@@ -1216,10 +1221,12 @@
                             <button onclick="a_idjdlsdlud_i2();">biblioteca sud</button>
                             <button onclick="a_idjdlsdlud_i2Off();">X</button>
                         </nav>
+                    </nav>
                     <nav id="t_" class="p">
                         <button onclick="donar();">donar</button>
                         
                     </nav>
+                    <nav>
                         <nav id="a_donar" class="p">
                             <button onclick="a_donar_e();">enlaces</button>
                             <button onclick="a_donar_eOff();">X</button>
@@ -1227,6 +1234,7 @@
                             <button onclick="a_donar_i1Off();">X</button>
                         </nav>
                         
+                    </nav>
                 </div>
             </header>
             <aside id="asideR1" class="estructuras">
@@ -1597,7 +1605,6 @@
                 </nav>
             </div>
             <p id="noticiam4"></p>
-            <h1>Hola Laura</h1>
             
             <button onclick="lOff();">Cerrar sesi&oacute;n</button>
         </main>
