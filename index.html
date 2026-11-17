@@ -76,7 +76,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
-                    var noticia1 = "12:57 | Se espera tormenta eléctrica y probabilidad de tornado y nubes de embudo hoy en la comuna desde las 12 a 19 hrs.";
+                    var noticia1 = "4:50 | entre las 18 y 20 hrs se espera un fuerte pukso de tormenta en la comuna";
                     //var noticia1 = "";
                     
                     switch(u){
@@ -118,6 +118,10 @@
                                         document.getElementById('a_os10_i1').style.display="none";
                                         document.getElementById('a_ade_e').style.display="none";
                                         document.getElementById('a_ade_i1').style.display="none";
+                                        document.getElementById('a_ayci_e').style.display="none";
+                                        document.getElementById('a_ayci_i1').style.display="none";
+                                        document.getElementById('a_ccdbl_e').style.display="none";
+                                        document.getElementById('a_ccdbl_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
@@ -942,24 +946,52 @@
                     function ayci(){
                         document.getElementById('ayci').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_ayci').style.display="block";
                         
                     }
                     function ayciOff(){
                         document.getElementById('ayci').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_ayci').style.display="none";
                         
+                    }
+                    function a_ayci_e(){
+                        document.getElementById('a_ayci_e').style.display="block";
+                    }
+                    function a_ayci_eOff(){
+                        document.getElementById('a_ayci_e').style.display="none";
+                    }
+                    function a_ayci_i1(){
+                        document.getElementById('a_ayci_i1').style.display="block";
+                    }
+                    function a_ayci_i1Off(){
+                        document.getElementById('a_ayci_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function ccdbl(){
                         document.getElementById('ccdbl').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_ccdbl').style.display="block";
                         
                     }
                     function ccdblOff(){
                         document.getElementById('ccdbl').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_ccdbl').style.display="none";
                         
+                    }
+                    function a_ccdbl_e(){
+                        document.getElementById('a_ccdbl_e').style.display="block";
+                    }
+                    function a_ccdbl_eOff(){
+                        document.getElementById('a_ccdbl_e').style.display="none";
+                    }
+                    function a_ccdbl_i1(){
+                        document.getElementById('a_ccdbl_i1').style.display="block";
+                    }
+                    function a_ccdbl_i1Off(){
+                        document.getElementById('a_ccdbl_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -1235,6 +1267,18 @@
                             <button onclick="a_ade_i1();">i1</button>
                             <button onclick="a_ade_i1Off();">X</button>
                         </nav>
+                        <nav id="a_ayci" class="p">
+                            <button onclick="a_ayci_e();">enlaces</button>
+                            <button onclick="a_ayci_eOff();">X</button>
+                            <button onclick="a_ayci_i1();">i1</button>
+                            <button onclick="a_ayci_i1Off();">X</button>
+                        </nav>
+                        <nav id="a_ccdbl" class="p">
+                            <button onclick="a_ccdbl_e();">enlaces</button>
+                            <button onclick="a_ccdbl_eOff();">X</button>
+                            <button onclick="a_ccdbl_i1();">i1</button>
+                            <button onclick="a_ccdbl_i1Off();">X</button>
+                        </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
                             <button onclick="a_idjdlsdlud_eOff();">X</button>
@@ -1476,19 +1520,23 @@
                     </div>
                     <div id="ayci" class="p">
                         <h1>AYCI <button onclick="ayciOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_ayci_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_ayci_i" class="i">
+                            <iframe id="a_ayci_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
                     <div id="ccdbl" class="p">
                         <h1>CCDBL <button onclick="ccdblOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_ccdbl_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_ccdbl_i" class="i">
+                            <iframe id="a_ccdbl_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
