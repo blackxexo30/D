@@ -122,6 +122,8 @@
                                         document.getElementById('a_ayci_i1').style.display="none";
                                         document.getElementById('a_ccdbl_e').style.display="none";
                                         document.getElementById('a_ccdbl_i1').style.display="none";
+                                        document.getElementById('a_iedmdi_e').style.display="none";
+                                        document.getElementById('a_iedmdi_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
@@ -998,12 +1000,26 @@
                     function iedmdi(){
                         document.getElementById('iedmdi').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_iedmdi').style.display="block";
                         
                     }
                     function iedmdiOff(){
                         document.getElementById('iedmdi').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_iedmdi').style.display="none";
                         
+                    }
+                    function a_iedmdi_e(){
+                        document.getElementById('a_iedmdi_e').style.display="block";
+                    }
+                    function a_iedmdi_eOff(){
+                        document.getElementById('a_iedmdi_e').style.display="none";
+                    }
+                    function a_iedmdi_i1(){
+                        document.getElementById('a_iedmdi_i1').style.display="block";
+                    }
+                    function a_iedmdi_i1Off(){
+                        document.getElementById('a_iedmdi_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -1279,6 +1295,12 @@
                             <button onclick="a_ccdbl_i1();">i1</button>
                             <button onclick="a_ccdbl_i1Off();">X</button>
                         </nav>
+                        <nav id="a_iedmdi" class="p">
+                            <button onclick="a_iedmdi_e();">enlaces</button>
+                            <button onclick="a_iedmdi_eOff();">X</button>
+                            <button onclick="a_iedmdi_i1();">i1</button>
+                            <button onclick="a_iedmdi_i1Off();">X</button>
+                        </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
                             <button onclick="a_idjdlsdlud_eOff();">X</button>
@@ -1542,10 +1564,12 @@
                     </div>
                     <div id="iedmdi" class="p">
                         <h1>IEDMDI <button onclick="iedmdiOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_iedmdi_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_iedmdi_i" class="i">
+                            <iframe id="a_iedmdi_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
