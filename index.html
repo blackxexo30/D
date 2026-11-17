@@ -76,7 +76,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
-                    var noticia1 = "Se espera tormenta eléctrica hoy en la comuna a las 3pm aprox.";
+                    var noticia1 = "12:57 | Se espera tormenta eléctrica y probabilidad de tornado y nubes de embudo hoy en la comuna desde las 12 a 19 hrs.";
                     //var noticia1 = "";
                     
                     switch(u){
@@ -116,6 +116,8 @@
                                         document.getElementById('a_vpcmdcr_i1').style.display="none";
                                         document.getElementById('a_os10_e').style.display="none";
                                         document.getElementById('a_os10_i1').style.display="none";
+                                        document.getElementById('a_ade_e').style.display="none";
+                                        document.getElementById('a_ade_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
@@ -914,12 +916,26 @@
                     function ade(){
                         document.getElementById('ade').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_ade').style.display="block";
                         
                     }
                     function adeOff(){
                         document.getElementById('ade').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_ade').style.display="none";
                         
+                    }
+                    function a_ade_e(){
+                        document.getElementById('a_ade_e').style.display="block";
+                    }
+                    function a_ade_eOff(){
+                        document.getElementById('a_ade_e').style.display="none";
+                    }
+                    function a_ade_i1(){
+                        document.getElementById('a_ade_i1').style.display="block";
+                    }
+                    function a_ade_i1Off(){
+                        document.getElementById('a_ade_i1').style.display="none";
                     }
                 </script>
                 <script>
@@ -1213,6 +1229,12 @@
                             <button onclick="a_os10_i1();">i1</button>
                             <button onclick="a_os10_i1Off();">X</button>
                         </nav>
+                        <nav id="a_ade" class="p">
+                            <button onclick="a_ade_e();">enlaces</button>
+                            <button onclick="a_ade_eOff();">X</button>
+                            <button onclick="a_ade_i1();">i1</button>
+                            <button onclick="a_ade_i1Off();">X</button>
+                        </nav>
                         <nav id="a_idjdlsdlud" class="p">
                             <button onclick="a_idjdlsdlud_e();">enlaces</button>
                             <button onclick="a_idjdlsdlud_eOff();">X</button>
@@ -1257,8 +1279,6 @@
                             >MS Team app</a>
                             <a href="https://www.microsoft.com/es-cl/microsoft-teams/log-in" target="_blank"
                             >MS Team Web</a>
-                            <a href="https://1drv.ms/w/c/859092611fbe5986/IQCEz_U2My6rRZjwpVeWKABEAQlpwzm-ERwG1CcBSNGLUMc?e=SKvKhc" target="_blank"
-                            >Actualizar Noticias</a>
                             <a href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" target="_blank"
                             >Informe Detmap</a>
                             <a href="https://1drv.ms/w/c/859092611fbe5986/IQD4stnsQziqRZ2WXRYrV2e4ATqbRKdq_5UowFouIcRC9PM?e=vppLx2" target="_blank"
@@ -1445,10 +1465,12 @@
                     </div>
                     <div id="ade" class="p">
                         <h1>ADE <button onclick="adeOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_ade_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_ade_i" class="i">
+                            <iframe id="a_ade_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
