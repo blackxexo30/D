@@ -61,15 +61,23 @@
                     #m2>nav{background-color:orange;color:white;margin:1%;padding:1%;}
                     #m2>nav>a{background-color:darkred;color:pink;}
                 </style>
-            <head>
-                <style type="text/css" media="all">
-                    #m3{background-color:black;color:white;text-align:center;}
-                    #m3>h1{background-color:red;color:white;text-align:center;}
-                    #m3>nav{background-color:orange;color:white;margin:1%;padding:1%;}
-                    #m3>nav>a{background-color:darkred;color:pink;}
-                </style>
+                <head>
+                    <style type="text/css" media="all">
+                        #m3{background-color:black;color:white;text-align:center;}
+                        #m3>h1{background-color:red;color:white;text-align:center;}
+                        #m3>nav{background-color:orange;color:white;margin:1%;padding:1%;}
+                        #m3>nav>a{background-color:darkred;color:pink;}
+                    </style>
+                </head>
+                <head>
+                    <style type="text/css" media="all">
+                        #m4{background-color:pink;color:white;text-align:center;}
+                        #m4>h1{background-color:red;color:white;text-align:center;}
+                        #m4>nav{background-color:orange;color:white;margin:1%;padding:1%;}
+                        #m4>nav>a{background-color:darkred;color:pink;}
+                    </style>
+                </head>
             </head>
-        </head>
         </head>
         <head>
             <script>
@@ -127,6 +135,12 @@
                                         document.getElementById('a_idjdlsdlud_e').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i1').style.display="none";
                                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
+                                        document.getElementById('a_iem_e').style.display="none";
+                                        document.getElementById('a_iem_i1').style.display="none";
+                                        document.getElementById('a_fo_e').style.display="none";
+                                        document.getElementById('a_fo_i1').style.display="none";
+                                        document.getElementById('a_s_e').style.display="none";
+                                        document.getElementById('a_s_i1').style.display="none";
                                     document.getElementById('tienda').style.display="none";
                                         document.getElementById('a_donar_e').style.display="none";
                                         document.getElementById('a_donar_i1').style.display="none";
@@ -1058,36 +1072,78 @@
                     function iem(){
                         document.getElementById('iem').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_iem').style.display="block";
                         
                     }
                     function iemOff(){
                         document.getElementById('iem').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_iem').style.display="none";
                         
+                    }
+                    function a_iem_e(){
+                        document.getElementById('a_iem_e').style.display="block";
+                    }
+                    function a_iem_eOff(){
+                        document.getElementById('a_iem_e').style.display="none";
+                    }
+                    function a_iem_i1(){
+                        document.getElementById('a_iem_i1').style.display="block";
+                    }
+                    function a_iem_i1Off(){
+                        document.getElementById('a_iem_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function fo(){
                         document.getElementById('fo').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_fo').style.display="block";
                         
                     }
                     function foOff(){
                         document.getElementById('fo').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_fo').style.display="none";
                         
+                    }
+                    function a_fo_e(){
+                        document.getElementById('a_fo_e').style.display="block";
+                    }
+                    function a_fo_eOff(){
+                        document.getElementById('a_fo_e').style.display="none";
+                    }
+                    function a_fo_i1(){
+                        document.getElementById('a_fo_i1').style.display="block";
+                    }
+                    function a_fo_i1Off(){
+                        document.getElementById('a_fo_i1').style.display="none";
                     }
                 </script>
                 <script>
                     function s(){
                         document.getElementById('s').style.display="block";
                         document.getElementById('a_').style.display="none";
+                        document.getElementById('a_s').style.display="block";
                         
                     }
                     function sOff(){
                         document.getElementById('s').style.display="none";
                         document.getElementById('a_').style.display="block";
+                        document.getElementById('a_s').style.display="none";
                         
+                    }
+                    function a_s_e(){
+                        document.getElementById('a_s_e').style.display="block";
+                    }
+                    function a_s_eOff(){
+                        document.getElementById('a_s_e').style.display="none";
+                    }
+                    function a_s_i1(){
+                        document.getElementById('a_s_i1').style.display="block";
+                    }
+                    function a_s_i1Off(){
+                        document.getElementById('a_s_i1').style.display="none";
                     }
                 </script>
             </head>
@@ -1309,6 +1365,24 @@
                             <button onclick="a_idjdlsdlud_i2();">biblioteca sud</button>
                             <button onclick="a_idjdlsdlud_i2Off();">X</button>
                         </nav>
+                        <nav id="a_iem" class="p">
+                            <button onclick="a_iem_e();">enlaces</button>
+                            <button onclick="a_iem_eOff();">X</button>
+                            <button onclick="a_iem_i1();">i1</button>
+                            <button onclick="a_iem_i1Off();">X</button>
+                        </nav>
+                        <nav id="a_fo" class="p">
+                            <button onclick="a_fo_e();">enlaces</button>
+                            <button onclick="a_fo_eOff();">X</button>
+                            <button onclick="a_fo_i1();">i1</button>
+                            <button onclick="a_fo_i1Off();">X</button>
+                        </nav>
+                        <nav id="a_s" class="p">
+                            <button onclick="a_s_e();">enlaces</button>
+                            <button onclick="a_s_eOff();">X</button>
+                            <button onclick="a_s_i1();">i1</button>
+                            <button onclick="a_s_i1Off();">X</button>
+                        </nav>
                     </nav>
                     <nav id="t_" class="p">
                         <button onclick="donar();">donar</button>
@@ -1417,7 +1491,12 @@
                     <div id="salud" class="p">
                         <h1>SALUD <button onclick="saludOff();">X</button></h1>
                         <nav id="p_s_e">
-                            <a>####</a>
+                            <a href="https://telesalud.gob.cl/" target="_blank"
+                            >Tele Salud (solicitar hora m&eacute;dica)</a>
+                            <a href="https://www.chileatiende.gob.cl/fichas/15574-busca-tu-farmacia" target="_blank"
+                            >💊 Farmacias de Turno - chile atiende</a>
+                            <a href="https://www.araucaniasur.cl/hospital-de-loncoche/" target="_blank"
+                            >Araucania sur - Hospital Loncoche</a>
                         </nav>
                         <div id="p_s_i" class="i">
                             <iframe id="p_s_i1" src=""
@@ -1431,7 +1510,11 @@
                     <div id="juego" class="p">
                         <h1>JUEGO <button onclick="juegoOff();">X</button></h1>
                         <nav id="p_j_e">
-                            <a>####</a>
+                            <a href="https://blackxexo30.wixsite.com/dslspctrabat" target="_blank"
+                            >realidadVirtual craft</a>
+                            <a id="juego_nav_enlace_btn2" href="https://blackxexo30.wixsite.com/website-5" target="_blank"
+                            >realidadVirtual .gt .av</a>
+                                
                         </nav>
                         <div id="p_j_i" class="i">
                             <iframe id="p_j_i1" src=""
@@ -1506,6 +1589,21 @@
                                 frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
+                        <!--
+                            js
+                                fetch() funcion js para protocolo http
+                                let d0 = setTimeout(function() {
+                                    let article1 = document.getElementById('article1');
+                                    article1.style.display          =   "none";
+                                    article1.style.left = "1%";
+                                    article1.style.top = "1%";
+                                    article1.style.width = "5%";
+                                    article1.style.height = "1%";
+                                }, 10);
+                            css
+                                <link rel="stylesheet" href="">
+                        
+                        -->
                     </div>
                     <div id="vpcmdcr" class="p">
                         <h1>VPCMDCR <button onclick="vpcmdcrOff();">X</button></h1>
@@ -1597,28 +1695,34 @@
                     </div>
                     <div id="iem" class="p">
                         <h1>IEM <button onclick="iemOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_iem_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_iem_i" class="i">
+                            <iframe id="a_iem_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
                     <div id="fo" class="p">
                         <h1>FO <button onclick="foOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_fo_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_fo_i" class="i">
+                            <iframe id="a_fo_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
                     <div id="s" class="p">
                         <h1>S <button onclick="sOff();">X</button></h1>
-                        <nav>
-                            
+                        <nav id="a_s_e">
+                            <a>#####</a>
                         </nav>
                         <div id="a_s_i" class="i">
+                            <iframe id="a_s_i1" src="" 
+                                frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
                     </div>
@@ -1663,13 +1767,28 @@
             </div>
             <p id="noticiam2"></p>
             <nav>
-                <a href="https://1drv.ms/f/c/859092611fbe5986/IgCKd7Y7RNXwTovyNFYJxxjwAWhqeUkjSzSd013D2MC2EvE" 
-                    target="_blank">Subir</a>
+                <a href="https://1drv.ms/f/c/859092611fbe5986/IgCKd7Y7RNXwTovyNFYJxxjwAWhqeUkjSzSd013D2MC2EvE" target="_blank"
+                >Subir</a>
                 <a href="https://1drv.ms/w/c/859092611fbe5986/IQBdqnHMbIPRQqsG-8_8hEFGAdsJ9D5OCVCbMAWZLCrDxE4?e=UcZ3Uc" target="_blank"
                 >Informe</a>
-            </nav>
-                <button onclick="lOff();">Cerrar sesi&oacute;n</button>
+                <a href="https://1drv.ms/x/c/859092611fbe5986/IQDjti4Xwk8dRbinquv-F9rYAYA_8NB_l35Nr7UM-LpfQnU?e=mwhDG8"target="_blank"
+                >bddDETMAP</a>
+                <a href="https://telesalud.gob.cl/" target="_blank"
+                >Tele Salud (solicitar hora m&eacute;dica)</a>
+                <a href="https://www.chileatiende.gob.cl/fichas/15574-busca-tu-farmacia" target="_blank"
+                >💊 Farmacias de Turno - chile atiende</a>
+                <a href="https://www.araucaniasur.cl/hospital-de-loncoche/" target="_blank"
+                >Araucania sur - Hospital Loncoche</a>
+                <a href="https://blackxexo30.wixsite.com/dslspctrabat" target="_blank"
+                >(juego)realidadVirtual craft</a>
+                <a id="juego_nav_enlace_btn2" href="https://blackxexo30.wixsite.com/website-5" target="_blank"
+                >(juego)realidadVirtual .gt .av</a>
                 
+            </nav>
+            <nav>
+                
+                <button onclick="lOff();">Cerrar sesi&oacute;n</button>
+            </nav>
         </main>
         <main id="m3" class="main">
             <div class="gam">
@@ -1685,10 +1804,24 @@
                     target="_blank">bddKOTA</a>
                 <a href="https://1drv.ms/f/c/859092611fbe5986/IgBXsH-7GNG0RpH8M4fG95h5AXZtMa7tJgmqLlu4Cae8aNM" 
                     target="_blank">Subir</a>
+                <a href="https://telesalud.gob.cl/" target="_blank"
+                >Tele Salud (solicitar hora m&eacute;dica)</a>
+                <a href="https://www.chileatiende.gob.cl/fichas/15574-busca-tu-farmacia" target="_blank"
+                >💊 Farmacias de Turno - chile atiende</a>
+                <a href="https://www.araucaniasur.cl/hospital-de-loncoche/" target="_blank"
+                >Araucania sur - Hospital Loncoche</a>
+                <a href="https://blackxexo30.wixsite.com/dslspctrabat" target="_blank"
+                >(juego)realidadVirtual craft</a>
+                <a id="juego_nav_enlace_btn2" href="https://blackxexo30.wixsite.com/website-5" target="_blank"
+                >(juego)realidadVirtual .gt .av</a>
+                
             </nav>
             <img src="https://gifdb.com/images/high/flashing-close-up-venom-face-zc8jfc7oau2hpk0r.gif" 
             width="100%"height="50%"/>
-            <button onclick="lOff();">Cerrar sesi&oacute;n</button>
+            <nav>
+                
+                <button onclick="lOff();">Cerrar sesi&oacute;n</button>
+            </nav>
         </main>
         <main id="m4" class="main">
             <h1>Laura</h1>
@@ -1699,7 +1832,19 @@
                 </nav>
             </div>
             <p id="noticiam4"></p>
-            
+            <nav>
+                <a href="https://telesalud.gob.cl/" target="_blank"
+                >Tele Salud (solicitar hora m&eacute;dica)</a>
+                <a href="https://www.chileatiende.gob.cl/fichas/15574-busca-tu-farmacia" target="_blank"
+                >💊 Farmacias de Turno - chile atiende</a>
+                <a href="https://www.araucaniasur.cl/hospital-de-loncoche/" target="_blank"
+                >Araucania sur - Hospital Loncoche</a>
+                <a href="https://blackxexo30.wixsite.com/dslspctrabat" target="_blank"
+                >(juego)realidadVirtual craft</a>
+                <a id="juego_nav_enlace_btn2" href="https://blackxexo30.wixsite.com/website-5" target="_blank"
+                >(juego)realidadVirtual .gt .av</a>
+                
+            </nav>
             <button onclick="lOff();">Cerrar sesi&oacute;n</button>
         </main>
         <main id="m5" class="main">
