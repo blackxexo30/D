@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <!--andrea zalasar bodega fuera de loncoche por omil
+    --><head> 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>DOMOELECGAM</title>
         <head>
@@ -84,7 +85,7 @@
                 function l(){
                     var u = document.getElementById('u').value;
                     var p = document.getElementById('p').value;
-                    var noticia1 = "4:50 | entre las 18 y 20 hrs se espera un fuerte pukso de tormenta en la comuna";
+                    var noticia1 = "11:31 | hoy se realiza la feria del libro presencial!";
                     //var noticia1 = "";
                     
                     switch(u){
@@ -118,6 +119,7 @@
                                     document.getElementById('aprendizaje').style.display="none";
                                         document.getElementById('a_em_e').style.display="none";
                                         document.getElementById('a_em_i1').style.display="none";
+                                        document.getElementById('a_em_i2').style.display="none";
                                         document.getElementById('a_pds_e').style.display="none";
                                         document.getElementById('a_pds_i1').style.display="none";
                                         document.getElementById('a_vpcmdcr_e').style.display="none";
@@ -183,6 +185,7 @@
                                 case "st111":
                                     document.getElementById('m0').style.display="none";
                                     document.getElementById('m5').style.display="block";
+                                    document.getElementById('noticiam5').innerHTML=noticia1;
                                     break;
                             }
                             break;
@@ -191,6 +194,7 @@
                                 case "iypp321":
                                     document.getElementById('m0').style.display="none";
                                     document.getElementById('m6').style.display="block";
+                                    document.getElementById('noticiam6').innerHTML=noticia1;
                                     break;
                             }
                             break;
@@ -853,6 +857,12 @@
                     function a_em_i1Off(){
                         document.getElementById('a_em_i1').style.display="none";
                     }
+                    function a_em_i2(){
+                        document.getElementById('a_em_i2').style.display="block";
+                    }
+                    function a_em_i2Off(){
+                        document.getElementById('a_em_i2').style.display="none";
+                    }
                 </script>
                 <script>
                     function pds(){
@@ -1067,6 +1077,91 @@
                     function a_idjdlsdlud_i2Off(){
                         document.getElementById('a_idjdlsdlud_i2').style.display="none";
                     }
+                    var sud = true;
+                            //antiguo testamento
+                            if(sud){
+                                
+                                function at_on(){
+                                    document.getElementById('at').style.display="block";
+                                }
+                                
+                                function at_off(){
+                                    document.getElementById('at').style.display="none";
+                                }
+                                
+                            }
+                            //nuevo testamento
+                            if(sud){
+                                
+                                function nt_on(){
+                                    document.getElementById('nt').style.display="block";
+                                }
+                                
+                                function nt_off(){
+                                    document.getElementById('nt').style.display="none";
+                                }
+                                
+                            }
+                            //libro de mormón
+                            if(sud){
+                                
+                                function ldm_on(){
+                                    document.getElementById('ldm').style.display="block";
+                                }
+                                
+                                function ldm_off(){
+                                    document.getElementById('ldm').style.display="none";
+                                }
+                                
+                            }
+                            //doctrinas y convenios
+                            if(sud){
+                                
+                                function dyc_on(){
+                                    document.getElementById('dyc').style.display="block";
+                                }
+                                
+                                function dyc_off(){
+                                    document.getElementById('dyc').style.display="none";
+                                }
+                                
+                            }
+                            //himnos
+                            if(sud){
+                                
+                                function himnos_on(){
+                                    document.getElementById('himnos').style.display="block";
+                                }
+                                
+                                function himnos_off(){
+                                    document.getElementById('himnos').style.display="none";
+                                }
+                                
+                            }
+                            //Plan de salvación
+                            if(sud){
+                                
+                                function plds_on(){
+                                    document.getElementById('plds').style.display="block";
+                                }
+                                
+                                function plds_off(){
+                                    document.getElementById('plds').style.display="none";
+                                }
+                                
+                            }
+                            //Sacerdocio
+                            if(sud){
+                                
+                                function sacerdocio_on(){
+                                    document.getElementById('sacerdocio').style.display="block";
+                                }
+                                
+                                function sacerdocio_off(){
+                                    document.getElementById('sacerdocio').style.display="none";
+                                }
+                                
+                            }
                 </script>
                 <script>
                     function iem(){
@@ -1312,8 +1407,10 @@
                         <nav id="a_em" class="p">
                             <button onclick="a_em_e();">enlaces</button>
                             <button onclick="a_em_eOff();">X</button>
-                            <button onclick="a_em_i1();">PN</button>
+                            <button onclick="a_em_i1();">i1</button>
                             <button onclick="a_em_i1Off();">X</button>
+                            <button onclick="a_em_i2();">i2</button>
+                            <button onclick="a_em_i2Off();">X</button>
                         </nav>
                         <nav id="a_pds" class="p">
                             <button onclick="a_pds_e();">enlaces</button>
@@ -1386,6 +1483,7 @@
                     </nav>
                     <nav id="t_" class="p">
                         <button onclick="donar();">donar</button>
+                        <button>recargar</button>
                         
                     </nav>
                     <nav>
@@ -1407,7 +1505,7 @@
             </aside>
             <article id="article" class="estructuras">
                 <div id="persona" class="domoelecgam">
-                    <h1>PERSONA<button onclick="personaOff();">X</button></h1>
+                    <h1 >PERSONA<button onclick="personaOff();">X</button></h1>
                     <div id="plan" class="p">
                         <h1>PLAN <button onclick="planOff();">X</button></h1>
                         <nav id="p_pl_e">
@@ -1444,12 +1542,10 @@
                     <div id="calculo" class="p">
                         <h1>C&Aacute;LCULO <button onclick="calculoOff();">X</button></h1>
                         <nav id="p_c_e">
-                            <a href="https://1drv.ms/x/c/859092611fbe5986/IQCcE__hQBlUTJpz7wIWVDFBAbtmYtfrG_oC4-AcCMw9Rrs" target="_blank"
-                                >calculo bdd</a>
                             <a href="https://play.google.com/store/apps/details?id=com.microblink.photomath" target="_blank"
-                                >photomath playstore</a>
+                                >photomath apk</a>
                             <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.excel" target="_blank"
-                                >excel app</a>
+                                >excel apk</a>
                             <a  href="https://1drv.ms/x/c/859092611fbe5986/IQBNJXIexFHJTa3CJvzv0ndrARSirmUcoqWGZ01IxF6dKXg?e=J8jELi" target="_blank"
                                 >bdd</a>
                             <a href="https://1drv.ms/x/c/859092611fbe5986/IQCBxxSlm6sVRqpw_8mdA6oxAQZOfUzTEFkwc_d8ioWsy_c?e=wW63BO"target="_blank"
@@ -1487,6 +1583,11 @@
                                 frameborder="0" scrolling="yes"></iframe>
                             -->
                         </div>
+                        <!--
+                            certificado  declaracion jurada 
+                            de cesantia notaria
+                            
+                        -->
                     </div>
                     <div id="salud" class="p">
                         <h1>SALUD <button onclick="saludOff();">X</button></h1>
@@ -1528,7 +1629,50 @@
                     <div id="app" class="p">
                         <h1>APP <button onclick="appOff();">X</button></h1>
                         <nav id="p_ap_e">
-                            <a>####</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.microsoft.skydrive"target="_blank"
+                            >Onedrive apk</a>
+                            <a href="https://manage.wix.com/account/websites/folder/218f8b45-c7ab-465e-8ab1-a93a785986ca?referralAdditionalInfo=Route" target="_blank"
+                            >wix.com</a>
+                            <a href="https://1drv.ms/f/c/859092611fbe5986/IgBXsH-7GNG0RpH8M4fG95h5AXZtMa7tJgmqLlu4Cae8aNM?e=gBvysX"target="_blank"
+                            >up kota</a>
+                            <a href="https://1drv.ms/f/c/859092611fbe5986/IgCKd7Y7RNXwTovyNFYJxxjwAWhqeUkjSzSd013D2MC2EvE?e=frX8hr"target="_blank"
+                            >up detmap</a>
+                            <a  href="https://1drv.ms/f/c/859092611fbe5986/IgAv_5gyqlEQTpKcjiGjxoI2ATlFugoluIGELkqVOR7Tcb8?e=CrTxIN"    target="_blank"
+                            >up cbpb</a>
+                            <a  href="https://1drv.ms/f/c/859092611fbe5986/IgB55IciZtBxTZp2qU7uFXQuAZYMPFn5hKH9Ehcu4jcc6O0?e=RUS6dF"target="_blank"
+                            >up mmpc</a>
+                            <a href="https://1drv.ms/f/c/859092611fbe5986/IgAA_4fLit3OS7zACaSjtAIGAXRkejNRB9esmthSgRlvdTs?e=WP1RTd"target="_blank"
+                            >up iypp</a>
+                            <a  href="https://onedrive.live.com/" target="_blank"
+                            >Onedrive web</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.rhmsoft.code" target="_blank" 
+                            >Editor apk</a>
+                            <a href="https://play.google.com/store/apps/details?id=org.wordpress.android" target="_blank" 
+                            >Wordpress apk</a>
+                            <a href="https://wordpress.com/es/" target="_blank" 
+                            >wordpres.com</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.wix.admin" target="_blank" 
+                            >Wix apk</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs" target="_blank"
+                            >Drive apk</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.dropbox.android" target="_blank"
+                            >Dropbox apk</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.microsoft.emmx" target="_blank"
+                            >Edge apk</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.teacapps.barcodescanner" target="_blank"
+                            >Lector QR apk</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.google.android.videos" target="_blank"
+                            >google tv apk</a>
+                            <a href="https://www.microsoft.com/es-es/download/details.aspx?id=17718" target="_blank"
+                            >dotNetFx40</a>
+                            <a href="https://www.daemon-tools.cc/spa/products/dtLite" target="_blank"
+                            >Daemon tool lite</a>
+                            <a href="https://www.image-line.com/fl-studio/download" target="_blank"
+                            >FL Studio</a>
+                            <a href="https://pivotanimator.net/Download.php" target="_blank"
+                            >Pivot</a>
+                            <a href="https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="_blank"
+                            >vc_redist</a>
                         </nav>
                         <div id="p_ap_i" class="i">
                             <iframe id="p_ap_i1" src=""
@@ -1541,7 +1685,9 @@
                     <div id="transmitir" class="p">
                         <h1>TRANSMITIR <button onclick="transmitirOff();">X</button></h1>
                         <nav id="p_tr_e">
-                            <a>####</a>
+                            <a href="https://open.spotify.com/playlist/0cY5xrTP8QiBTEezEDpnLg?si=gM0wDutOSI-eM94DGIqw7A&utm_source=copy-link&pi=VXxYMp_5T7SXQ" target="_blank"
+                            >radio domoelecgam</a>
+                            
                         </nav>
                         <div id="p_tr_i" class="i">
                             <iframe id="p_tr_i1" src=""
@@ -1555,13 +1701,26 @@
                     <div id="contacto" class="p">
                         <h1>CONTACTO <button onclick="contactoOff();">X</button></h1>
                         <nav id="p_co_e">
-                            <a>####</a>
+                            <a href="https://blackxexo30.wixsite.com/chat" target="_blank">Contactar</a>
+                            <a href="https://blackxexo30.wixsite.com/website-4" target="_blank">invitado</a>
+                            <a href="https://blackxexo30.wixsite.com/my-site-4" target="_blank">kota</a>
+                            <a href="https://blackxexo30.wixsite.com/website" target="_blank">detmap</a>
+                            <a href="https://blackxexo30.wixsite.com/website-2" target="_blank">mmpc</a>
+                            <a href="https://blackxexo30.wixsite.com/website-1" target="_blank">cbpb</a>
+                            <a href="https://blackxexo30.wixsite.com/website-3" target="_blank">iypp</a>
+                            <a href="https://blackxexo30.wixsite.com/website-7" target="_blank">fjs </a>
+                            <a href="https://blackxexo30.wixsite.com/mac1" target="_blank">mac</a>
+                            <a href="https://blackxexo30.wixsite.com/website-9" target="_blank">yasmil</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.facebook.orca" target="_blank">messenger</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank" >Instagram</a>
+                            
                         </nav>
                         <div id="p_co_i" class="i">
                             <iframe id="p_co_i1" src=""
                                 frameborder="0" scrolling="yes"></iframe>
-                            <!--<iframe id="p_co_i1" src=""
-                                frameborder="0" scrolling="yes"></iframe>
+                            <!--
+                                31138895 bto
+                                67768244 david
                             -->
                         </div>
                     </div>
@@ -1571,10 +1730,14 @@
                     <div id="em" class="p">
                         <h1>EM <button onclick="emOff();">X</button></h1>
                         <nav id="a_em_e">
-                            <a>#####</a>
+                            <a id="em_nav_enlace_btn1" href="https://aprendoenlinea.mineduc.gob.cl/" target="_blank"
+                            >Aprendo en linea</a>
+                            
                         </nav>
                         <div id="a_em_i" class="i">
                             <iframe id="a_em_i1" src="https://www.puntajenacional.cl/" 
+                                frameborder="0" scrolling="yes"></iframe>
+                            <iframe id="a_em_i2" src="https://www.curriculumnacional.cl/estudiantes/Ingreso" 
                                 frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
@@ -1582,7 +1745,36 @@
                     <div id="pds" class="p">
                         <h1>PDS <button onclick="pdsOff();">X</button></h1>
                         <nav id="a_pds_e">
-                            <a>#####</a>
+                            <a id="pds_nav_enlace_btn1" href="https://www.w3schools.com/html/" target="_blank"
+                            >w3schools html</a>
+                            <a id="pds_nav_enlace_btn2" href="https://www.w3schools.com/css/default.asp" target="_blank"
+                            >w3schools css</a>
+                            <a id="pds_nav_enlace_btn3" href="https://www.w3schools.com/js/default.asp" target="_blank"
+                            >w3schools js</a>
+                            <a id="pds_nav_enlace_btn4" href="https://www.w3schools.com/php/default.asp"target="_blank"
+                            >w3schools php</a>
+                            <a id="pds_nav_enlace_btn5" href="https://www.w3schools.com/mysql/default.asp"target="_blank"
+                            >w3schools mysql</a>
+                            <a id="pds_nav_enlace_btn6" href="https://www.w3schools.com/java/default.asp"target="_blank"
+                            >w3schools java</a>
+                            <a id="pds_nav_enlace_btn7" href="https://www.w3schools.com/python/default.asp"target="_blank"
+                            >w3schools python</a>
+                            <a id="pds_nav_enlace_btn8" href="https://www.w3schools.com/c/index.php"target="_blank"
+                            >w3schools c</a>
+                            <a id="pds_nav_enlace_btn9" href="https://www.w3schools.com/excel/index.php"target="_blank"
+                            >w3schools excel</a>
+                            <a id="pds_nav_enlace_btn10" href="https://www.w3schools.com/xml/default.asp"target="_blank"
+                            >w3schools xml</a>
+                            <a id="pds_nav_enlace_btn11" href="https://www.w3schools.com/nodejs/default.asp"target="_blank"
+                            >w3schools nodejs</a>
+                            <a id="pds_nav_enlace_btn12" href="https://www.w3schools.com/ai/default.asp"target="_blank"
+                            >w3schools ai</a>
+                            <a id="pds_nav_enlace_btn13" href="https://www.w3schools.com/cybersecurity/index.php"target="_blank"
+                            >w3schools cybersecurity</a>
+                            <a id="pds_nav_enlace_btn14" href="https://www.w3schools.com/datascience/default.asp"target="_blank"
+                            >w3schools datascience</a>
+                            <a id="pds_nav_enlace_btn15" href="https://www.w3schools.com/tools/index.php"target="_blank"
+                            >w3schools tools</a>
                         </nav>
                         <div id="a_pds_i" class="i">
                             <iframe id="a_pds_i1" src="" 
@@ -1603,6 +1795,13 @@
                             css
                                 <link rel="stylesheet" href="">
                         
+                            atajos
+                                ctrl+f (buscar linea de codigo)
+                        
+                        
+                        
+                        
+                        
                         -->
                     </div>
                     <div id="vpcmdcr" class="p">
@@ -1611,7 +1810,7 @@
                             <a>#####</a>
                         </nav>
                         <div id="a_vpcmdcr_i" class="i">
-                            <iframe id="a_vpcmdcr_i1" src="" 
+                            <iframe id="a_vpcmdcr_i1" src="https://1drv.ms/b/c/859092611fbe5986/IQQX-m-gjbL0T6Qm4fX7JbK8AWgCCzWK0GEckcrzsgsQ8gk" 
                                 frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
@@ -1663,10 +1862,33 @@
                     <div id="iedmdi" class="p">
                         <h1>IEDMDI <button onclick="iedmdiOff();">X</button></h1>
                         <nav id="a_iedmdi_e">
-                            <a>#####</a>
+                            <a id="iedmdi_nav_enlace_btn1" href="https://blackxexo30.wixsite.com/website-6" 
+                                target="_blank">iedmdi</a>
+                            <a id="iedmdi_nav_enlace_btn2" href="https://1drv.ms/x/c/859092611fbe5986/IQAFjts5KlomR4HtQ6JqUQMLAbGRsBD5S7gcG4Ci7KoCquM?e=Bl0gDw" 
+                                target="_blank">bdd iedmdi</a>
+                                    <a href="https://www.sec.cl/pliegos-tecnicos-ric/?view_full_site=true" target="_blank" 
+                                        >ir a sec pliegos-tecnicos-ric</a>
+                                    <a href="https://www.youtube.com/watch?v=kPsFJsnOPlk&embeds_referring_euri=https%3A%2F%2Fwww.sec.cl%2F&source_ve_path=Mjg2NjY&feature=emb_logo" target="_blank" 
+                                        >Charla 1 SEC</a>
+                                    <a href="https://www.youtube.com/watch?v=EaXWwWeqYao" target="_blank" 
+                                        >Charla 2 SEC</a>
+                                    <a href="https://www.youtube.com/watch?v=c37VJc3r1es" target="_blank" 
+                                        >Charla 3 SEC</a>
+                                    <a href="https://www.youtube.com/watch?v=lfwYqjtBVvQ" target="_blank" 
+                                        >Charla 4 SEC</a>
+                                    <a href="https://www.youtube.com/watch?v=BW9kZyQG6F4&t=6s" target="_blank" 
+                                        >Charla 5 SEC</a>
+                                    <a href="https://www.youtube.com/watch?v=370aVwhw6xk" target="_blank" 
+                                        >Charla 6 SEC</a>
+                                    <a href="https://www.sec.cl/documentos-complementarios-de-los-pliegos-ric/" target="_blank" 
+                                        >Documentos Complementarios de los Pliegos RIC</a>
+                                    <a href="https://www.sec.cl/pliegos-ric-estandares-constructivos-empalmes/" target="_blank" 
+                                        >Estándares constructivos de empalmes</a>
+                                    <a href="https://www.sec.cl/procedimientos-de-excepcion-por-catastrofe/" target="_blank" 
+                                        >Procedimiento de Excepción por Catástrofe</a>
                         </nav>
                         <div id="a_iedmdi_i" class="i">
-                            <iframe id="a_iedmdi_i1" src="" 
+                            <iframe id="a_iedmdi_i1" src="https://blackxexo30.wixsite.com/website-6" 
                                 frameborder="0" scrolling="yes"></iframe>
                             
                         </div>
@@ -1678,10 +1900,40 @@
                             <a id="idjdlsdlud_nav_enlace_btn2" href="https://1drv.ms/w/c/859092611fbe5986/IQAkk38ynKBlSo2AVFpIIZSiAVs8zJfdSAOB4VjqL6Ux440" target="_blank">cuaderno IDJDLSDUD</a>
                             <a id="idjdlsdlud_nav_enlace_btn3" href="https://www.churchofjesuschrist.org/study?lang=spa" target="_blank">Biblioteca web</a>
                             <a id="idjdlsdlud_nav_enlace_btn4" href="https://play.google.com/store/apps/details?id=org.lds.ldssa" target="_blank">Biblioteca app</a>
-                            <a href="https://www.churchofjesuschrist.org/study/general-conference/2026/10/53villanueva?lang=spa&id=p_uTAhP%2Cp_hz2zt%2Cp_fzcPh%2Cp_hqrB0%2Cp_csiNC%2Cp_mprqN%2Cp_jN56J#p_uTAhP" 
-                                target="_blank">Probadme ahora en cristo</a>
-                            <a>alma 13:3</a>
-                            <a>DyC 122:7</a>
+                            <a href="https://www.churchofjesuschrist.org/study/general-conference/2026/10/53villanueva?lang=spa&id=p_uTAhP%2Cp_hz2zt%2Cp_fzcPh%2Cp_hqrB0%2Cp_csiNC%2Cp_mprqN%2Cp_jN56J#p_uTAhP" target="_blank"
+                                >Probadme ahora en cristo</a>
+                            <a href="https://www.churchofjesuschrist.org/study/manual/the-plan-of-salvation?lang=spa" target="_blank"
+                            >plan de salvaci&oacute;n</a>
+                            <a href="https://www.churchofjesuschrist.org/study/manual/the-word-of-wisdom?lang=spa" target="_blank">
+                            La palabra de sabiduria</a>
+                            <a href="https://www.churchofjesuschrist.org/study/scriptures/gs/baptism-baptize?lang=spa" target="_blank">
+                            bautizar</a>
+                            <a href="https://www.churchofjesuschrist.org/study/manual/englishconnect1-learner?lang=spa" target="_blank">
+                            libro ingles</a>
+                            <a href="https://www.churchofjesuschrist.org/study/scriptures/gs/repent-repentance?lang=spa" target="_blank"
+                            >arrepentimiento</a>
+                            <a href="https://www.churchofjesuschrist.org/study/scriptures/gs/israel?lang=spa"target="_blank"
+                            >israel</a>
+                            <a href="" target="_blank"
+                            >Expiaci&oacute;n de Jesucristo (actualuzar)</a>
+                            <a href="" target="_blank"
+                            >Testificar(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >Investidura(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >doctrina de los grados de gloria(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >sacerdosio da la autoridad(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >sellamiento, ordenanzas y bautidmos(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >simbolo de la investidura (garments)(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >ordenanzas y convenios(actualuzar)</a>
+                            <a href="" target="_blank"
+                            >ministracion(actualuzar)</a>
+                            <a>alma 13:3(actualuzar)</a>
+                            <a>DyC 122:7(actualuzar)</a>
                         </nav>
                         <div id="a_idjdlsdlud_i" class="i">
                             <iframe id="a_idjdlsdlud_i1" src="https://1drv.ms/w/c/859092611fbe5986/IQQkk38ynKBlSo2AVFpIIZSiAcpNKG_ttuXdOpEhjGj0TxY" 
@@ -1690,7 +1942,535 @@
                                 scrolling="yes">{}</iframe>
                         </div>
                         <div>
-                            
+                                    <!--Bibloteca-->
+                                    <ul>Bibloteca
+                                        <!--antiguo testamento--> 
+                                        <li>Antiguo Testamento
+                                            <button onclick="at_on();"> + </button>
+                                            <button onclick="at_off();"> - </button>
+                                            
+                                            <ul id="at" style="display:none">
+                                                
+                                                <li>Jeremias:
+                                                    
+                                                    <ul>
+                                                                <li>1:5 <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/jer/1?lang=spa&id=p5#p5" target="_blank">
+                                                                    Antes que te formase en el vientre</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--nuevo testamento--> 
+                                        <li>Nuevo Testamento
+                                            <button onclick="nt_on();"> + </button>
+                                            <button onclick="nt_off();"> - </button>
+                                            
+                                            <ul id="nt" style="display:none">
+                                                
+                                                <li>Mateo:
+                                                    
+                                                    <ul>
+                                                                <li>3 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/3?lang=spa" target="_blank">
+                                                                    Jesucristo es bautizado</a>
+                                                                </li>
+                                                                <li>2 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/2?lang=spa" target="_blank">
+                                                                    Jesucristo perdona los pecados</a>
+                                                                </li>
+                                                                
+                                                                <li>5 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/5?lang=spa" target="_blank">
+                                                                    Jesucristo expulsa una legi&oacute;n 
+                                                                    de demonios</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li>Juan
+                                                    <ul>
+                                                                <li>3 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=spa&id=p16#p16" target="_blank">
+                                                                    Expiaci&oacute;n de Jesucristo</a>
+                                                                </li>
+                                                                
+                                                                <li>13 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/13?lang=spa&id=p34#p34" target="_blank">
+                                                                    Amaos los unos a los otros como yo os he amado</a>
+                                                                </li>
+                                                                <li>17 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/17?lang=spa" target="_blank">
+                                                                    Jesucristo ofrece la gran Oraci&oacute;n 
+                                                                    intercesora</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li>Galatas
+                                                    <ul>
+                                                                <li>5:22-23 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/gal/5?lang=spa&id=p22-p23#p22" target="_blank">
+                                                                    El fruto del Esp&iacute;ritu</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li>Hebreos
+                                                    <ul>
+                                                                <li>12:9 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/heb/12?lang=spa&id=p9#p9" target="_blank">
+                                                                    Nuestros padres terrenales</a>
+                                                                </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul>
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--libro de mormon--> 
+                                        <li>Libro de Morm&oacute;n
+                                            <button onclick="ldm_on();"> + </button>
+                                            <button onclick="ldm_off();"> - </button>
+                                            
+                                            <ul id="ldm" style="display:none">
+                                                
+                                                <li>estudio:
+                                                    
+                                                    <ul>
+                                                        <!--1 Nefi-->
+                                                        <li>1 Nefi
+                                                            
+                                                            <ul>capitulos
+                                                                <li>15:14 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/15?lang=spa&id=p14#p14" target="_blank" >
+                                                                    Llegar&aacute;n al conocimiento de su Redentor 
+                                                                    y de los principios exactos de su doctrina</a>
+                                                                </li>
+                                                                <li>31 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=spa" target="_blank" >
+                                                                    Bautismo de Jesucristo</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--2 Nefi-->
+                                                        <li>2 Nefi
+                                                            
+                                                            <ul>capitulos
+                                                                
+                                                                <li>2:22:25 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=spa&id=p22-p25#p22" target="_blank" >
+                                                                    La caida de Adan y Eva</a>
+                                                                </li>
+                                                                
+                                                                <li>3 <a href="https://www.churchofjesuschrist.org/bofm-app/share?v=2&id=M41ZD" target="_blank" >
+                                                                    José, en Egipto, vio a los nefitas en visión 
+                                                                    — Profetizó en cuanto a José Smith, el vidente 
+                                                                    de los últimos días; en cuanto a Moisés, que 
+                                                                    libraría a Israel; y en cuanto al advenimiento 
+                                                                    del Libro de Mormón</a>
+                                                                </li>
+                                                                
+                                                                <li>4:28-35<a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/4?lang=spa&id=p28-p35#p28" target="_blank" >
+                                                                    La caida de Adan y Eva</a>
+                                                                </li>
+                                                                
+                                                                <li>31 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=spa" target="_blank" >
+                                                                    Bautismo de Jesucristo</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Mosiah-->
+                                                        <li>Mos&iacute;ah
+                                                            
+                                                            <ul>capitulos
+                                                                
+                                                                <li>13:12-24 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/13?lang=spa" target="_blank">
+                                                                    Los Dies Mandamientos</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Alma-->
+                                                        <li>Alma
+                                                            
+                                                            <ul>capitulos
+                                                                
+                                                                <li>22:13 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/22?lang=spa&id=p13#p13" target="_blank">
+                                                                    Plan de salvacion, Plan de redencion, Plan de 
+                                                                    felicidad o Plan de misericordia</a>
+                                                                </li>
+                                                                
+                                                                <li>30:44 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/30?lang=spa&id=p44#p44" target="_blank">
+                                                                    Mas Alma le dijo: Ya has tenido bastantes señales</a>
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </li>
+                                                        <!--3 Nefi-->
+                                                        <li>3 Nefi
+                                                            
+                                                            <ul>capitulos
+                                                                
+                                                                <li>9:15 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/9?lang=spa&id=p15#p15" target="_blank">
+                                                                    si venís a mí, tendréis vida eterna</a>
+                                                                </li>
+                                                                <li>11 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=spa" target="_blank">
+                                                                    Jesucristo se manifest&oacute; a Nefi</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Éter-->
+                                                        <li>&Eacute;ter
+                                                            
+                                                            <ul>capitulos
+                                                                
+                                                                <li>12:27 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=spa&id=p27#p27" target="_blank">
+                                                                    El señor da debilidad a los hombres para que 
+                                                                    sean humildes</a>
+                                                                    </a>
+                                                                    
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Moroni-->
+                                                        <li>Moroni
+                                                            
+                                                            <ul>capitulos
+                                                                
+                                                                <li>6 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/6?lang=spa" target="_blank">
+                                                                    Las personas que se arrepienten son 
+                                                                    bautizadas y hermanadas en la Iglesia</a>
+                                                                    
+                                                                    
+                                                                </li>
+                                                                
+                                                                <li>6:4 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/6?lang=spa&id=p4#p4" target="_blank">
+                                                                    Nutridos por la buena palabra de Dios</a>
+                                                                    
+                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--doctrinas y convenios--> 
+                                        <li>Doctrinas y Convenios
+                                            <button onclick="dyc_on();"> + </button>
+                                            <button onclick="dyc_off();"> - </button>
+                                            
+                                            <ul id="dyc" style="display:none">
+                                                
+                                                <li>estudio:
+                                                    
+                                                    <ul>
+                                                        
+                                                        <li>18
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>10 
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/132?lang=spa&id=p13-p21#p13" target="_blank">
+                                                                    Recordad que el valor de las almas es 
+                                                                    grande a la vista de Dios</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                        <li>20
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>17 
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/20?lang=spa&id=p17#p17" target="_blank">
+                                                                    Por estas cosas sabemos que hay un Dios en el cielo</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                        <li>42
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>12-14
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42?lang=spa&id=p12-p14#p12" target="_blank">
+                                                                    Y además, los élderes, presbíteros y maestros de esta 
+                                                                    iglesia enseñarán los principios de mi evangelio, que se encuentran 
+                                                                    en la Biblia y en el Libro de Mormón, en el cual se halla la
+                                                                    plenitud del evangelio.</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                         
+                                                        <li>42
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>14
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42?lang=spa&id=p14#p14" target="_blank">
+                                                                    Y se os dará el Espíritu por la oración de fe; 
+                                                                    y si no recibís el Espíritu, no enseñaréis.</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                        <li>50
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>13-22
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/50?lang=spa&id=p13-p22#p13" target="_blank">
+                                                                    Por tanto, yo, el Señor, os hago esta pregunta:
+                                                                    ¿A qué se os ordenó?</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                        <li>52
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>9
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/52?lang=spa&id=p9#p9" target="_blank">
+                                                                    Y viajen desde allí, predicando la palabra 
+                                                                    por el camino, no diciendo sino las cosas
+                                                                    escritas por los profetas y apóstoles, y
+                                                                    lo que el Consolador les enseñe mediante 
+                                                                    la oración de fe.</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                        <li>132
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>13-21 
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/18?lang=spa&id=p10#p10" target="_blank">
+                                                                    Sellamiento de matrimonios en el Templo</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--Perla de gran precio--> 
+                                        <li>Perla de gran precio
+                                            <button onclick="pdgp_on();"> + </button>
+                                            <button onclick="pdgp_off();"> - </button>
+                                            
+                                            <ul id="pdgp" style="display:none">
+                                                
+                                                <li>estudio:
+                                                    
+                                                    <ul>
+                                                        
+                                                        <li>2
+                                                            
+                                                            <ul>Versiculos
+                                                                
+                                                                <li>1
+                                                                    <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/2?lang=spa&id=p1#p1" target="_blank">
+                                                                    Y sucedió que el Señor habló a Moisés, diciendo</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--himnos--> 
+                                        <li>Himnos
+                                            <button onclick="himnos_on();"> + </button>
+                                            <button onclick="himnos_off();"> - </button>
+                                            
+                                            <ul id="himnos" style="display:none">
+                                                
+                                                <li>estudio:
+                                                    
+                                                    <ul>
+                                                        
+                                                        <li>196
+                                                            
+                                                            <ul>Letra
+                                                                
+                                                                <li>
+                                                                    <a href="https://www.churchofjesuschrist.org/study/manual/hymns/i-am-a-child-of-god?lang=spa" target="_blank">
+                                                                    Soy un hijo de Dios</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--Plan de Salvación--> 
+                                        <li>Plan de Salvaci&oacute;n
+                                            <button onclick="plds_on();"> + </button>
+                                            <button onclick="plds_off();"> - </button>
+                                            
+                                            <ul id="plds" style="display:none">
+                                                
+                                                <li>estudio:
+                                                    
+                                                    <ul>
+                                                        <li>Alma
+                                                            
+                                                            <ul>
+                                                                
+                                                                <li>22:13 <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/22?lang=spa&id=p13#p13" target="_blank">
+                                                                    Y Aarón le explicó las Escrituras, desde la 
+                                                                    creación de Adán, exponiéndole la caída del 
+                                                                    hombre, y su estado carnal, y también el plan 
+                                                                    de redención que fue preparado desde la 
+                                                                    fundación del mundo, por medio de Cristo,
+                                                                    para cuantos quisieran creer en su nombre.</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--Sacerdocio--> 
+                                        <li>Sacerdocio
+                                            <button onclick="sacerdocio_on();"> + </button>
+                                            <button onclick="sacerdocio_off();"> - </button>
+                                            
+                                            <ul id="sacerdocio" style="display:none">
+                                                
+                                                <li>estudio:
+                                                    
+                                                    <ul>
+                                                        <!--Doctrinas y Convenios-->
+                                                        <li>Doctrinas y Convenios
+                                                            
+                                                            <ul>
+                                                                
+                                                                <li>13 <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/13?lang=spa" target="_blank">
+                                                                    Entrar</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Sacerdocio Aarónico-->
+                                                        <li>Sacerdocio Aar&oacute;nico
+                                                            
+                                                            <ul>
+                                                                
+                                                                <li> <a href="https://www.churchofjesuschrist.org/study/general-conference/topics/aaronic-priesthood?lang=spa" target="_blank">
+                                                                    Entrar</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Sacerdocio reseña-->
+                                                        <li>Sacerdocio reseña
+                                                            
+                                                            <ul>
+                                                                
+                                                                <li> <a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/priesthood?lang=spa" target="_blank">
+                                                                    Entrar</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Sacerdocios-->
+                                                        <li>Sacerdocios
+                                                            
+                                                            <ul>
+                                                                
+                                                                <li> <a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics?lang=spa#map70" target="_blank">
+                                                                    Entrar</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--Sacerdocio de Melquisedec-->
+                                                        <li>Sacerdocio de Melquisedec
+                                                            
+                                                            <ul>
+                                                                
+                                                                <li> <a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics?lang=spa#map71" target="_blank">
+                                                                    Entrar</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <!--libros-->
+                                                        <li>libros
+                                                            
+                                                            <ul>
+                                                                <li>Mois&eacute;s 1:39 <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1?lang=spa&id=p39#p39" target="_blank">
+                                                                    Porque, he aquí, esta es mi obra y mi 
+                                                                    gloria: Llevar a cabo la inmortalidad
+                                                                    y la vida eterna del hombre.</a>
+                                                                </li>
+                                                                <li>Mateo 7:21-23 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/7?lang=spa&id=p21-p23#p21" target="_blank">
+                                                                    21 No todo el que me dice: Señor, Señor,
+                                                                    entrará en el reino de los cielos, sino el
+                                                                    que hace la voluntad de mi Padre que está en los cielos.
+                                                                    22 Muchos me dirán en aquel día: Señor, 
+                                                                    Señor, ¿no profetizamos en tu nombre,
+                                                                    y en tu nombre echamos fuera demonios 
+                                                                    y en tu nombre hicimos muchos milagros?
+                                                                    23 Y entonces les declararé: Nunca os conocí; 
+                                                                    apartaos de mí, hacedores de maldad.</a>
+                                                                </li>
+                                                                <li>Art&iacute;culos de Fe 1:5 <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=spa&id=p5#p5" target="_blank">
+                                                                    5 Creemos que el hombre debe ser llamado por Dios, por 
+                                                                    profecía y la imposición de manos, por aquellos que
+                                                                    tienen la autoridad, a fin de que pueda predicar el 
+                                                                    evangelio y administrar sus ordenanzas.</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!--ingles-->
+                                    <!--
+                                    hola -> hi,hello
+                                        como estas -> how are you?
+                                        bien -> good
+                                        donde va ahora -> where are you going
+                                        a la iglesia -> to the church
+                                        a la casa -> to me house
+                                        ir -> to go
+                                        quien es -> who are you?
+                                        su -> his(hombre)/her(mujer)
+                                        su nombre es maryori -> her name is maryori
+                                        que te gusta a ti? -> what do yo like to do?
+                                         ->a like to
+                                         play soccer
+                                         dance
+                                        salir ->go out 
+                                        adios -> 
+                                         ->nive to meet you. 
+                                        nos vemos -> see you (silla)
+                                        yo soy 31 -> im 31 (years old)
+                                        de donde eres? -> where are you from?
+                                         -> 
+                                         -> 
+                                         -> hi,hello
+                                         -> how are you?
+                                         -> good
+                                         -> where are you going
+                                        pais -> country
+                                        campo -> 
+                                         -> country sils
+                                         -> now
+                                         -> what are you doing?
+                                        donde trabajas -> where do you like?
+                                         -> what is you favorite food?
+                                        pure -> mashs
+                                         -> cheese
+                                         -> carne
+                                         -> soap
+                                         -> fries potato
+                                         -> mashed (pure)
+                                         -> blits
+                                         -> 
+                                         -> nefi padre de nefi
+                                    -->
                         </div>
                     </div>
                     <div id="iem" class="p">
@@ -1791,13 +2571,13 @@
             </nav>
         </main>
         <main id="m3" class="main">
+            <h1>Kota</h1>
             <div class="gam">
                 <nav>
                     <input type="text" id="chat3" value="" placeholder="escriba aquí!"/>
                     <button onclick="chat3();">GAM</button>
                 </nav>
             </div>
-            <h1>Kota</h1>
             <p id="noticiam3"></p>
             <nav>
                 <a href="https://1drv.ms/x/c/859092611fbe5986/IQCBxxSlm6sVRqpw_8mdA6oxAQZOfUzTEFkwc_d8ioWsy_c?e=wW63BO"
@@ -1848,10 +2628,82 @@
             <button onclick="lOff();">Cerrar sesi&oacute;n</button>
         </main>
         <main id="m5" class="main">
-            <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
+            <h1>SCARLET</h1>
+            <nav>
+                <a href="https://1drv.ms/w/c/859092611fbe5986/IQC3WaTm88lxQrwln45SJiclAYX_kbWbY44lhOH6tsV6GAU"target="_blank"
+                >informe (word)</a>
+                <a href="https://1drv.ms/f/c/859092611fbe5986/IgAICbJ7j2XqT6bG8NqNZuJpAcLzrFJNF7ZxyJCnege7npE" target="_blank"
+                >Subir archivos aqu&iacute;</a>
+                <a href="https://play.google.com/store/apps/details?id=com.microblink.photomath" target="_blank"
+                >photomath apk</a>
+                <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.excel" target="_blank"
+                >excel apk</a>
+                <a  href="https://1drv" target="_blank"
+                >bdd(excel)</a>
+            </nav>
+            <div>
+                <iframe id="p_pl_i1" src="https://calendar.google.com/calendar/embed?src=939ae17974b603fb17871e697be998ff769329c14f756ed5e72ce943788a4f34%40group.calendar.google.com&ctz=America%2FSantiago"
+                    frameborder="0" scrolling="yes"></iframe>
+                <iframe id="p_pl_i2" src="https://www.meteored.cl/tiempo-en_Loncoche-America+Sur-Chile-Araucania--1-18249.html" 
+                    frameborder="0" ></iframe>
+                <iframe id="p_pl_i3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345!2d-72.65!3d-39.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614a7d4b1a8b1c1%3A0x1!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses!2scl!4v1700000000000"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p>Hola Scarlet en esta sesion que te compartí yo te 
+                compartire cosas que tengo para ayudarte digitalmente en lo que necesites 
+                si hay algo que no te gusta como colores, diseños, etc. me lo dices 
+                y te personalizo tu sesion.
+            </p>
+            <p>Te comparti informe para que escribas lo que quieras y yo igual puedo entrar por si 
+                necesitas imprimir algo lo subes alli y si no tienes tiempo 
+                para imprimir me avisas y yo imprimo por ti lo que me dejes guardado en el informe (obviamente tu pagas la 
+                impresion jajaja yo imprimo siesque no tienes tiempo tu como tu secretario jajaja.
+            </p>
+            <p>el boton <u>"bbd(excel)</u>es similar pero exclusivo para calculos matematicos que no entiendas 
+                me los escribes dentro del excel y yo los resuelvo por ti!
+                
+            </p>
+            <p id="noticiam5"></p>
         </main>
         <main id="m6" class="main">
-            <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
+            <h1>IYPP</h1>
+            <nav>
+                <a href="https://1drv.ms/w/c/859092611fbe5986/IQBiF8yGOBrrTZ1_hkp12iVWAdBP9EIHpQlYjNLroFuTivg?e=jTLwvN"target="_blank"
+                >informe (word)</a>
+                <a href="https://1drv.ms/f/c/859092611fbe5986/IgA3KzVetKqOQ6dPpVB6K3TUAYDb5hFsdIkM9rLCO19ISZg" target="_blank"
+                >Subir archivos aqu&iacute;</a>
+                <a href="https://play.google.com/store/apps/details?id=com.microblink.photomath" target="_blank"
+                >photomath apk</a>
+                <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.excel" target="_blank"
+                >excel apk</a>
+                <a  href="https://1drv.ms/x/c/859092611fbe5986/IQCg_CAT5ax_R5r__4DtRFnGAYuTz9DxU2eBPIMvaBmeOpU" target="_blank"
+                >bdd(excel)</a>
+                <a href="https://1drv.ms/f/c/859092611fbe5986/IgD-Sc6MqEt1Ta7mdle3Z4u0AWaYv1Hncgg4yathiG_QFhg" target="_blank"
+                >electricidad cuaderno kolping villarrica</a>
+            </nav>
+            <div>
+                <iframe id="p_pl_i1" src="https://calendar.google.com/calendar/embed?src=939ae17974b603fb17871e697be998ff769329c14f756ed5e72ce943788a4f34%40group.calendar.google.com&ctz=America%2FSantiago"
+                    frameborder="0" scrolling="yes"></iframe>
+                <iframe id="p_pl_i2" src="https://www.meteored.cl/tiempo-en_Loncoche-America+Sur-Chile-Araucania--1-18249.html" 
+                    frameborder="0" ></iframe>
+                <iframe id="p_pl_i3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345!2d-72.65!3d-39.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614a7d4b1a8b1c1%3A0x1!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses!2scl!4v1700000000000"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p>El boton que dice <u>electricidad cuaderno kolping villarrica</u>
+                te lo comparto, contiene 9 paginas (cada una es una imagen) 
+                necesito que veas las p&aacute;ginas y hagas los calculos necesarios 
+                de mi cuaderno y tus conocimie tos en el excel 
+                que te deje mas arriba en el boton <u>"bdd(excel)"</u> 
+                si ocupas ese excel y veo tu avanse yo puedo enviarte mejorado el excel para automatizarlo 
+                porque igual se programar excel con formulas lógicas de programación.
+            </p>
+            <p>
+                solo con escribir las formulas que estan en mi cuaderno (cualquier calculo) me sirve en ese 
+                excel que te deje de bdd.
+                
+                
+            </p>
+            <p id="noticiam6"></p>
         </main>
         <main id="m7" class="main">
             <h1>Hola estamos en mantenimiento hoy 10/11/2026</h1>
